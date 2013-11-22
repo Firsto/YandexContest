@@ -39,7 +39,6 @@ package PieceOfCake;
 //          for i:=1 to n+1 do
 //           y[i]:=y[i]-min;
 //        End;
-//
 //        Procedure Ploshad;
 //        Var i: integer;
 //        Begin
