@@ -108,26 +108,30 @@ float polygonSquare2fv(Point2f* points, int n){
 
 public class PieceOfCake {
     public static void main(String[] args) {
+//        System.out.println(20 % 3);
+//        System.exit(0);
 //        int n = 6;
 //        int[] x = {2, 3, 2, -1, -2, -1, 0};
 //        int[] y = {5, -1, -4, -4, -2, 3, 0};
-        int n = 6;
+        int n = 5;
 //        int[] x = {-1, 1, 2, 1, -1, -2, 0};
 //        int[] y = {-3, -3, 0, 3, 3, 0,  0};
-        int[] x = {2, -2, -3, 4, 11, 9,  0};
-        int[] y = {5, 4, -1, -4, -2, 3,  0};
+//        int[] x = {2, -2, -3, 4, 11, 9,  0};
+//        int[] y = {5, 4, -1, -4, -2, 3,  0};
+        int[] x = {-2, -3, -2, 3 , 3 , 0};
+        int[] y = {-3, 2, 3, 2, -2, 0};
         x[n]=x[0];
         y[n]=y[0];
 
         double s = S(x, y, n);
         System.out.println(s);
 
-        int xc = 0;
+        double xc = 0;
         for (int i = 0; i < n-1; i++) {
             xc += x[i];
         }
         xc = xc/n;
-        int yc = 0;
+        double yc = 0;
         for (int i = 0; i < n-1; i++) {
             yc += y[i];
         }
@@ -137,16 +141,17 @@ public class PieceOfCake {
 
     public static double S(int[] x, int[] y, int n) {
         int min = y[0];
-        for (int i = 1; i < n; i++) {
+       /* for (int i = 1; i < n; i++) {
             if (min > y[i]) min = y[i];
         }
         for (int i = 0; i < n+1; i++) {
             y[i] = y[i]-min;
-        }
+        }*/
 
         double s = 0;
         for (int i = 0; i < n; i++) {
-            s += ((y[i+1]+y[i])*(x[i+1]-x[i])/2);
+//            s += ((y[i+1]+y[i])*(x[i+1]-x[i])/2);
+            s += (x[i]*y[(i+1)%n] - y[i]*x[(i+1)%n])/2;
         }
 
         return s;
