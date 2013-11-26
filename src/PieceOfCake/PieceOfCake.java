@@ -1,5 +1,7 @@
 package PieceOfCake;
 
+import java.util.*;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Razor
@@ -108,52 +110,90 @@ float polygonSquare2fv(Point2f* points, int n){
 
 public class PieceOfCake {
     public static void main(String[] args) {
-//        System.out.println(20 % 3);
+//        System.out.println((double) 20);
 //        System.exit(0);
-//        int n = 6;
-//        int[] x = {2, 3, 2, -1, -2, -1, 0};
-//        int[] y = {5, -1, -4, -4, -2, 3, 0};
-        int n = 5;
-//        int[] x = {-1, 1, 2, 1, -1, -2, 0};
-//        int[] y = {-3, -3, 0, 3, 3, 0,  0};
-//        int[] x = {2, -2, -3, 4, 11, 9,  0};
-//        int[] y = {5, 4, -1, -4, -2, 3,  0};
-        int[] x = {-2, -3, -2, 3 , 3 , 0};
-        int[] y = {-3, 2, 3, 2, -2, 0};
-        x[n]=x[0];
-        y[n]=y[0];
+        ArrayList<Point> polygon = new ArrayList<Point>();
+        polygon.add(new Point(8.32,-3.06));
+        polygon.add(new Point(-4.08,4.38));
+        polygon.add(new Point(7.88,4.42));
+//        polygon.add(new Point(-2.76,-2.68));
+//        System.out.println(triangleCenter(polygon));
+        // s = 83.6
+        System.out.println("S = " + S(polygon));
 
-        double s = S(x, y, n);
-        System.out.println(s);
-
-        double xc = 0;
-        for (int i = 0; i < n-1; i++) {
-            xc += x[i];
-        }
-        xc = xc/n;
-        double yc = 0;
-        for (int i = 0; i < n-1; i++) {
-            yc += y[i];
-        }
-        yc = yc/n;
-        System.out.println("center (" + xc + ", " + yc + ")");
     }
 
-    public static double S(int[] x, int[] y, int n) {
-        int min = y[0];
-       /* for (int i = 1; i < n; i++) {
+    public static double S(ArrayList<Point> plist) {
+//        double min = y[0];
+        /*for (int i = 1; i < n; i++) {
             if (min > y[i]) min = y[i];
         }
         for (int i = 0; i < n+1; i++) {
             y[i] = y[i]-min;
         }*/
-
+        plist.add(new Point(plist.get(0).x, plist.get(0).y));
+        System.out.println(plist);
         double s = 0;
-        for (int i = 0; i < n; i++) {
-//            s += ((y[i+1]+y[i])*(x[i+1]-x[i])/2);
-            s += (x[i]*y[(i+1)%n] - y[i]*x[(i+1)%n])/2;
+        for (int i = 0; i < plist.size()-1; i++) {
+            s += (plist.get(i+1).y + plist.get(i).y) * (plist.get(i+1).x - plist.get(i).x) / 2;
+//              s += (plist.get(i).x * plist.get((i+1)%plist.size()).y - plist.get(i).y * plist.get((i+1)%plist.size()).x)/2;
         }
 
+//        for (int i = 0; i < n; i++) {
+//            s += ((y[i+1]+y[i])*(x[i+1]-x[i])/2);
+//            s += ((x[i+1]+x[i])*(y[i+1]-y[i])/2);
+//            s += (x[i]*y[(i+1)%n] - y[i]*x[(i+1)%n])/2;
+//          }
+
         return s;
+    }
+    public static double[] gravityCenter(int[] x, int[] y) {
+        double[] center = new double[2];
+        int n = x.length;
+        double[] xa = new double[x.length];
+        double[] ya = new double[y.length];
+        for (int i = 0; i < n; i++) {
+            xa[i] = (double) x[i];
+            ya[i] = (double) y[i];
+        }
+
+        if (n < 3) {
+            for (int i = 0; i < xa.length; i++) {
+
+            }
+        }
+        else {
+
+        }
+
+        return center;
+    }
+    public static Point triangleCenter(ArrayList<Point> plist) {
+        Point p = new Point();
+        for (Point point : plist) {
+            p.x += point.x/3;
+            p.y += point.y/3;
+        }
+        return p;
+    }
+
+    protected static class Point {
+        public double x;
+        public double y;
+
+        Point() {
+            this.x = 0;
+            this.x = 0;
+        }
+
+        Point(double x, double y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        @Override
+        public String toString() {
+            return "x: " + this.x + "; y: " + this.y;
+        }
     }
 }

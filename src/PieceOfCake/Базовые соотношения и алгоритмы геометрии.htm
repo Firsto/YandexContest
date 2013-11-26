@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0034)http://www.e-olimp.com/articles/25 -->
+<html><script>var urchinTracker=function(){},_gaq={push:function(){try {if(arguments[0][0]=='_link')window.location.href=arguments[0][1]}catch(er){}}},_gat={_createTracker:function(){}, _getTracker:function(){return{__noSuchMethod__:function(){},_link:function(o){if(o)location.href=o;},_linkByPost:function(){return true;},_getLinkerUrl:function(o){return o;},_trackEvent:function(){}}}};</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="google-site-verification" content="TXB7--Fwa72m5eyB4XCSFHWlI_BCORtjpUBLoaKKsAA">
+  
+  <link rel="icon" href="http://www.e-olimp.com/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://www.e-olimp.com/favicon.ico" type="image/x-icon">
+  <!--<base href="http://www.e-olimp.com/">--><base href=".">
+  <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script> var datetime_zone = parseInt(' +0200', 10) / 100; </script>
+  <script type="text/javascript" src="./Базовые соотношения и алгоритмы геометрии_files/jquery.js"></script><style type="text/css"></style><script type="text/javascript" src="./Базовые соотношения и алгоритмы геометрии_files/js.php"></script><script type="text/javascript" src="./Базовые соотношения и алгоритмы геометрии_files/jquery.shortcuts.js"></script><script type="text/javascript" src="./Базовые соотношения и алгоритмы геометрии_files/js(1).php"></script>  <script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'ru'}</script>
+  <style type="text/css">
+	 @import "http://www.e-olimp.com/templates/default/style.css";  </style>
+  <title>Базовые соотношения и алгоритмы геометрии - E-Olimp система подготовки и проведения олимпиад по спортивному программированию</title>
+ <link type="text/css" rel="stylesheet" href="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/page_context.js"></script><script>window["_GOOG_TRANS_EXT_VER"] = "1";</script></head>
+    <body screen_capture_injected="true">
+    <div class="bbg">
+      <center>
+       <div class="main">
+    	    <div class="header">
+    	    <div class="google-plus-one"><g:plusone size="medium" href="http://www.e-olimp.com" count="true"><iframe style="width: 30px; height: 19px; border: 0px;"></iframe></g:plusone></div>
+            <a href="http://www.e-olimp.com/"><img border="0" class="logo" src="./Базовые соотношения и алгоритмы геометрии_files/eolimp_logo.gif" alt="e-olimp"></a>
+            <div class="infoman">
+                                 <h1>Время</h1>
+                 <div class="box">
+                     <div class="box-item" title="Время" style="padding: 6px 0px;width:100%;z-index: 1000">
+                        <center>
+                            <font style="font-size:28px;color:#278D90" id="time">05:37:07</font><br>
+                            <font id="date"> 25 Ноября  2013</font>
+                        </center>
+                     </div>
+                                                             <div class="box-item" title="Сейчас проходит соревнование">
+                        <a style="font-weight: bold;" href="http://www.e-olimp.com/competitions/3057">III Открытая Дистанционная Олимпиада 2013-2014 им. В.Л.Дидковского</a><br>
+                        Осталось: 47 дней<br>
+                        Конец:  10.01.2014 22:00<br>
+                        Лидер: <a href="http://www.e-olimp.com/competitions-result/3057">AlexBurkov</a>                     </div>
+                                                         </div>
+            </div>
+            </div>
+            <div class="body">
+              <table cellpadding="0" cellspacing="0" class="main-grid">
+               <tbody><tr><td valign="top" class="main-grid-left">
+                <div class="leftbox">
+
+                    <div class="orange menu" style="margin-top: 0;">
+                        <div><ul>
+                            <li><a href="http://www.e-olimp.com/news">Новости</a></li>
+                            <li><a href="http://www.e-olimp.com/problems" title="Shortcut: +P" class="shortcut">Список задач</a></li>
+                            <li><a href="http://www.e-olimp.com/solutions">Очередь</a></li>
+                            <li><a href="http://www.e-olimp.com/competitions" title="Shortcut: +O" class="shortcut">Соревнования</a></li>
+                            <li><a href="http://www.e-olimp.com/users-raiting">Рейтинг</a></li>
+                            <li><a href="http://www.e-olimp.com/discuss">Обсуждения</a></li>
+                            <li><a href="http://www.e-olimp.com/articles">Методическая страница</a></li>
+                            <li><a href="http://www.e-olimp.com/links">Ссылки</a></li>
+                            <li><a href="http://www.e-olimp.com/pages/help">Помощь</a></li>
+                            <li><a href="http://www.e-olimp.com/pages/about">О проекте</a></li>
+                            <li><a href="http://www.e-olimp.com/feedback">Обратная связь</a></li>
+                            <li><a href="http://www.e-olimp.com/users-sign-up">Регистрация</a></li>                        </ul></div>
+                    </div>
+
+                    <div class="blue menu">
+                                              <div><form action="http://www.e-olimp.com/users-login" method="post">
+                            <table>
+                                <tbody><tr><td>Логин&nbsp;</td><td><input class="text" type="text" name="login" autocomplete="off" clickev="true" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); padding-right: 16px; background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat no-repeat;"></td></tr>
+                                <tr><td>Пароль&nbsp;</td><td><input class="text" type="password" name="password" autocomplete="off" clickev="true" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QsPDhss3LcOZQAAAU5JREFUOMvdkzFLA0EQhd/bO7iIYmklaCUopLAQA6KNaawt9BeIgnUwLHPJRchfEBR7CyGWgiDY2SlIQBT/gDaCoGDudiy8SLwkBiwz1c7y+GZ25i0wnFEqlSZFZKGdi8iiiOR7aU32QkR2c7ncPcljAARAkgckb8IwrGf1fg/oJ8lRAHkR2VDVmOQ8AKjqY1bMHgCGYXhFchnAg6omJGcBXEZRtNoXYK2dMsaMt1qtD9/3p40x5yS9tHICYF1Vn0mOxXH8Uq/Xb389wff9PQDbQRB0t/QNOiPZ1h4B2MoO0fxnYz8dOOcOVbWhqq8kJzzPa3RAXZIkawCenHMjJN/+GiIqlcoFgKKq3pEMAMwAuCa5VK1W3SAfbAIopum+cy5KzwXn3M5AI6XVYlVt1mq1U8/zTlS1CeC9j2+6o1wuz1lrVzpWXLDWTg3pz/0CQnd2Jos49xUAAAAASUVORK5CYII=); padding-right: 16px; background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat no-repeat;"></td></tr>
+                                <tr><td align="right"><input type="checkbox" name="remember"></td><td>Запомнить меня</td></tr>
+                            </tbody></table>
+                            <div style="text-align:right">
+                                <input type="submit" value="Войти">
+                            </div>
+                        </form></div>
+                                          </div>
+                                                     <!--div class='gray menu search'>
+                        <input type="text" class='text' value="">
+                        <input type="button" class='submit' value="&gt;&gt;" onclick="qSearch()">
+                    </div-->
+                                                                                                                                     <div class="gray menu"><div>
+                        <b>Языки</b>
+                        <ul>
+                                                                                       <li><a href="http://www.e-olimp.com/ru/articles/25">Русский</a></li>
+                                                           <li><a href="http://www.e-olimp.com/ua/articles/25">Українська</a></li>
+                                                           <li><a href="http://www.e-olimp.com/en/articles/25">English</a></li>
+                                                           <li><a href="http://www.e-olimp.com/az/articles/25">Azərbaycan</a></li>
+                                                    </ul>
+                    </div></div>
+                                   </div>
+                               <div class="menu gray" style="text-align: center; padding: 10px 0; width: 230px; overflow-x: hidden;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8886205092907001";
+/* 160x600, СЃРѕР·РґР°РЅРѕ 16.10.10 */
+google_ad_slot = "8353777697";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                </div>
+                             </td><td valign="top">
+               <div class="tabbox">
+                                   <div id="ajaxprocess">
+                    <img src="./Базовые соотношения и алгоритмы геометрии_files/process.gif" alt="loading...">
+                  </div>
+                </div>
+               <div class="content">
+                  <div id="content">
+<div style="float:right">← <a class="toajax" href="http://www.e-olimp.com/articles/group-7">Страница Михаила Медведева</a></div><h1>Базовые соотношения и алгоритмы геометрии</h1>
+<div class="condition"><p style="text-align: justify;">&nbsp;&nbsp; Простейшими фигурами на плоскости (геометрическими примитивами) являются <strong><em>точка</em></strong> и <strong><em>прямая</em></strong>. <strong><em>&nbsp;</em></strong></p>
+<p style="text-align: justify;">&nbsp;&nbsp; <strong><em>Отрезком</em></strong> называется ограниченная часть прямой. <strong><em>&nbsp;</em></strong></p>
+<p style="text-align: justify;">&nbsp;&nbsp; <strong><em>Углом</em></strong> называется совокупность двух лучей, которые выходят из одной точки.</p>
+<p style="text-align: justify;">&nbsp;&nbsp; <strong><em>Вектором</em></strong><em> </em>называется направленный отрезок прямой.</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Пусть <em>a</em>(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) и <em>b</em>(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) – векторы.</p>
+<p style="text-align: justify;">&nbsp;&nbsp; <strong><em>Модуль</em></strong> вектора <em>a</em>: |<em>a</em>| = <img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268088970.JPG" alt="medv_geom_01" width="73" height="31">;</p>
+<p style="text-align: justify;">&nbsp;&nbsp; <strong><em>Скалярное произведение</em></strong> векторов <em>a</em> и <em>b</em>:</p>
+<p style="text-align: center;">(<em>a</em>, <em>b</em>) = |<em>a</em>|·|<em>b</em>|·cos(<em>a</em>, <em>b</em>) = <em>x</em><sub>1</sub>·<em>x</em><sub>2</sub> + <em>y</em><sub>1</sub>·<em>y</em><sub>2</sub>.</p>
+<p style="text-align: justify;">&nbsp;&nbsp; <strong><em>Векторное произведение</em></strong> векторов <em>a</em> и <em>b</em> <strong><em>на плоскости</em></strong>:</p>
+<p style="text-align: center;"><em>a</em> <em>x b</em> = |<em>a</em>|·|<em>b</em>|·sin(<em>a</em>, <em>b</em>) =&nbsp;<img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268089377.JPG" alt="medv_geom_02" width="59" height="53">= <em>x</em><sub>1</sub><em>y</em><sub>2</sub> – <em>x</em><sub>2</sub><em>y</em><sub>1</sub>&nbsp; = - <em>b x </em><em>a</em>.</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Векторное произведение <em>a</em> и <em>b</em> положительно, если кратчайший поворот, который совмещает <em>b</em> с <em>a</em>, происходит по часовой стрелке, и отрицательно, если против.</p>
+<p style="text-align: justify;"><strong><em>&nbsp;&nbsp; Векторным произведением</em></strong> векторов <em>a</em> и <em>b</em> <strong><em>в пространстве</em></strong> называется вектор <em>a</em> <em>x b</em>, определяемый следующими тремя условиями:</p>
+<ol style="text-align: justify;">
+<li>Модуль векторного произведения равен произведению модулей перемножаемых векторов на синус угла&nbsp; между ними: |<em>a</em> <em>x</em><em> b</em>| = |<em>a</em>|·|<em>b</em>|·sin(<em>a</em>, <em>b</em>);</li>
+<li>Векторное произведение <em>a</em> <em>x</em><em> b</em> перпендикулярно и вектору <em>a</em> и вектору <em>b</em>.</li>
+<li>Упорядоченная тройка векторов <em>a</em>, <em>b</em>, <em>a</em> <em>x</em><em> b</em> имеет положительную ориентацию.</li>
+</ol>
+<p style="text-align: justify;">&nbsp;&nbsp; Если координаты векторов равны <em>a</em>(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>, <em>z</em><sub>1</sub>) и <em>b</em>(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>, <em>z</em><sub>2</sub>), то</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268089601.JPG" alt="medv_geom_03" width="362" height="74"></p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Уравнение прямой</em></strong> на плоскости имеет вид <em>ax</em> + <em>by</em> + <em>c</em> = 0. Вектор нормали прямой имеет координаты (<em>a</em>, <em>b</em>), направляющий вектор прямой (-<em>b</em>, <em>a</em>).</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Прямая с угловым коэффициентом <em>k</em>, которая проходит через точку (0, <em>b</em>), задается уравнением <em>y</em> = <em>kx</em> + <em>b</em>.</p>
+<p style="text-align: justify;">&nbsp;&nbsp; <strong><em>Уравнение прямой</em></strong>, проходящей через точки A(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) и B(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>), имеет вид:</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268089754.JPG" alt="medv_geom_04" width="124" height="45"></p>
+<p style="text-align: justify;"><strong>&nbsp;&nbsp; Доказательство.</strong> Прямой, проходящей через две точки A и B, является геометрическое место точек X(<em>x</em>, <em>y</em>), для которых &nbsp;векторы AX и AB колинеарны. Векторы AX(<em>x</em> – <em>x</em><sub>1</sub>, <em>y</em> – <em>y</em><sub>1</sub>) и AB(<em>x</em><sub>2</sub> – <em>x</em><sub>1</sub>, <em>y</em><sub>2</sub> – <em>y</em><sub>1</sub>) &nbsp;колинеарны, если их координаты пропорциональны. Искомым уравнением прямой является условие пропорциональности координат векторов AX и AB.</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Но в таком виде не представимы горизонтальные и вертикальные прямые, так как для них имеет место <em>y</em><sub>1</sub> = <em>y</em><sub>2</sub> или <em>x</em><sub>1</sub> = <em>x</em><sub>2</sub>. <strong><em>Уравнение прямой</em></strong>&nbsp; можно переписать в виде:</p>
+<p style="text-align: center;">(<em>y</em><sub>2</sub> – <em>y</em><sub>1</sub>) <em>x</em> – (<em>x</em><sub>2</sub> – <em>x</em><sub>1</sub>) <em>y</em> – <em>x</em><sub>1</sub><em>y</em><sub>2</sub> + <em>y</em><sub>1</sub><em>x</em><sub>2</sub> = 0</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Расстояние</em></strong> <strong><em>между точками</em></strong> (<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) и (<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) равно&nbsp;</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268089920.JPG" alt="medv_geom_05" width="156" height="34"></p>
+<p style="text-align: justify;"><strong><em>&nbsp;&nbsp; Расстояние от точки</em></strong> M(<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>) <strong>до прямой</strong> <em>ax</em> + <em>by</em> + <em>c</em> = 0<strong><em> </em></strong>равно</p>
+<p style="text-align: center;"><em>d</em> =<img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268090034.JPG" alt="medv_geom_06" width="102" height="43"></p>
+<p style="text-align: justify;"><strong>&nbsp;&nbsp; Доказательство.</strong> Пусть <em>n</em>(<em>a</em>, <em>b</em>) – вектор нормали, проведенной к прямой из точки M<sub>1</sub>(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>). MA <img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268090339.JPG" alt="medv_geom_08" width="14" height="14"> <em>n</em>, искомое расстоняние <em>d</em> = AM<sub>1</sub>. Обозначим через <em>j</em> угол AM<sub>1</sub>M. Тогда <em>d</em> = M<sub>1</sub>M·cos<em>j</em>, скалярное произведение векторов <em>n </em>и M<sub>1</sub>M (обозначим его через (<em>n</em>, M<sub>1</sub>M)) равно |<em>n</em>|·|M<sub>1</sub>M|·cos<em>j</em>, откуда</p>
+<p style="text-align: justify;"><em>&nbsp;</em><strong><br></strong></p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268090145.JPG" alt="medv_geom_07" width="570" height="168"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; <strong><em>Пересечение прямых.</em></strong> Пусть на плоскости заданы две прямые <em>a</em><sub>1</sub><em>x</em> + <em>b</em><sub>1</sub><em>y</em> = <em>c</em><sub>1</sub> и <em>a</em><sub>2</sub><em>x</em> + <em>b</em><sub>2</sub><em>y</em> = <em>c</em><sub>2</sub>. Прямые параллельны, если их векторы нормалей параллельны, то есть если</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268170905.JPG" alt="medv_geom_09" width="67" height="45"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; В случае параллельности прямые совпадают, если&nbsp;</p>
+<p style="text-align: center;"><img src="./Базовые соотношения и алгоритмы геометрии_files/1268170925.JPG" alt="medv_geom_10" width="100" height="45"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Если прямые не параллельны, то они пересекаются в одной точке. Точка их пересечения находится решением системы линейных уравнений</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268170943.JPG" alt="medv_geom_11" width="122" height="50"></p>
+<p style="text-align: justify;">методом Крамера:</p>
+<p style="text-align: justify;"><em>&nbsp;</em></p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268170960.JPG" alt="medv_geom_12" width="423" height="50"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Функция kramer находит координаты пересечения двух прямых. На вход ей передаются значения <em>a</em><sub>1</sub>, <em>b</em><sub>1</sub>, <em>c</em><sub>1</sub>,<em> </em><em>a</em><sub>2</sub>, <em>b</em><sub>2</sub>, <em>c</em><sub>2</sub>, а также адреса двух переменных <em>x</em> и <em>y</em>. Если система имеет единственное решение, то функция возвращает 0, а в переменных (<em>x</em>, <em>y</em>) возвращаются координаты точки пересечения. Если прямые параллельны и не имеют общих точек, функция возвращает 1. В случае совпадения прямых функция возвращает 2.</p>
+<p style="padding-left: 30px; text-align: justify;"><span style="color: #0000ff;">int</span> kramer(<span style="color: #0000ff;">double</span> a1, <span style="color: #0000ff;">double</span> b1, <span style="color: #0000ff;">double</span> c1, <span style="color: #0000ff;">double</span> a2,<span style="color: #0000ff;">double b2</span>, <span style="color: #0000ff;">double</span> c2, <span style="color: #0000ff;">double</span> *x, <span style="color: #0000ff;">double</span> *y)</p>
+<p style="padding-left: 30px; text-align: justify;">{</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">double</span> d = a1 * b2 - a2 * b1;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">double</span> dx = c1 * b2 - c2 * b1;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">double</span> dy = a1 * c2 - a2 * c1;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; if (!d) <span style="color: #0000ff;">return</span> (dx == 0.0) + 1;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; *x = dx/d; *y = dy/d;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">return</span> 0;</p>
+<p style="padding-left: 30px; text-align: justify;">}</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Три точки A(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), B(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>), C(<em>x</em><sub>3</sub>, <em>y</em><sub>3</sub>) лежат на одной прямой, если векторы AB(<em>x</em><sub>2</sub> – <em>x</em><sub>1</sub>, <em>y</em><sub>2</sub> – <em>y</em><sub>1</sub>) и AC(<em>x</em><sub>3</sub> – <em>x</em><sub>1</sub>, <em>y</em><sub>3</sub> – <em>y</em><sub>1</sub>) <strong><em>колинеарны</em></strong>, то есть имеет место равенство</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268172313.JPG" alt="medv_geom_13" width="120" height="40"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Для избежания деления на нуль и возможности использования формулы для любых входных данных, следует переписать равенство в виде (<em>x</em><sub>2</sub> – <em>x</em><sub>1</sub>)·(<em>y</em><sub>3</sub> – <em>y</em><sub>1</sub>) = (<em>x</em><sub>3</sub> – <em>x</em><sub>1</sub>)·(<em>y</em><sub>2</sub> – <em>y</em><sub>1</sub>).</p>
+<p style="text-align: justify;">&nbsp;&nbsp; <strong><em>Расположение двух точек относительно прямой</em></strong>. Две точки А и В лежат по разные стороны от прямой CD, если векторные произведения CD x CA и CD x CB имеют разные знаки, то есть (CD x CA)·(CD x CB) &lt; 0.</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Если прямая задана уравнением f(<em>x</em>, <em>y</em>) = <em>ax</em> + <em>by</em> + <em>c</em> = 0, то две точки A(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) и B(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) лежат по разные от нее стороны тогда и только тогда, когда</p>
+<p style="text-align: center;">f(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>)· f(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) &lt; 0</p>
+<p style="text-align: justify;"><strong><em>&nbsp;&nbsp; Направление поворота.</em></strong> Совершается движение от точки А до В, затем от В до С. При движении имеет место левый поворот (движение происходит против часовой стрелки), если AB x BC &gt; 0 и правый, если AB x BC &lt; 0.</p>
+<p style="text-align: justify;">&nbsp;  <strong><em>Уравнение отрезка</em></strong><strong>.</strong> Пусть A(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), B(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) – концы отрезка AB. Точка X(<em>x</em>, <em>y</em>) принадлежит отрезку AB тогда и только тогда, когда |AX| + |XB| = |AB| или в координатном виде:</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268172522.JPG" alt="medv_geom_14" width="492" height="33"></p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Параметрическое уравнение отрезка</em></strong><strong>.</strong> Пусть A(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), B(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) – концы отрезка AB. Параметрическое уравнение отрезка имеет вид:</p>
+<p style="text-align: center;"><em>x</em>(<em>t</em>) = <em>x</em><sub>1</sub> + (<em>x</em><sub>2</sub> – <em>x</em><sub>1</sub>)·<em>t</em>, <em>y</em>(<em>t</em>) = <em>y</em><sub>1</sub> + (<em>y</em><sub>2</sub> – <em>y</em><sub>1</sub>)·<em>t</em>, 0 ≤ <em>t</em> ≤ 1</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Отрезок является геометрическим местом точек (<em>x</em>(<em>t</em>), <em>y</em>(<em>t</em>)), где 0 ≤ <em>t</em> ≤ 1.</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Расстояние от точки</em></strong><strong> </strong>O(<em>x</em>, <em>y</em>) <strong><em>до отрезка</em></strong> AB, заданного координатами концов:&nbsp; A(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), B(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>). Рассмотрим три варианта взаимного расположения точки и отрезка:<strong>&nbsp;</strong></p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268172766.JPG" alt="medv_geom_15" width="506" height="95"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Обозначим <em>d</em> = AB, <em>d</em><sub>1</sub> = OA, <em>d</em><sub>2</sub> = OB. В первом случае угол А не острый, d<sup>2</sup><sub>2</sub> &nbsp;≥ d<sup>2</sup><sub>1</sub> + d<sup>2</sup>, искомое расстояние равно <em>d</em><sub>1</sub>. Во втором случае угол B не острый,&nbsp; d<sup>2</sup><sub>1</sub>&nbsp; ≥ d<sup>2</sup><sub>2</sub> + d<sup>2</sup>, искомое расстояние равно <em>d</em><sub>2</sub>. Если углы A и B острые, то расстояние от точки O до отрезка AB равно длине высоты треугольника OAB, которая вычисляется по формуле 2·<em>S</em>/<em>d</em>, где <em>S</em> – площадь треугольника OAB.</p>
+<p style="text-align: justify;"><strong><em>&nbsp;&nbsp; Пересечение отрезков на прямой.</em></strong> Пусть [<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>] и [<em>x</em><sub>3</sub>, <em>x</em><sub>4</sub>] – два отрезка на прямой (<em>x</em><sub>1</sub> &lt; <em>x</em><sub>2</sub>, <em>x</em><sub>3</sub> &lt; <em>x</em><sub>4</sub>). Отрезки не пересекаются, если имеет место одно из двух расположений:</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268173244.JPG" alt="medv_geom_16" width="479" height="43"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Если <em>x</em><sub>3</sub> &gt; <em>x</em><sub>2</sub>, то должно быть <em>x</em><sub>4</sub> &gt; <em>x</em><sub>1</sub>. Если <em>x</em><sub>1</sub> &gt; <em>x</em><sub>4</sub>, то должно быть <em>x</em><sub>2</sub> &gt; <em>x</em><sub>3</sub>. Эти два условия можно объединить в одно. Отрезки не пересекаются тогда и только тогда, когда имеет место неравенство: (<em>x</em><sub>3</sub> – <em>x</em><sub>2</sub>)·(<em>x</em><sub>4</sub> – <em>x</em><sub>1</sub>) &gt; 0. Если это произведение неположительно, то отрезки пересекаются.</p>
+<p style="text-align: justify;"><strong><em>&nbsp;&nbsp; Мера пересечения отрезков на прямой</em></strong>. Пусть [<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>] и [<em>x</em><sub>3</sub>, <em>x</em><sub>4</sub>] – два пересекающихся отрезка.</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268173348.JPG" alt="medv_geom_17"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Пусть <em>left</em> = max(<em>x</em><sub>1</sub>, <em>x</em><sub>3</sub>) – максимум левых концов, <em>right</em> = min(<em>x</em><sub>2</sub>, <em>x</em><sub>4</sub>) – минимум правых. Тогда значение <em>right</em>–<em>left</em> будет длиной общей части отрезков.</p>
+<p style="text-align: justify;"><strong><em>&nbsp;&nbsp; Пересечение отрезков на плоскости. </em></strong>Пусть заданы два отрезка AB и CD координатами своих концов.</p>
+<p style="text-align: justify;"><strong><em>&nbsp;&nbsp; Ограничивающим прямоугольником</em></strong><em> </em>геометрической фигуры называется наименьший из прямоугольников со сторонами, параллельными осям координат, который содержит в себе эту фигуру. Для отрезка с концами (<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) и (<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) ограничивающим будет прямоугольник с левым нижним углом (<em>x</em><sub>1</sub><sup>'</sup>, <em>y</em><sub>1</sub><sup>'</sup>) и правым верхним углом (<em>x</em><sub>2</sub><sup>'</sup>, <em>y</em><sub>2</sub><sup>'</sup>), где <em>x</em><sub>1</sub><sup>'</sup> = min(<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>), <em>y</em><sub>1</sub><sup>'</sup> = min(<em>y</em><sub>1</sub>, <em>y</em><sub>2</sub>), <em>x</em><sub>2</sub><sup>'</sup> = max(<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>), <em>y</em><sub>2</sub><sup>'</sup> = max(<em>y</em><sub>1</sub>, <em>y</em><sub>2</sub>).</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Отрезки AB и CD пересекаются тогда и только тогда, когда:</p>
+<ol style="text-align: justify;">
+<li>Пересекаются прямоугольники, которые их ограничивают;</li>
+<li>[AC x AB]·[AD x AB] ≤ 0;</li>
+<li>[CA x CD]·[CB x CD] ≤ 0.</li>
+</ol>
+<p style="text-align: justify;">&nbsp;&nbsp; Ниже представлены различные случаи взаимного расположения двух отрезков и соответствующие значения векторных произведений:</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268173567.JPG" alt="medv_geom_18" width="435" height="278"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; В следующем примере каждый из отрезков пересекает прямую, содержащую второй отрезок. Но при этом не пересекаются прямоугольники, их ограничивающие.</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268173677.JPG" alt="medv_geom_19" width="111" height="85"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Пусть концы отрезков AB и CD имеют координаты: A(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), B(<em>x</em><sub>2</sub>,<em> y</em><sub>2</sub>), C(<em>x</em><sub>3</sub>, <em>y</em><sub>3</sub>), D(<em>x</em><sub>4</sub>, <em>y</em><sub>4</sub>). Функция RectanglesIntersects принимает в качестве аргументов 8 координат концов отрезков и выводит 1, если прямоугольники, ограничивающие отрезки AB и CD, пересекаются. Иначе функция возвращает 0.</p>
+<p style="padding-left: 30px; text-align: justify;"><span style="color: #0000ff;">int</span> RectanglesIntersects(<span style="color: #0000ff;">double</span> x1,<span style="color: #0000ff;">double</span> y1,<span style="color: #0000ff;">double</span> x2,<span style="color: #0000ff;">double</span> y2,</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #0000ff;">double</span> x3,<span style="color: #0000ff;">double</span> y3,<span style="color: #0000ff;">double</span> x4,<span style="color: #0000ff;">double</span> y4)</p>
+<p style="padding-left: 30px; text-align: justify;">{</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">if</span> ((x3 - x2)*(x4 - x1) &gt; 0) <span style="color: #0000ff;">return</span> 0;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">if</span> ((y3 - y2)*(y4 - y1) &gt; 0) <span style="color: #0000ff;">return</span> 0;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">return</span> 1;</p>
+<p style="padding-left: 30px; text-align: justify;">}</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Функция intersect проверяет, пересекаются ли отрезки AB и CD. Сначала проверяется пересечение ограничивающих прямоугольников. Если они пересекаются, то строятся вектора AC, AB, AD, CA, CB, CD (например, координаты вектора CD содержатся в переменных CDx и CDy) и вычисляются векторные произведения, указанные в пунктах 2 и 3. В зависимости от значений векторных произведений формируется возвращаемое значение. Оно равно 1, если отрезки AB и CD пересекаются и 0 иначе.</p>
+<p style="padding-left: 30px; text-align: justify;"><span style="color: #0000ff;">double</span> intersect(<span style="color: #0000ff;">double</span> x1,<span style="color: #0000ff;">double</span> y1, <span style="color: #0000ff;">double</span> x2, <span style="color: #0000ff;">double</span> y2,</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #0000ff;">double</span> x3,<span style="color: #0000ff;">double</span> y3, <span style="color: #0000ff;">double</span> x4, <span style="color: #0000ff;">double</span> y4)</p>
+<p style="padding-left: 30px; text-align: justify;">{</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">double</span> ABx, ABy, ACx, ACy, ADx, ADy;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">double</span> CAx, CAy, CBx, CBy, CDx, CDy;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">double</span> ACxAB, ADxAB, CAxCD, CBxCD;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">if</span> (!RectanglesIntersects(min(x1,x2),min(y1,y2),max(x1,x2),max(y1,y2),</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; min(x3,x4),min(y3,y4),max(x3,x4),max(y3,y4))) <span style="color: #0000ff;">return</span> 0;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; ACx = x3 - x1; ACy = y3 - y1;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; ABx = x2 - x1; ABy = y2 - y1;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; ADx = x4 - x1; ADy = y4 - y1;</p>
+<p style="padding-left: 60px; text-align: justify;">&nbsp; CAx = x1 - x3; CAy = y1 - y3;</p>
+<p style="padding-left: 60px; text-align: justify;">&nbsp; CBx = x2 - x3; CBy = y2 - y3;</p>
+<p style="padding-left: 60px; text-align: justify;">&nbsp; CDx = x4 - x3; CDy = y4 - y3;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; ACxAB = ACx * ABy - ACy * ABx;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; ADxAB = ADx * ABy - ADy * ABx;</p>
+<p style="padding-left: 60px; text-align: justify;">&nbsp; CAxCD = CAx * CDy - CAy * CDx;</p>
+<p style="padding-left: 60px; text-align: justify;">&nbsp; CBxCD = CBx * CDy - CBy * CDx;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">return</span> ACxAB * ADxAB &lt;= 0 &amp;&amp; CAxCD * CBxCD &lt;= 0;</p>
+<p style="padding-left: 30px; text-align: justify;">}</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Точка пересечения отрезков</em></strong><strong>.</strong> Пусть A(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), B(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) – концы отрезка AB, C(<em>x</em><sub>3</sub>, <em>y</em><sub>3</sub>), D(<em>x</em><sub>4</sub>, <em>y</em><sub>4</sub>) – концы отрезка CD. Запишем параметрические уравнения отрезков:</p>
+<p style="text-align: justify;">AB: <em>x</em>(<em>t</em><sub>1</sub>) = <em>x</em><sub>1</sub> + (<em>x</em><sub>2</sub> – <em>x</em><sub>1</sub>)·<em>t</em><sub>1</sub><em> </em>, <em>y</em>(<em>t</em><sub>1</sub>) = <em>y</em><sub>1</sub> + (<em>y</em><sub>2</sub> – <em>y</em><sub>1</sub>)·<em>t</em><sub>1</sub>, 0 ≤ <em>t</em><sub>1</sub> ≤ 1,</p>
+<p style="text-align: justify;">CD: <em>x</em>(<em>t</em><sub>2</sub>) = <em>x</em><sub>3</sub> + (<em>x</em><sub>4</sub> – <em>x</em><sub>3</sub>)·<em>t</em><sub>2</sub><em> </em>, <em>y</em>(<em>t</em><sub>2</sub>) = <em>y</em><sub>3</sub> + (<em>y</em><sub>4</sub> – <em>y</em><sub>3</sub>)·<em>t</em><sub>2</sub>, 0 ≤ <em>t</em><sub>2</sub> ≤ 1,</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Отрезки пересекаются, если существуют такие <em>t</em><sub>1</sub>, <em>t</em><sub>2</sub> (0 ≤ <em>t</em><sub>1</sub>, <em>t</em><sub>2</sub> ≤ 1), что</p>
+<p style="text-align: justify;"><em>x</em>(<em>t</em><sub>1</sub>) = <em>x</em>(<em>t</em><sub>2</sub>), <em>y</em>(<em>t</em><sub>1</sub>) = <em>y</em>(<em>t</em><sub>2</sub>)</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Или то же самое, что</p>
+<p style="text-align: justify;"><em>x</em><sub>1</sub> + (<em>x</em><sub>2</sub> – <em>x</em><sub>1</sub>)·<em>t</em><sub>1</sub><em> </em>= <em>x</em><sub>3</sub> + (<em>x</em><sub>4</sub> – <em>x</em><sub>3</sub>)·<em>t</em><sub>2</sub></p>
+<p style="text-align: justify;"><em>y</em><sub>1</sub> + (<em>y</em><sub>2</sub> – <em>y</em><sub>1</sub>)·<em>t</em><sub>1</sub> = <em>y</em><sub>3</sub> + (<em>y</em><sub>4</sub> – <em>y</em><sub>3</sub>)·<em>t</em><sub>2</sub></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Имеем систему линейных уравнений относительно <em>t</em><sub>1</sub> и <em>t</em><sub>2</sub>, которую решаем методом Крамера.</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Серединный перпендикуляр.</em></strong> Пусть A(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), B(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) – координаты концов отрезка, <em>ax</em> + <em>by</em> + <em>c</em> = 0 уравнение серединного перпендикуляра к нему. Тогда</p>
+<p style="text-align: center;"><em>a</em> = <em>x</em><sub>2</sub> – <em>x</em><sub>1</sub>, <em>b</em> = <em>y</em><sub>2</sub> – <em>y</em><sub>1</sub>,&nbsp;<em>&nbsp;</em><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268174368.JPG" alt="medv_geom_20" width="149" height="43"></p>
+<p style="text-align: justify;"><strong><em>&nbsp;&nbsp;&nbsp; Уравнение окружности</em></strong> с центром в точке (<em>a</em>, <em>b</em>) и радиусом <em>r</em> имеет вид:</p>
+<p style="text-align: justify;">(<em>x</em> – <em>a</em>)<sup>2</sup> + (<em>y</em> – <em>b</em>)<sup>2</sup> = <em>r</em><sup>2</sup></p>
+<p style="text-align: justify;"><strong><em>&nbsp;&nbsp; Полярный угол.</em></strong> Пусть A(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) и B(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>) – две точки на плоскости, О – начало координат. Вектор OA образует больший угол с осью абсцисс, нежели OB, если выполняется одно из следующих условий:</p>
+<p style="text-align: justify;">а) <em>y</em><sub>1</sub> &lt; 0, <em>y</em><sub>2</sub> ≥³ 0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; б) <em>y</em><sub>2</sub> = 0, <em>x</em><sub>1</sub> &gt; 0;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; в) OA x OB &lt; 0;</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Вычисление полярного угла.</em></strong> Функция PolarAngle вычисляет величину угла вектора p с осью абсцисс. Значение угла изменяется в пределах от 0 до 2π.</p>
+<p style="padding-left: 30px; text-align: justify;"><span style="color: #0000ff;">double</span> PolarAngle(pair p)</p>
+<p style="padding-left: 30px; text-align: justify;"><span style="color: #339966;">// p != (0,0)</span></p>
+<p style="padding-left: 30px; text-align: justify;">{</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">double</span> res = 0;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">int</span> x = p.first, y = p.second;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">if</span> (x == 0)</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; {</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;&nbsp; if (y &gt; 0)res = PI / 2; <span style="color: #0000ff;">else</span> res = 3*PI/2;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; }</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">else</span></p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; {</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;&nbsp; res = atan(1.0*y/x);</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;&nbsp; <span style="color: #0000ff;">if</span> (x &lt; 0) res = res + PI;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;&nbsp; <span style="color: #0000ff;">if</span> (res &lt; 0) res = res + 2*PI;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; }</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;<span style="color: #0000ff;"> return</span> res;</p>
+<p style="padding-left: 30px; text-align: justify;">}</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Функция atan(<em>x</em>) вычисляет арктангенс <em>x</em> в пределах от -π/2 до π/2.</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Функция atan2(double <em>y</em>, double <em>x</em>) вычисляет значение арктангенса <em>y</em>/<em>x</em> в пределах от -π до π. Если <em>x</em> = 0, или оба параметра равны нулю,то функция возвращает 0. С использованием atan2 функцию PolarAngle можно переписать в виде:</p>
+<p style="padding-left: 30px; text-align: justify;"><span style="color: #0000ff;">double</span> PolarAngle(pair p)</p>
+<p style="padding-left: 30px; text-align: justify;">{</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">double</span> res = atan2(1.0*p.second,1.0*p.first);</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">if</span> (res &lt; 0) res += 2*PI;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">return</span> res;</p>
+<p style="padding-left: 30px; text-align: justify;">}</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Площадь треугольника</em></strong> ABC, заданного координатами вершин A(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), B(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>), C(<em>x</em><sub>3</sub>,<em>y</em><sub>3</sub>), равна</p>
+<p style="text-align: center;"><em><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268175034.JPG" alt="medv_geom_21"><br></em></p>
+<p style="text-align: justify;">Вычтем со второй и из третьей строки первую и распишем определитель по третьему столбцу:</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268175053.JPG" alt="medv_geom_22" width="394" height="116"></p>
+<p style="padding-left: 30px; text-align: justify;"><span style="color: #0000ff;">double</span> TriangleSquare(<span style="color: #0000ff;">int</span> x1, <span style="color: #0000ff;">int</span> y1, <span style="color: #0000ff;">int</span> x2, <span style="color: #0000ff;">int</span> y2, <span style="color: #0000ff;">int</span> x3, <span style="color: #0000ff;">int</span> y3)</p>
+<p style="padding-left: 30px; text-align: justify;">{</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">return</span> abs((x2 - x1) * (y3 - y1) - (x3 - x1) * (y2 - y1)) / 2.0;</p>
+<p style="padding-left: 30px; text-align: justify;">}</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Принадлежность точки треугольнику</em></strong><strong>.</strong> Точка O лежит внутри треугольника ABC тогда и только тогда, когда все три поворота OAB, OBC и OCA правые&nbsp; (треугольник ABC ориентирован по часовой стрелке) или левые (треугольник ABC ориентирован против часовой стрелки). То есть все выражения OA x AB, OB x BC, OC x CA имеют одинаковый знак.</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Относительное расположение треугольников</em></strong>. Треугольники ABC и DEF лежат по разные стороны от прямой AB тогда и только тогда, когда одновременно выполняются следующие три условия:</p>
+<ol style="text-align: justify;">
+<li>вершины C и D лежат по разные стороны от прямой AB: (AB x AC)·(AB x AD) &lt; 0</li>
+<li>вершины C и E лежат по разные стороны от прямой AB: (AB x AC)·(AB x AE) &lt; 0</li>
+<li>вершины C и F лежат по разные стороны от прямой AB: (AB x AC)·(AB x AF) &lt; 0</li>
+</ol>
+<p style="text-align: justify;"><strong><em>&nbsp;&nbsp; Пересечение треугольников</em></strong>. Два треугольника не пересекаются тогда и только тогда, когда существует такая прямая, проходящая через одну из шести сторон треугольников, что плоскости треугольников лежат по разные стороны от нее.</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Площадь выпуклого многоугольника.</em></strong> Пусть (<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), (<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>), …, (<em>x<sub>n</sub></em>, <em>y<sub>n</sub></em>) – координаты вершин выпуклого многоугольника, заданные в порядке его обхода по или против часовой стрелки. Тогда площадь многоугольника вычисляется по формуле трапеций:</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268175274.JPG" alt="medv_geom_23" width="209" height="42"></p>
+<p style="text-align: justify;">где (<em>x<sub>n</sub></em><sub>+1</sub>, <em>y<sub>n</sub></em><sub>+1</sub>) = (<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>). Причем значение суммы положительно, если координаты точек заданы в порядке обхода по часовой стрелке, и отрицательно если против.</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Пусть массив x содержит абсцисы точек, а y – ординаты, заданные в порядке обхода по или против часовой стрелки. Функция findArea вычисляет площадь многоугольника.</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; <span style="color: #0000ff;">double</span> findArea(vector x, vector y)</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; {</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;&nbsp; <span style="color: #0000ff;">double</span> s;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;&nbsp; <span style="color: #0000ff;">int</span> i;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;&nbsp; x.push_back(x[0]); y.push_back(y[0]);</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;&nbsp; <span style="color: #0000ff;">for</span>(s = i = 0; i &lt; x.size() - 1; i++)</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; s += (y[i+1] + y[i]) * (x[i+1] - x[i]) / 2.0;</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp;&nbsp;&nbsp; <span style="color: #0000ff;">return</span> fabs(s);</p>
+<p style="padding-left: 30px; text-align: justify;">&nbsp; }</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Уравнение окружности через три точки.</em></strong> Пусть A(<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), B(<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>), C(<em>x</em><sub>3</sub>, <em>y</em><sub>3</sub>) – три точки, не лежащие на одной прямой. Тогда уравнение окружности, проходящей через три точки, имеет вид:</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268175615.JPG" alt="medv_geom_24" width="172" height="101"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Уравнение можно также представить в виде <em>a</em>·(<em>x</em><sup>2</sup> + <em>y</em><sup>2</sup>) – <em>bx</em> + <em>cy</em> – <em>d</em> = 0, где</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268175632.JPG" alt="medv_geom_25" width="533" height="80"></p>
+<p style="text-align: justify;"><em>&nbsp;</em>&nbsp;&nbsp; Центр (<em>x<sub>c</sub></em>, <em>y<sub>c</sub></em>) и радиус <em>r</em> окружности, описанной вокруг треугольника ABC, находится из соотношений:</p>
+<p style="text-align: center;"><em>x</em><sub>c</sub> = <em>b</em> / 2<em>a</em>, <em>y</em><sub>c</sub> = -<em>c</em> / 2<em>a</em>, <em>r</em><sup>2</sup> = (<em>b</em><sup>2</sup> + <em>c</em><sup>2</sup> – 4<em>ad</em>) / 4<em>a</em><sup>2</sup></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Другой метод решения задачи состоит в написании уравнений двух серединных перпендикуляров к отрезкам AB и AC. Точка их пересечения, которую находим методом Крамера, и является центром искомой окружности.</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Центр тяжести.</em></strong> Понятие "центр тяжести многоугольника" можно интерпретировать тремя различными способами:</p>
+<ol style="text-align: justify;">
+<li>Масса находится только в вершинах.</li>
+<li>Масса равномерно распределена по границе многоугольника.</li>
+<li>Масса равномерно распределена по области, ограниченной многоугольником.</li>
+</ol>
+<p style="text-align: justify;">&nbsp;&nbsp; Рассмотрим каждый из этих случаем в отдельности.</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Масса находится только в вершинах.</em></strong> Пусть многоугольник состоит из <em>n</em> вершин, (<em>x<sub>i</sub></em>, <em>y<sub>i</sub></em>) – координаты <em>i</em> -ой вершины, <em>m<sub>i</sub></em> – ее масса. Пусть М – масса всех вершин. Тогда координаты центра тяжести определяются по формулам:</p>
+<p style="text-align: center;">X<sub>c</sub> = (<em>m</em><sub>1</sub><em>·</em><em>x</em><sub>1</sub> + … + <em>m<sub>n</sub>·</em><em>x<sub>n</sub></em>) / M = <img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268193132.JPG" alt="medv_geom_26" width="80" height="43"></p>
+<p style="text-align: center;">Y<sub>c</sub> = (<em>m</em><sub>1</sub><em>·</em><em>y</em><sub>1</sub> + … + <em>m</em><em><sub>n</sub>·</em><em>y<sub>n</sub></em>) / M = <img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268193151.JPG" alt="medv_geom_27" width="81" height="42"></p>
+<p style="text-align: justify;">Если каждая вершина весит одинаково, то формулы примут следующий вид:</p>
+<p style="text-align: center;">X<sub>c</sub> = (<em>x</em><sub>1</sub> + … + <em>x<sub>n</sub></em>) / <em>n</em> = <img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268193178.JPG" alt="medv_geom_28" width="51" height="41"></p>
+<p style="text-align: center;">Y<sub>c</sub> = (<em>y</em><sub>1</sub> + … + <em>y<sub>n</sub></em>) / <em>n</em> = <img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268193206.JPG" alt="medv_geom_29" width="51" height="41"></p>
+<p style="text-align: justify;"><strong><em>&nbsp;&nbsp; Масса равномерно распределена по границе многоугольника.</em></strong> В этом случае масса ребра пропорциональна его длине. Каждое ребро мы можем заменить на точечную массу, пропорциональную длине ребра. Обозначим через <em>l<sub>i</sub></em> длину <em>i</em> - го ребра. Пусть P – периметр многоугольника, P = <em>l</em><sub>1</sub> + … + <em>l<sub>n</sub></em>. Тогда формулы координат центра тяжести имеют вид:<strong><em>&nbsp;</em></strong></p>
+<p style="text-align: center;">X<sub>c</sub> = (<em>l</em><sub>1</sub><em>·</em><em>x</em><sub>1</sub> + … + <em>l</em><em><sub>n</sub>·</em><em>x<sub>n</sub></em>) / P = <img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268193234.JPG" alt="medv_geom_30" width="71" height="41"></p>
+<p style="text-align: center;">Y<sub>c</sub> = (<em>l</em><sub>1</sub><em>·</em><em>y</em><sub>1</sub> + … + <em>l</em><em><sub>n</sub>·</em><em>y<sub>n</sub></em>) / P = <img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268193259.JPG" alt="medv_geom_31" width="69" height="42"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Здесь через (<em>x<sub>i</sub></em>, <em>y<sub>i</sub></em>) обозначены координаты середины <em>i</em> - го ребра.</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Масса равномерно распределена по области, ограниченной многоугольником.</em></strong></p>
+<p style="text-align: justify;"><strong>&nbsp;&nbsp; Теорема.</strong> Пусть фигура Ф является объединением двух других фигур Ф<sub>1</sub> и Ф<sub>2</sub>, пересекающимися только по границе. Тогда центр тяжести фигуры Ф выражается так:</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268193277.JPG" alt="medv_geom_32" width="309" height="41"> , где</p>
+<p style="text-align: justify;">(X<sub>c</sub>, Y<sub>c</sub>) – координаты центра тяжести фигуры Ф;</p>
+<p style="text-align: justify;">(X<sub>c</sub><sub>1</sub>, Y<sub>c</sub><sub>1</sub>) – координаты центра тяжести фигуры Ф<sub>1</sub>;</p>
+<p style="text-align: justify;">(X<sub>c</sub><sub>2</sub>, Y<sub>c</sub><sub>2</sub>) – координаты центра тяжести фигуры Ф<sub>2</sub>;</p>
+<p style="text-align: justify;">S – площадь фигуры Ф, S<sub>1</sub> – площадь фигуры Ф<sub>1</sub>, S<sub>2</sub> – площадь фигуры Ф<sub>2</sub>.</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Кроме того, для треугольника центр тяжести определяется так:</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268193674.JPG" alt="medv_geom_33" width="252" height="41"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Разобъем многоугольник на треугольники. Для каждого треугольника найдем его центр тяжести (<em>x<sub>ci</sub></em>, <em>y<sub>ci</sub></em>) и площадь <em>s<sub>i</sub></em>. Тогда координаты центра многоугольника можно найти следующим образом:</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268193860.JPG" alt="medv_geom_34" width="367" height="44"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Здесь <em>m</em> равно количеству треугольников, на которые разбит многоугольник.</p>
+<p style="text-align: justify;">&nbsp;&nbsp; Если вершин многоугольника заданы координатами (<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>), (<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>), …, (<em>x</em><sub>n</sub><sub>-1</sub>, <em>y</em><sub>n</sub><sub>-1</sub>), то координаты его центра тяжести вычисляются по формулам</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268193972.JPG" alt="medv_geom_35" width="254" height="89"></p>
+<p style="text-align: justify;">&nbsp;&nbsp; Здесь (<em>x</em><sub>n</sub>, <em>y</em><sub>n</sub>) = (<em>x</em><sub>0</sub>, <em>y</em><sub>0</sub>), а через</p>
+<p style="text-align: center;"><img class="media-image" src="./Базовые соотношения и алгоритмы геометрии_files/1268194120.JPG" alt="medv_geom_36" width="163" height="43"></p>
+<p style="text-align: justify;">обозначена площадь многоугольника.</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Константа </em></strong><strong><em>p</em></strong> в языке С объявляется так:</p>
+<p style="text-align: justify; padding-left: 30px;"><span style="color: #0000ff;">const double</span> pi = acos(-1.0);</p>
+<p style="text-align: justify;">&nbsp; &nbsp;<strong><em>Расстояние между точками на сфере.</em></strong> Рассмотрим сферу, на которой точки, задаются парами (<em>широта</em>, <em>долгота</em>) = (<em>latitude</em>, <em>longitude</em>), -89 ≤ <em>latitude</em> ≤ 89, -179 ≤ <em>longitude</em> ≤ 179. Кратчайшее расстояние от точки (<em>lat</em><sub>1</sub>, <em>lon</em><sub>1</sub>) до (<em>lat</em><sub>2</sub>, <em>lon</em><sub>2</sub>) на сфере радиуса <em>radius </em>равно</p>
+<p style="text-align: center;">radius·acos(sin(lat<sub>1</sub>)·sin(lat<sub>2</sub>) + cos(lat<sub>1</sub>)·cos(lat<sub>2</sub>)·cos(lon<sub>1</sub> - lon<sub>2</sub>))</p>
+<p><strong><em>Поворот на угол на плоскости</em></strong>. Выведем формулы поворота на плоскости на угол φ против часовой стрелки. Пусть z’ и z – комплексные числа. Тогда &nbsp;или <em>x</em>' + <em>iy</em>' = (cosφ + <em>i</em>sinφ) (<em>x</em> + <em>iy</em>) = <em>x</em>cosφ – <em>y</em>sinφ + <em>i</em>(<em>x</em>sinφ + <em>y</em>cosφ). Откуда получаем формулы поворота:</p>
+<p align="center">x'=xcosφ-ysinφ</p>
+<p align="center">y'=xsinφ+ycosφ</p>
+<p>#include &lt;stdio.h&gt;</p>
+<p>#include &lt;math.h&gt;</p>
+<p>#define PI acos(-1.0)</p>
+<p>double x, y, fi, xx, yy;</p>
+<p>int main(void)</p>
+<p>{</p>
+<p>&nbsp; x = 10, y = 0, fi = 90; fi = PI/180 * fi;</p>
+<p>&nbsp; printf("%.4lf %.4lf\n",x,y);</p>
+<p>&nbsp; xx = x * cos(fi) - y*sin(fi);</p>
+<p>&nbsp; yy = x * sin(fi) + y*cos(fi);</p>
+<p>&nbsp; printf("%.4lf %.4lf\n",xx,yy);</p>
+<p>&nbsp; return 0;</p>
+<p>}</p>
+<p>&nbsp;<strong>Пример.</strong> Формула поворота на 90 градусов против часовой стрелки имеют вид:</p>
+<p style="text-align: center;">x'=xcos90°-ysin90°</p>
+<p style="text-align: center;">y'=xsin90°+ycos90°</p>
+<p align="center">&nbsp;или</p>
+<p style="text-align: center;">&nbsp;x'=-y</p>
+<p style="text-align: center;">y'=x</p>
+<p><strong><em>Отрезок на решетке.</em></strong> Рассмотрим отрезок, концы которого имеют целочисленные координаты (<em>x</em><sub>1</sub>, <em>y</em><sub>1</sub>) – (<em>x</em><sub>2</sub>, <em>y</em><sub>2</sub>). Тогда количество целочисленных точек, лежащих на отрезке, равно</p>
+<p align="center">1 + НОД(|<em>x</em><sub>1</sub> – <em>x</em><sub>2</sub>|, |<em>y</em><sub>1</sub> – <em>y</em><sub>2</sub>|)</p>
+<p><strong>Пример.</strong> Отрезок (1, 0) – (5, 2) содержит 1 + НОД(|5 – 1|, |2 – 0|)&nbsp; = 1 + НОД(4, 2) = 3 целочисленные точки.</p>
+<p>&nbsp;<strong><em>Теорема Пика.</em></strong> Площадь S многоугольника с целочисленными вершинами равна сумме</p>
+<p align="center">B + G / 2 – 1,</p>
+<p>где В равно количеству целочисленных точек внутри многоугольника, а G количеству целочисленных точек на границе многоугольника</p>
+<p>&nbsp;</p></div>
+<hr>
+<center><b><a class="toajax" href="http://www.e-olimp.com/articles/group-7">Страница Михаила Медведева</a></b></center>               </div>
+               </div>
+              </td></tr>
+             </tbody></table>
+           </div>
+       </div>
+     </center>
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11236568-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google Analytics -->
+      </div>
+      <div class="footer-container">
+         <div class="footer">
+             Интернет-портал организационно методического обеспечение дистанционных олимпиад по программированию для одаренной молодежи учебных заведений Украины разработан Житомирским государственным университетом имени Ивана Франко при финансовой поддержке МОН и Государственного комитета Украины по вопросам науки, инноваций и информатизации, в рамках Государственной  программы  “Информационные и коммуникационные технологии в образовании и науке” в 2009-2010 годах                                                              <br>
+             Все материалы, размещенные на сайте, являются собственностью их авторов и могут использоваться только с их согласия.<br>
+             Сайт поддерживается  Житомирским государственным университетом  имени Ивана Франко <br>
+                                   </div>
+      </div>
+    
+
+<script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ d.innerText=i; } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>
