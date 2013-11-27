@@ -9,128 +9,40 @@ import java.util.*;
  * Time: 21:12
  */
 
-/*
-//        Var p,s,min: real;
-//            n: integer;
-//            x,y: array[1..21] of real;
-//
-//        Procedure Vvod;
-//        Var i: integer;
-//        Begin
-//        write('Vvedite kolichestvo yglov mnogougolnika n=');
-//        readln(n);
-//        for i:= 1 to n do
-//          begin
-//           writeln('vvedite kkordinatu N ',i);
-//           write('x[',i,']=');
-//           readln(x[i]);
-//           write('y[',i,']=');
-//           readln(y[i]);
-//          end;
-//          x[n+1]:=x[1];
-//          y[n+1]:=y[1];
-//        End;
-//
-//        Procedure Perenos;
-//        Var i: integer;
-//        Begin
-//        min:=y[1];
-//        for i:= 2 to n do
-//          if min >y[i] then
-//           min:=y[i];
-//          for i:=1 to n+1 do
-//           y[i]:=y[i]-min;
-//        End;
-//
-//        Procedure Ploshad;
-//        Var i: integer;
-//        Begin
-//        s:=0;
-//        for i:= 1 to n do
-//          s:= s+((y[i+1]+y[i])*(x[i+1]-x[i])/2);
-//        end;
-
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
-
-typedef struct{
-    float x, y;
-} Point2f;
-
-float distance2f(Point2f*, Point2f*);
-float triangleSqare2f(Point2f*, Point2f*, Point2f*);
-float polygonSquare2fv(Point2f*, int);
-
-int main(int argc, char** argv) {
-    srand(time(0));
-
-    int i, n;
-    printf("Enter n: "); scanf("%d", &n);
-
-    Point2f* polygon = (Point2f*)calloc(n, sizeof(Point2f));
-
-    for(i = 0; i < n; i++){
-        printf("Point %d.x: ", i + 1); scanf("%f", &polygon[i].x);
-        printf("Point %d.y: ", i + 1); scanf("%f", &polygon[i].y);
-    }
-
-    printf("Polygon square: %f\n", polygonSquare2fv(polygon, n));
-
-    free(polygon);
-    return 0;
-}
-
-float distance2f(Point2f* p1, Point2f* p2){
-    return sqrtf(pow(p1->x - p2->x, 2) + pow(p1->y - p2->y, 2));
-}
-
-float triangleSqare2f(Point2f* p1, Point2f* p2, Point2f* p3){
-    float
-        a = distance2f(p1, p2),
-        b = distance2f(p2, p3),
-        c = distance2f(p3, p1);
-    float p = (a + b + c) / 2.0;
-
-    return sqrtf(p*(p - a) * (p - b) * (p - c));
-}
-
-float polygonSquare2fv(Point2f* points, int n){
-    float square = 0.0;
-    int i;
-    for(i = 1; i < n - 1; i++)
-        square += triangleSqare2f(points + 0, points + i, points + i + 1);
-
-    return square;
-}
-
-
-*/
-
 public class PieceOfCake {
     public static void main(String[] args) {
 //        System.out.println((double) 20);
 //        System.exit(0);
         ArrayList<Point> polygon = new ArrayList<Point>();
-        polygon.add(new Point(8.32,-3.06));
-        polygon.add(new Point(-4.08,4.38));
-        polygon.add(new Point(7.88,4.42));
-//        polygon.add(new Point(-2.76,-2.68));
+//        polygon.add(new Point(-4,2));
+//        polygon.add(new Point(-4,4));
+//        polygon.add(new Point(5,4));
+//        polygon.add(new Point(4,0));
+//        polygon.add(new Point(0,-2));
+        polygon.add(new Point(-2.56, 7.75));
+        polygon.add(new Point(-1.51, 8.58));
+        polygon.add(new Point(1.18, 8.2));
+        polygon.add(new Point(1.35, 7.03));
+        polygon.add(new Point(0.68, 5.73));
+        polygon.add(new Point(-1.12, 6.15));
+        polygon.add(new Point(-2.2, 6.7));
 //        System.out.println(triangleCenter(polygon));
-        // s = 83.6
-        System.out.println("S = " + S(polygon));
-
+//        System.out.println("S = " + S(polygon));
+//        System.out.println("S = " + triangleSquare(new Point(1,-2), new Point(3,4),new Point(5,-1)));
+        System.out.println("poly S = " + polygonSquare(polygon));
+        System.out.println("Polycenter: " + polygonCenter(polygon));
     }
+    public static double polyS(ArrayList<Point> plist) {
+        double s = 0;
 
-    public static double S(ArrayList<Point> plist) {
-//        double min = y[0];
-        /*for (int i = 1; i < n; i++) {
-            if (min > y[i]) min = y[i];
+        for (int i = 0; i < plist.size() - 1; i++) {
+            s += s;
         }
-        for (int i = 0; i < n+1; i++) {
-            y[i] = y[i]-min;
-        }*/
+
+        return s;
+    }
+    static double S(ArrayList<Point> plist) {
+
         plist.add(new Point(plist.get(0).x, plist.get(0).y));
         System.out.println(plist);
         double s = 0;
@@ -147,32 +59,70 @@ public class PieceOfCake {
 
         return s;
     }
-    public static double[] gravityCenter(int[] x, int[] y) {
-        double[] center = new double[2];
-        int n = x.length;
-        double[] xa = new double[x.length];
-        double[] ya = new double[y.length];
-        for (int i = 0; i < n; i++) {
-            xa[i] = (double) x[i];
-            ya[i] = (double) y[i];
-        }
 
-        if (n < 3) {
-            for (int i = 0; i < xa.length; i++) {
-
-            }
-        }
-        else {
-
-        }
-
-        return center;
+    static double distance(Point p1, Point p2){
+        return Math.sqrt(Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2));
     }
-    public static Point triangleCenter(ArrayList<Point> plist) {
+
+    static double triangleSquare(Point p1, Point p2, Point p3){
+        double
+                a = distance(p1, p2),
+                b = distance(p2, p3),
+                c = distance(p3, p1);
+        double p = (a + b + c) / 2;
+
+        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+    }
+
+    static double polygonSquare(ArrayList<Point> plist){
+        double s = 0;
+        for(int i = 0; i < plist.size() - 1; i++)
+            s += triangleSquare(plist.get(0), plist.get(i), plist.get(i + 1));
+
+        return s;
+    }
+
+    static Point triangleCenter(ArrayList<Point> plist) {
         Point p = new Point();
+//        System.out.println("Triangle: " + plist);
         for (Point point : plist) {
             p.x += point.x/3;
             p.y += point.y/3;
+        }
+        System.out.println("Triangle center: " + p);
+        return p;
+    }
+
+    static Point triangulation(ArrayList<Point> plist) {
+        Point center = new Point();
+        double sp = polygonSquare(plist);
+        System.out.println("Base polygon: " + plist);
+        for(int i = 1; i < plist.size() - 1; i++) {
+            ArrayList<Point> triangle = new ArrayList<Point>();
+            triangle.add(plist.get(0));
+            triangle.add(plist.get(i));
+            triangle.add(plist.get(i + 1));
+            System.out.println("Triangle: " + triangle);
+            double st = polygonSquare(triangle);
+            System.out.println("Triangle square: " + st);
+            Point p = triangleCenter(triangle);
+            center.x += p.x*st;
+            center.y += p.y*st;
+        }
+        center.x = center.x/sp;
+        center.y = center.y/sp;
+        System.out.println("Triangulation center: " + center);
+        return center;
+    }
+
+    static Point polygonCenter(ArrayList<Point> plist) {
+        Point p = new Point();
+//        double s = polygonSquare(plist);
+        if (plist.size() > 3) {
+            p = triangulation(plist);
+        }
+        else {
+            p = triangleCenter(plist);
         }
         return p;
     }
@@ -193,7 +143,7 @@ public class PieceOfCake {
 
         @Override
         public String toString() {
-            return "x: " + this.x + "; y: " + this.y;
+            return "(" + this.x + ", " + this.y + ")";
         }
     }
 }
