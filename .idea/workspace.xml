@@ -2,13 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" name="Default" comment="YandexContest geom">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" afterPath="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/MinCostFlowSimple.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/rule.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YandexContest.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/PieceOfCake.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385543337266" ignored="false" />
-    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385470938696" ignored="false" />
+    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385642164181" ignored="false" />
+    <file path="/BrokenParquet.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385638266015" ignored="false" />
+    <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385638284716" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,14 +73,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PieceOfCake.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PieceOfCake.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="24" selection-start="4085" selection-end="4085" vertical-scroll-proportion="0.36567163">
+            <state line="120" column="24" selection-start="4085" selection-end="4085" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#320#327#0" expanded="true" />
                 <element signature="e#3352#3359#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BrokenParquet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="44" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MinCostFlowSimple.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MinCostFlowSimple.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="25" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.3421687">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,13 +127,18 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" />
+        <option value="$PROJECT_DIR$/src/BrokenParquet/sdsd.java" />
+        <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowTest.java" />
+        <option value="$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" />
+        <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowPreflow.java" />
+        <option value="$PROJECT_DIR$/src/BrokenParquet/MinCostFlowSimple.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="140" />
     <option name="y" value="25" />
-    <option name="width" value="1469" />
+    <option name="width" value="1464" />
     <option name="height" value="849" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -121,7 +148,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -172,10 +199,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PieceOfCake" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -188,6 +211,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BrokenParquet" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -215,9 +242,57 @@
     <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.PieceOfCake">
+  <component name="RunManager" selected="Application.MinCostFlowSimple">
     <configuration default="false" name="PieceOfCake" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="PieceOfCake.PieceOfCake" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="YandexContest" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BrokenParquet" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="BrokenParquet.BrokenParquet" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="YandexContest" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MaxFlowPreflow" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="BrokenParquet.MaxFlowPreflow" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="YandexContest" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MinCostFlowSimple" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="BrokenParquet.MinCostFlowSimple" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -320,12 +395,18 @@
       <patterns />
       <method />
     </configuration>
-    <list size="1">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.PieceOfCake" />
+      <item index="1" class="java.lang.String" itemvalue="Application.BrokenParquet" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MaxFlowPreflow" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MinCostFlowSimple" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.PieceOfCake" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.MinCostFlowSimple" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MaxFlowPreflow" />
+        <item index="2" class="java.lang.String" itemvalue="Application.BrokenParquet" />
+        <item index="3" class="java.lang.String" itemvalue="Application.PieceOfCake" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -385,11 +466,15 @@
       <created>1385470135029</created>
       <updated>1385470135029</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="YandexContest geom">
+      <created>1385546468686</created>
+      <updated>1385546468686</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="140" y="25" width="1469" height="849" extended-state="0" />
+    <frame x="140" y="25" width="1464" height="849" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16714698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -405,7 +490,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3034826" sideWeight="0.63728327" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3045649" sideWeight="0.63728327" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36271676" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -614,11 +699,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="24" selection-start="4085" selection-end="4085" vertical-scroll-proportion="0.36567163">
+        <state line="120" column="24" selection-start="4085" selection-end="4085" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#320#327#0" expanded="true" />
             <element signature="e#3352#3359#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="44" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MinCostFlowSimple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="25" selection-start="1196" selection-end="1196" vertical-scroll-proportion="0.3421687">
+          <folding />
         </state>
       </provider>
     </entry>
