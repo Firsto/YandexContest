@@ -8,7 +8,7 @@ package BrokenParquet;
  */
 public class BrokenParquet {
     public static void main(String[] args) {
-        int[][] capacity = { { 1, 1, 1 }, { 0, 1, 0 }, { 0, 0, 0 } };
+        int[][] capacity = { { 0, 1, 1, 0 }, { 0, 0, 1, 1 }, { 1, 1, 1, 0 } , { 0, 1, 0, 1 } };
         int n = capacity.length;
         MaxFlowPreflow flow = new MaxFlowPreflow();
         flow.init(n);

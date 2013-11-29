@@ -1,0 +1,161 @@
+.maintext {
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration: none;
+}
+.maintext2 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	text-decoration: none;
+}
+.maintext_cit1 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.tableheader {
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration: none;
+	font-style: normal;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+
+}
+.tableheaderback_cvr {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-style: normal;
+	text-align:center;
+	background-color: #0000FF;
+}
+.heading2 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #0000FF;
+	background-color: #CCCCCC;
+	font-weight: bold;
+	text-align:center;
+
+}
+.tableheaderback {
+	text-decoration: none;
+	font-style: normal;
+	background-color: #990000;
+}
+.tableheaderback_pto {
+	text-decoration: none;
+	font-style: normal;
+	background-color: #666633;
+}
+.tableheaderback_upto {
+	text-decoration: none;
+	font-style: normal;
+	background-color: #006666;
+}
+.tableheaderback_f {
+	text-decoration: none;
+	font-style: normal;
+	background-color: #0D7482;
+}
+.tablebackone {
+	text-decoration: none;
+	font-style: normal;
+	background-color: #CFE1EB;
+}
+.tablebacktwo {
+	text-decoration: none;
+	font-style: normal;
+	background-color: #9DC2D7;
+}
+.maintextbuckovica {
+	font-family: Tahoma;
+	font-size: 12px;
+	text-decoration: none;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #FF0000;
+
+}
+.footertextbukovicainhead {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #FF0000;
+}
+.form {
+	color: #000000;
+	letter-spacing: normal;
+	text-align: left;
+	vertical-align: middle;
+	word-spacing: normal;
+	font-style: normal;
+	width: auto;
+	border: 1px solid #000000;
+	margin: 1px;
+	padding: 1px;
+}
+.formpadding {
+	letter-spacing: normal;
+	text-align: left;
+	vertical-align: middle;
+	word-spacing: normal;
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+	padding-top: 1px;
+	padding-right: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	font-style: normal;
+	height: auto;
+	width: auto;
+}
+.tableheaderbig {
+	font-family: Tahoma;
+	font-size: 14px;
+	text-decoration: none;
+	font-style: normal;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+}
+.zagolovok {
+	font-size: 16px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #FF6600;
+}
+.maintextbuckovicaheader {
+	font-family: Tahoma;
+	font-size: 13px;
+	text-decoration: none;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #6666CC;
+}
+.thback2 {
+	text-decoration: none;
+	font-style: normal;
+	background-color: #339966;
+}
+
+h3 {
+text-align: center;
+}
