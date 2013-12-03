@@ -15,30 +15,34 @@ public class PieceOfCake {
 //        System.out.println((double) 20);
 //        System.exit(0);
         ArrayList<Point> polygon = new ArrayList<Point>();
-        polygon.add(new Point(-2, 0));
-        polygon.add(new Point(1, 3));
-        polygon.add(new Point(2, -2));
-        System.out.println("polygon: " + polygon);
+        polygon.add(new Point(0, 0));
+        polygon.add(new Point(0, 2));
+        polygon.add(new Point(2, 2));
+        polygon.add(new Point(3, 0));
+        System.out.println("Base polygon: " + polygon);
         System.out.println("polygon Square = " + polygonSquare(polygon));
-        System.out.println("Polygon center: " + polygonCenter(polygon));
-        Line line1 = new Line(new Point(-3,1), new Point(3,1));
-        Line line2 = new Line(new Point(1,5), new Point(1,-2));
+        Line line1 = new Line(new Point(-1,3), new Point(3,-1));
         ArrayList<Point> halfpoly1 = new ArrayList<Point>();
         ArrayList<Point> halfpoly2 = new ArrayList<Point>();
         Point intersectPoint1 = new Point();
         Point intersectPoint2 = new Point();
-//        dividePolygonByLine(polygon, line1, halfpoly1, halfpoly2, intersectPoint1, intersectPoint2);
-//        lineIntersection(new Line(polygon.get(0),polygon.get(1)), line1, intersectPoint1);
-//        System.out.println(intersectPoint1);
+        dividePolygonByLine(polygon, line1, halfpoly1, halfpoly2, intersectPoint1, intersectPoint2);
+        Line line2 = perpendicularLine(line1, new Point(1,1));
+        ArrayList<Point>[] quartpoly = new ArrayList[4];
+        for (int i = 0; i < quartpoly.length; i++) {
+            quartpoly[i] = new ArrayList<Point>();
+        }
+        dividePolygonByLine(halfpoly1, line2, quartpoly[0], quartpoly[1], intersectPoint1, intersectPoint2);
+        dividePolygonByLine(halfpoly2, line2, quartpoly[2], quartpoly[3], intersectPoint1, intersectPoint2);
+        for (int i = 0; i < quartpoly.length; i++) {
+            ArrayList<Point> points = quartpoly[i];
+            System.out.println("Polygon #" + i + " " + points + " with S = " + polygonSquare(points));
+        }
 //        System.out.println("First polygon : " + halfpoly1);
 //        System.out.println("Second polygon : " + halfpoly2);
 //        System.out.println("First intersect point : " + intersectPoint1);
 //        System.out.println("Second intersect point : " + intersectPoint2);
-        dividePolygonByLine(polygon, line2, halfpoly1, halfpoly2, intersectPoint1, intersectPoint2);
-        System.out.println("First polygon : " + halfpoly1);
-        System.out.println("Second polygon : " + halfpoly2);
-        System.out.println("First intersect point : " + intersectPoint1);
-        System.out.println("Second intersect point : " + intersectPoint2);
+
 //        System.out.println(lineIntersection(l1, new Line(polygon.get(0),polygon.get(1)), p3));
 
 //        Line l2 = new Line(new Point(-12,-6), new Point(-8,2));
