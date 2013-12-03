@@ -1,0 +1,184 @@
+a img, a:link img, a:visited img{
+	text-decoration: none;
+	border: none;
+}
+#fon
+{
+	/*xbackground-image: url('images/metal-4.gif');
+	 xbackground-image: url('images/gabro.jpg');*/
+	/*background-color: rgb(30,30,30);*/
+	background-color: /*#1C180D;/*/ #20180D; /*#261D0E;*/
+	font-family: Arial;
+	font-size: 14px;
+}
+#main
+{
+	background-color: rgb(0,0,0);
+	color: rgb(255,203,0);
+	/*border: 1px solid;
+	border-color: rgb(255,203,0);*/
+	margin-left: 12.5%;
+	margin-top: 1%;
+	width: 950px;
+	font-family: Arial;
+	font-size: 14px;
+}
+/*#main2
+{
+	background-color: rgb(0,0,0);
+	color: rgb(255,203,0);
+	font-family: Arial;
+	font-size: 14px;
+}*/
+#top
+{
+	height: 150px;
+	cursor: pointer;
+}
+#top a:link,
+#top a:visited,
+#top a:hover
+{
+	color: rgb(0,0,0);
+	text-decoration: none;
+}
+	#img1
+	{
+		float: left;
+		/*width: 15%;*/
+	}
+	#img2
+	{
+		float: left;
+		/*width: 60%;*/
+	}
+	#img3
+	{
+		float: left;
+		/*width: 15%;*/
+	}
+#line
+{
+	height: 25px;
+	width: 945px;
+	margin-left: 3px;
+
+	background-color: rgb(255,153,0);
+	background: url('images/gradient153.gif');
+}
+#selectline
+{
+	background-color: rgb(0,0,0);
+	color: rgb(255,255,255);
+	border: 1px solid rgb(255,203,0);
+}
+#medium
+{
+	overflow: hidden;
+}
+	#leftcol
+	{
+		float: left;
+		color: rgb(255,203,0);
+		width: 200px;
+	}
+	#menu
+	{
+		color: rgb(255,203,0);
+		height: 25px;
+		border: 1px solid rgb(255,153,0);
+		cursor: pointer;
+		text-align: center;
+		font-family: Arial;
+		padding-top: 5px;
+	}
+	#menu a:link,
+	#menu a:visited
+	{
+		color: rgb(255,153,0);
+		text-decoration: none;
+	}
+	#menu a:hover
+	{
+		color: rgb(0,255,0);
+	}
+	#rightcol
+	{
+		margin-left: 210px;
+		border-left: 1px solid rgb(255,153,0);
+		padding-left: 10px;
+	}
+#contact
+{
+	color: rgb(255,203,0);
+	padding-left: 10px;
+}
+.col1
+{
+	color: rgb(255,203,0);
+}
+.col2
+{
+	color: rgb(255,153,0);
+}
+.col3
+{
+	color: rgb(0,255,0);
+}
+.col4
+{
+	color: rgb(255,255,0);
+	font-family: Courier New;
+	font-size: 20px;
+}
+.col5
+{
+	color: rgb(0,255,255);
+}
+
+.code, .col6, .col7, .col8, .col9
+{
+	font-family: Courier New;
+	color: rgb(255, 255, 255);
+}
+.col6
+{
+	color: rgb(116,162,237);
+}
+.col7
+{
+	color: rgb(50,255,100);
+}
+.col8
+{
+	color: rgb(255,255,255);
+}
+.col9
+{
+	color: rgb(255,50,255);
+}
+#leftcol {
+	overflow: hidden;
+	display: block;
+	padding-bottom: 20px;
+}
+#leftcol ul {
+	padding-left: 20px;
+	overflow: hidden;
+	display: block;
+}
+#leftcol ul li {
+	list-style-type: none;
+	overflow: hidden;
+	display: block;
+}
+#leftcol ul li a{
+	line-height: 20px;
+	text-decoration: none;
+}
+#leftcol ul li a:hover{
+	text-decoration: underline;
+}
+#leftcol ul ul {
+	margin: 0px;
+}

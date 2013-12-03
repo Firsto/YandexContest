@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+}
+ul.main-page-menu {
+    text-align: center;
+    margin-left: -51px;
+    margin-top: 20px;
+}
+.main-page-menu li {
+    display: inline-block;
+    margin: 5px;
+}
+.main-page-menu li a {
+    display: block;
+    text-align: center;
+    color: #F90;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+.main-page-menu li a:hover {
+    border: 1px solid #00f;
+}
+.main-page-menu li a span {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.main-page-menu li a img {
+    height: 150px;
+    display: block;
+}

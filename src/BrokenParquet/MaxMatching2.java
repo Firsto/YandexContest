@@ -36,10 +36,10 @@ public class MaxMatching2 {
         for (int i = 0; i < n1; i++) {
             g[i] = new ArrayList<Integer>();
         }
-        g[0].add(0);
-        g[1].add(1);
-        g[2].add(2);
-        g[3].add(3);
+        g[0].add(1);
+        g[1].add(2);
+        g[2].add(3);
+        g[3].add(0);
         System.out.println(maxMatching(g, n2));
     }
 }

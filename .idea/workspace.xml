@@ -2,49 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/01.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/9.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/Back.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/For.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/Menu.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/but1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/button(1).gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/button.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/button_c2_1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/count.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/cycounter" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/image016.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/image017.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/image018.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/image019.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/image020.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/image021.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/image022.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/image023.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/image024.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/image025.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/image026.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/uarrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/MaxFlowDinic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/MaxFlowFordFulkerson.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/MaxMatching.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/MaxMatching2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов_files/watch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/Основные определения теории графов.htm" />
-      <change type="DELETED" beforePath="C:\Users\Учетная запись\IdeaProjects\YandexContest\src\BrokenParquet\MinCostFlowSimple.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" afterPath="$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PieceOfCake/HardFire_files/logo_max2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PieceOfCake/HardFire.htm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PieceOfCake/HardFire_files/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PieceOfCake/HardFire_files/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PieceOfCake/HardFire_files/quiz.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PieceOfCake/HardFire_files/quiz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/PieceOfCake/HardFire_files/tpl2.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java" afterPath="$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrokenParquet/MaxMatching2.java" afterPath="$PROJECT_DIR$/src/BrokenParquet/MaxMatching2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" afterPath="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YandexContest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/PieceOfCake.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385543337266" ignored="false" />
-    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385725950407" ignored="false" />
+    <file path="/PieceOfCake.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386038290465" ignored="false" />
+    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385913790590" ignored="false" />
     <file path="/BrokenParquet.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385638266015" ignored="false" />
-    <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385638284716" ignored="false" />
+    <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385946557492" ignored="false" />
     <file path="/sdsdsd.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385732532179" ignored="false" />
     <file path="/MaxMatching.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385734351135" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -98,6 +74,98 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="194" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="225" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="222" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="231" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="245" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="256" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -107,10 +175,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PieceOfCake.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PieceOfCake.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="24" selection-start="4085" selection-end="4085" vertical-scroll-proportion="0.0">
+            <state line="258" column="17" selection-start="9926" selection-end="9926" vertical-scroll-proportion="0.42083332">
+              <folding>
+                <element signature="e#356#363#0" expanded="true" />
+                <element signature="e#859#866#0" expanded="true" />
+                <element signature="e#920#927#0" expanded="true" />
+                <element signature="e#7470#7477#0" expanded="true" />
+                <element signature="e#9520#9527#0" expanded="true" />
+                <element signature="e#10145#10152#0" expanded="true" />
+                <element signature="e#10899#10906#0" expanded="true" />
+                <marker date="1386038304745" expanded="false" signature="7085:7268" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="229" column="0" selection-start="8468" selection-end="8468" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,7 +223,7 @@
       <file leaf-file-name="MaxFlowEdmondKarp.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="30" selection-start="2040" selection-end="2040" vertical-scroll-proportion="0.0">
+            <state line="72" column="30" selection-start="2073" selection-end="2073" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -155,16 +241,16 @@
       <file leaf-file-name="MaxMatching2.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MaxMatching2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="18" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0">
+            <state line="24" column="0" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MaxMatching.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MaxMatching.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MaxMatching.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="22" selection-start="933" selection-end="933" vertical-scroll-proportion="0.5771812">
+            <state line="32" column="22" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -193,28 +279,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowTest.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowPreflow.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/MinCostFlowSimple.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowDinic.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/sdsdsd.java" />
-        <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/sdsd.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowFordFulkerson.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/css.java" />
-        <option value="$PROJECT_DIR$/src/BrokenParquet/MaxMatching2.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/kk.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/MaxMatching.java" />
+        <option value="$PROJECT_DIR$/src/BrokenParquet/MaxMatching2.java" />
+        <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java" />
+        <option value="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="126" />
-    <option name="y" value="4" />
-    <option name="width" value="1464" />
-    <option name="height" value="849" />
+    <option name="x" value="466" />
+    <option name="y" value="23" />
+    <option name="width" value="1457" />
+    <option name="height" value="1007" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -227,7 +313,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -242,7 +328,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -275,6 +360,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PieceOfCake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -294,8 +383,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YandexContest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YandexContest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -305,7 +409,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -317,25 +421,9 @@
     <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Application.MaxMatching">
+  <component name="RunManager" selected="Application.PieceOfCake">
     <configuration default="false" name="MaxMatching2" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="BrokenParquet.MaxMatching2" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="YandexContest" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MaxFlowDinic" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="BrokenParquet.MaxFlowDinic" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -395,6 +483,28 @@
       <module name="YandexContest" />
       <envs />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="PieceOfCake" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="PieceOfCake.PieceOfCake" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="YandexContest" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -488,18 +598,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.MaxMatching2" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MaxFlowDinic" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MaxFlowEdmondKarp" />
-      <item index="3" class="java.lang.String" itemvalue="Application.MaxFlowFordFulkerson" />
-      <item index="4" class="java.lang.String" itemvalue="Application.MaxMatching" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MaxFlowEdmondKarp" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MaxFlowFordFulkerson" />
+      <item index="3" class="java.lang.String" itemvalue="Application.MaxMatching" />
+      <item index="4" class="java.lang.String" itemvalue="Application.PieceOfCake" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MaxMatching" />
-        <item index="1" class="java.lang.String" itemvalue="Application.MaxMatching2" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MaxFlowFordFulkerson" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MaxFlowEdmondKarp" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MaxFlowDinic" />
+        <item index="0" class="java.lang.String" itemvalue="Application.PieceOfCake" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MaxFlowEdmondKarp" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MaxMatching2" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MaxMatching" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MaxFlowFordFulkerson" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -571,24 +681,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="126" y="4" width="1464" height="849" extended-state="0" />
+    <frame x="466" y="23" width="1457" height="1007" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16714698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3647059" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34104046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30385163" sideWeight="0.71387285" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28612718" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31684586" sideWeight="0.63529414" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28470588" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -667,70 +777,128 @@
     <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#356#363#0" expanded="true" />
+            <element signature="e#859#866#0" expanded="true" />
+            <element signature="e#920#927#0" expanded="true" />
+            <element signature="e#7470#7477#0" expanded="true" />
+            <element signature="e#9520#9527#0" expanded="true" />
+            <element signature="e#10145#10152#0" expanded="true" />
+            <element signature="e#10899#10906#0" expanded="true" />
+            <marker date="1386038304745" expanded="false" signature="7085:7268" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#356#363#0" expanded="true" />
+            <element signature="e#859#866#0" expanded="true" />
+            <element signature="e#920#927#0" expanded="true" />
+            <element signature="e#7470#7477#0" expanded="true" />
+            <element signature="e#9520#9527#0" expanded="true" />
+            <element signature="e#10145#10152#0" expanded="true" />
+            <element signature="e#10899#10906#0" expanded="true" />
+            <marker date="1386038304745" expanded="false" signature="7085:7268" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#356#363#0" expanded="true" />
+            <element signature="e#859#866#0" expanded="true" />
+            <element signature="e#920#927#0" expanded="true" />
+            <element signature="e#7470#7477#0" expanded="true" />
+            <element signature="e#9520#9527#0" expanded="true" />
+            <element signature="e#10145#10152#0" expanded="true" />
+            <element signature="e#10899#10906#0" expanded="true" />
+            <marker date="1386038304745" expanded="false" signature="7085:7268" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#356#363#0" expanded="true" />
+            <element signature="e#859#866#0" expanded="true" />
+            <element signature="e#920#927#0" expanded="true" />
+            <element signature="e#7470#7477#0" expanded="true" />
+            <element signature="e#9520#9527#0" expanded="true" />
+            <element signature="e#10145#10152#0" expanded="true" />
+            <element signature="e#10899#10906#0" expanded="true" />
+            <marker date="1386038304745" expanded="false" signature="7085:7268" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#356#363#0" expanded="true" />
+            <element signature="e#859#866#0" expanded="true" />
+            <element signature="e#920#927#0" expanded="true" />
+            <element signature="e#7470#7477#0" expanded="true" />
+            <element signature="e#9520#9527#0" expanded="true" />
+            <element signature="e#10145#10152#0" expanded="true" />
+            <element signature="e#10899#10906#0" expanded="true" />
+            <marker date="1386038304745" expanded="false" signature="7085:7268" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#356#363#0" expanded="true" />
+            <element signature="e#859#866#0" expanded="true" />
+            <element signature="e#920#927#0" expanded="true" />
+            <element signature="e#7470#7477#0" expanded="true" />
+            <element signature="e#9520#9527#0" expanded="true" />
+            <element signature="e#10145#10152#0" expanded="true" />
+            <element signature="e#10899#10906#0" expanded="true" />
+            <marker date="1386038304745" expanded="false" signature="7085:7268" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#356#363#0" expanded="true" />
+            <element signature="e#859#866#0" expanded="true" />
+            <element signature="e#920#927#0" expanded="true" />
+            <element signature="e#7470#7477#0" expanded="true" />
+            <element signature="e#9520#9527#0" expanded="true" />
+            <element signature="e#10145#10152#0" expanded="true" />
+            <element signature="e#10899#10906#0" expanded="true" />
+            <marker date="1386038304745" expanded="false" signature="7085:7268" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="24" selection-start="4085" selection-end="4085" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#356#363#0" expanded="true" />
+            <element signature="e#859#866#0" expanded="true" />
+            <element signature="e#920#927#0" expanded="true" />
+            <element signature="e#7470#7477#0" expanded="true" />
+            <element signature="e#9520#9527#0" expanded="true" />
+            <element signature="e#10145#10152#0" expanded="true" />
+            <element signature="e#10899#10906#0" expanded="true" />
+            <marker date="1386038304745" expanded="false" signature="7085:7268" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -748,9 +916,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java">
+    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MaxMatching2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="30" selection-start="2040" selection-end="2040" vertical-scroll-proportion="0.0">
+        <state line="24" column="0" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MaxMatching.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="22" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -762,17 +937,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MaxMatching2.java">
+    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="18" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0">
+        <state line="72" column="30" selection-start="2073" selection-end="2073" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MaxMatching.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="22" selection-start="933" selection-end="933" vertical-scroll-proportion="0.5771812">
+        <state line="229" column="0" selection-start="8468" selection-end="8468" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="258" column="17" selection-start="9926" selection-end="9926" vertical-scroll-proportion="0.42083332">
+          <folding>
+            <element signature="e#356#363#0" expanded="true" />
+            <element signature="e#859#866#0" expanded="true" />
+            <element signature="e#920#927#0" expanded="true" />
+            <element signature="e#7470#7477#0" expanded="true" />
+            <element signature="e#9520#9527#0" expanded="true" />
+            <element signature="e#10145#10152#0" expanded="true" />
+            <element signature="e#10899#10906#0" expanded="true" />
+            <marker date="1386038304745" expanded="false" signature="7085:7268" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

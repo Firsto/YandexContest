@@ -1,0 +1,63 @@
+.quiz {
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin-left: 11px;
+    padding-top: 5px;
+}
+.quiz .quiz-title {
+    text-align: center;
+    font-weight: bold;
+}
+.quiz .question {
+    text-align: center;
+    margin-top: 10px;
+}
+.quiz ul.answers {
+    padding: 0px;
+}
+.quiz ul.answers li:first-child {
+    margin-top: 0px;
+}
+.quiz ul.answers li {
+    margin-top: 10px;
+}
+.quiz ul.answers li .feel-line {
+    height: 20px;
+    color: #000;
+    padding-top: 3px;
+    padding-left: 5px;
+    font-weight: bold;
+    margin-top: 2px;
+    overflow: hidden;
+    float: left;
+}
+.quiz ul.answers li .percent {
+    text-align: right;
+    float: right;
+    padding-top: 5px;
+    padding-right: 7px;
+}
+.quiz ul.answers li:first-child a.answer {
+    color: #78CEFF;
+}
+.quiz ul.answers li:last-child a.answer {
+    color: #F90;
+}
+.quiz ul.answers li:first-child .answer-text {
+    color: #78CEFF;
+}
+.quiz ul.answers li:last-child .answer-text {
+    color: #F90;
+}
+.quiz ul.answers li:first-child .feel-line {
+    background-color: #78CEFF;
+}
+.quiz ul.answers li:last-child .feel-line {
+    background-color: #F90;
+}
+.quiz ul.answers li:first-child .percent {
+    color: #78CEFF;
+}
+.quiz ul.answers li:last-child .percent {
+    color: #F90;
+}

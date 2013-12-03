@@ -68,8 +68,9 @@ public class MaxFlowEdmondKarp {
     public static void main(String[] args) {
         List<Edge>[] graph = createGraph(4);
         addEdge(graph, 0, 1, 1);
-        addEdge(graph, 1, 2, 2);
-        addEdge(graph, 2, 3, 3);
-        System.out.println(maxFlow(graph, 0, 2));
+        addEdge(graph, 1, 2, 1);
+        addEdge(graph, 2, 3, 1);
+        addEdge(graph, 3, 3, 0);
+        System.out.println(maxFlow(graph, 0, 1));
     }
 }
