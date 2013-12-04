@@ -15,34 +15,48 @@ public class PieceOfCake {
 //        System.out.println((double) 20);
 //        System.exit(0);
         ArrayList<Point> polygon = new ArrayList<Point>();
-        polygon.add(new Point(0, 0));
-        polygon.add(new Point(0, 2));
-        polygon.add(new Point(2, 2));
-        polygon.add(new Point(3, 0));
+        polygon.add(new Point(-2, 3));
+        polygon.add(new Point(1, 4));
+        polygon.add(new Point(4, -2));
+        polygon.add(new Point(3, -4));
+        polygon.add(new Point(-1, -3));
         System.out.println("Base polygon: " + polygon);
         System.out.println("polygon Square = " + polygonSquare(polygon));
-        Line line1 = new Line(new Point(-1,3), new Point(3,-1));
+        Line line1 = new Line(new Point(6,1.56), new Point(6,-0.7));
         ArrayList<Point> halfpoly1 = new ArrayList<Point>();
         ArrayList<Point> halfpoly2 = new ArrayList<Point>();
-        Point intersectPoint1 = new Point();
-        Point intersectPoint2 = new Point();
-        dividePolygonByLine(polygon, line1, halfpoly1, halfpoly2, intersectPoint1, intersectPoint2);
-        Line line2 = perpendicularLine(line1, new Point(1,1));
-        ArrayList<Point>[] quartpoly = new ArrayList[4];
-        for (int i = 0; i < quartpoly.length; i++) {
-            quartpoly[i] = new ArrayList<Point>();
+//        Line line2 = perpendicularLine(line1, new Point(1,1));
+//        ArrayList<Point>[] quartpoly = new ArrayList[4];
+//        for (int i = 0; i < quartpoly.length; i++) {
+//            quartpoly[i] = new ArrayList<Point>();
+//        }
+//        dividePolygonByLine(halfpoly1, line2, quartpoly[0], quartpoly[1], intersectPoint1, intersectPoint2);
+//        dividePolygonByLine(halfpoly2, line2, quartpoly[2], quartpoly[3], intersectPoint1, intersectPoint2);
+//        for (int i = 0; i < quartpoly.length; i++) {
+//            ArrayList<Point> points = quartpoly[i];
+//            System.out.println("Polygon #" + i + " " + points + " with S = " + polygonSquare(points));
+//        }
+
+        ArrayList<Point> s = new ArrayList<>();
+        npart_convex(polygon, 2, s);
+        Point intersectPoint1 = polygon.get(0);
+        Point intersectPoint2 = s.get(0);
+        Line line2 = new Line(intersectPoint1, intersectPoint2);
+        dividePolygonByLine(polygon, line2, halfpoly1, halfpoly2, intersectPoint1, intersectPoint2);
+        int n = 5;
+        for (int i = 1; i <= n; i++) {
+            Point p = part_segment(polygon.get(0), polygon.get(1), i, n-i);
+            System.out.println(p);
         }
-        dividePolygonByLine(halfpoly1, line2, quartpoly[0], quartpoly[1], intersectPoint1, intersectPoint2);
-        dividePolygonByLine(halfpoly2, line2, quartpoly[2], quartpoly[3], intersectPoint1, intersectPoint2);
-        for (int i = 0; i < quartpoly.length; i++) {
-            ArrayList<Point> points = quartpoly[i];
-            System.out.println("Polygon #" + i + " " + points + " with S = " + polygonSquare(points));
-        }
+
+//        System.out.println(s);
+
 //        System.out.println("First polygon : " + halfpoly1);
 //        System.out.println("Second polygon : " + halfpoly2);
 //        System.out.println("First intersect point : " + intersectPoint1);
 //        System.out.println("Second intersect point : " + intersectPoint2);
-
+//        System.out.printf("Squares: base %f; left %f; right %f \n", polygonSquare(polygon), polygonSquare(halfpoly1), polygonSquare(halfpoly2));
+//        System.out.printf("Perimeters: base %f, left %f, right %f \n", perimeter_polygon(polygon), perimeter_polygon(halfpoly1), perimeter_polygon(halfpoly2));
 //        System.out.println(lineIntersection(l1, new Line(polygon.get(0),polygon.get(1)), p3));
 
 //        Line l2 = new Line(new Point(-12,-6), new Point(-8,2));
@@ -91,6 +105,27 @@ public class PieceOfCake {
 
     static double distance(Point p1, Point p2){
         return Math.sqrt(Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2));
+    }
+
+    static double perimeter_polygon (ArrayList<Point> plist)
+    {
+        int i, j;
+        double perimeter = 0;
+        for (i = 0; i < plist.size(); ++ i)
+        {
+            j = (i + 1) % plist.size();
+            perimeter += distance(plist.get(i), plist.get(j));
+        }
+        return perimeter;
+    }
+
+    // отрезки :: деление отрезка в заданном отношении
+    static Point part_segment (Point p1, Point p2, double m, double n)
+    {
+        Point t = new Point();
+        t.x = (p1.x * n + p2.x * m) / (m + n);
+        t.y = (p1.y * n + p2.y * m) / (m + n);
+        return t;
     }
 
     static double triangleSquare(Point p1, Point p2, Point p3){
@@ -269,6 +304,32 @@ public class PieceOfCake {
             v1.clear(); v1.addAll(v2);
             v2.clear(); v2.addAll(tv);
         }
+    }
+    // разрезание выпуклого многоугольника в отношении площадей m:n
+    static Point part_convex (ArrayList<Point> v, double m, double n)
+    {
+        double area = Math.abs(polygonSquare(v)) / (m + n) * m;
+        double a = 0;
+        int i;
+        for (i = 1; i < v.size () - 1; ++ i)
+        {
+            double s = Math.abs(triangleSquare(v.get(0), v.get(i), v.get(i + 1)));
+            if (a + s <= area)
+                a += s;
+            else break;
+        }
+        if (Math.abs(a - area) <= eps) return v.get(i);
+        return part_segment (v.get(i), v.get(i + 1), area - a,
+                Math.abs (triangleSquare (v.get(0), v.get(i), v.get(i + 1)) - area + a));
+    }
+    // разрезание выпуклого многоугольника на k равных частей
+    static void npart_convex (ArrayList<Point> v, int k, ArrayList<Point> s)
+    {
+        double area = Math.abs(polygonSquare(v));
+        double a = area / (double) k;
+        int i;
+        for (i = 1; i < k; ++ i)
+            s.add(part_convex(v, a * i, area - a * i));
     }
 
     static Point triangleCenter(ArrayList<Point> plist) {
