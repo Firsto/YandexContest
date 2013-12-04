@@ -22,31 +22,77 @@ public class PieceOfCake {
         polygon.add(new Point(-1, -3));
         System.out.println("Base polygon: " + polygon);
         System.out.println("polygon Square = " + polygonSquare(polygon));
-        Line line1 = new Line(new Point(6,1.56), new Point(6,-0.7));
+//        Line line1 = new Line(new Point(6,1.56), new Point(6,-0.7));
         ArrayList<Point> halfpoly1 = new ArrayList<Point>();
         ArrayList<Point> halfpoly2 = new ArrayList<Point>();
 //        Line line2 = perpendicularLine(line1, new Point(1,1));
-//        ArrayList<Point>[] quartpoly = new ArrayList[4];
-//        for (int i = 0; i < quartpoly.length; i++) {
-//            quartpoly[i] = new ArrayList<Point>();
-//        }
+        ArrayList<Point>[] quartpoly = new ArrayList[4];
+        for (int l = 0; l < quartpoly.length; l++) {
+            quartpoly[l] = new ArrayList<Point>();
+        }
+//        quartpoly[0].clear();quartpoly[1].clear();quartpoly[2].clear();quartpoly[3].clear();
 //        dividePolygonByLine(halfpoly1, line2, quartpoly[0], quartpoly[1], intersectPoint1, intersectPoint2);
 //        dividePolygonByLine(halfpoly2, line2, quartpoly[2], quartpoly[3], intersectPoint1, intersectPoint2);
-//        for (int i = 0; i < quartpoly.length; i++) {
-//            ArrayList<Point> points = quartpoly[i];
-//            System.out.println("Polygon #" + i + " " + points + " with S = " + polygonSquare(points));
+//        for (int l = 0; l < quartpoly.length; l++) {
+//            ArrayList<Point> points = quartpoly[l];
+//            System.out.println("Polygon #" + l + " " + points + " with S = " + polygonSquare(points));
 //        }
 
         ArrayList<Point> s = new ArrayList<>();
-        npart_convex(polygon, 2, s);
-        Point intersectPoint1 = polygon.get(0);
-        Point intersectPoint2 = s.get(0);
-        Line line2 = new Line(intersectPoint1, intersectPoint2);
-        dividePolygonByLine(polygon, line2, halfpoly1, halfpoly2, intersectPoint1, intersectPoint2);
-        int n = 5;
-        for (int i = 1; i <= n; i++) {
-            Point p = part_segment(polygon.get(0), polygon.get(1), i, n-i);
-            System.out.println(p);
+        ArrayList<Point> sv = new ArrayList<>();
+        Point intersectPoint1 = new Point();
+        Point intersectPoint2 = new Point();
+        Point p = new Point();
+        Line line1 = new Line(p,p);
+        Line line2 = new Line(p,p);
+        int m = 2000;
+        int n = polygon.size();
+        for (int j = 0; j < n; j++) {
+
+            for (int i = 1; i <= m; i++) {
+                intersectPoint1 = part_segment(polygon.get(j), polygon.get(j==n-1?0:j+1), i, m-i);
+                p = intersectPoint1;
+                s.clear(); sv.clear(); halfpoly1.clear(); halfpoly2.clear();
+                s.addAll(polygon);
+                if (j == n-1) s.add(p); else s.add(j+1, p);
+                for (int k = 0; k <= j; k++) {
+                    s.add(s.get(0));
+                    s.remove(0);
+                }
+                npart_convex(s, 2, sv);
+                intersectPoint2 = sv.get(0);
+                line1 = new Line(intersectPoint1, intersectPoint2);
+                dividePolygonByLine(polygon, line1, halfpoly1, halfpoly2, intersectPoint1, intersectPoint2);
+//                System.out.println(s + " -- ip: " + intersectPoint2);
+//                System.out.printf("Squares: base %f; left %f; right %f \n", polygonSquare(polygon), polygonSquare(halfpoly1), polygonSquare(halfpoly2));
+//                System.out.println(line1);
+                for (int k = 1; k <= m; k++) {
+                    p = part_segment(polygon.get(0), polygon.get(1), i, m - k);
+                    line2 = perpendicularLine(line1, p);
+                    quartpoly[0].clear();quartpoly[1].clear();quartpoly[2].clear();quartpoly[3].clear();
+                    dividePolygonByLine(halfpoly1, line2, quartpoly[0], quartpoly[1], intersectPoint1, intersectPoint2);
+                    dividePolygonByLine(halfpoly2, line2, quartpoly[2], quartpoly[3], intersectPoint1, intersectPoint2);
+
+                    if (
+                        polygonSquare(quartpoly[0])!=0 &&
+                        Math.abs (polygonSquare(quartpoly[0]) - polygonSquare(quartpoly[1])) < 0.01 &&
+                        Math.abs (polygonSquare(quartpoly[2]) - polygonSquare(quartpoly[3])) < 0.01
+//                        Math.round(polygonSquare(quartpoly[0])) == Math.round(polygonSquare(quartpoly[2])) &&
+//                        Math.round(polygonSquare(quartpoly[1])) == Math.round(polygonSquare(quartpoly[3])) &&
+//                        polygonSquare(quartpoly[0])!=0
+                            ){
+                        System.out.println("BINGO!");
+                        System.out.println("halfpoly1 : " + halfpoly1);
+                        System.out.println("halfpoly1 square = " + polygonSquare(halfpoly1));
+                        System.out.println("halfpoly2 : " + halfpoly2);
+                        System.out.println("halfpoly2 square = " + polygonSquare(halfpoly2));
+                        for (int l = 0; l < quartpoly.length; l++) {
+                            ArrayList<Point> points = quartpoly[l];
+                            System.out.println("Polygon #" + l + " " + points + " with S = " + polygonSquare(points));
+                         }
+                    }
+                }
+            }
         }
 
 //        System.out.println(s);
@@ -64,6 +110,7 @@ public class PieceOfCake {
 
     }
 
+//    static void
 /*
     static double S(ArrayList<Point> plist) {
 
