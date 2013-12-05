@@ -35,6 +35,7 @@ public class PieceOfCake {
                 polygon.add(new Point(x,y));
             }
         } catch (IOException e) {
+            System.out.println(-1);
             System.exit(-1);
         }
 
@@ -74,8 +75,8 @@ public class PieceOfCake {
         boolean isFound = false;
         searching:
         for (int j = 0; j < n; j++) {
-
-            for (int i = 1; i <= m; i++) {
+//            intersectPoint1 = polygon.get(j);
+            for (int i = 0; i <= m; i++) {
                 intersectPoint1 = part_segment(polygon.get(j), polygon.get(j==n-1?0:j+1), i, m-i);
                 p = intersectPoint1;
                 s.clear(); sv.clear(); halfpoly1.clear(); halfpoly2.clear();
@@ -151,8 +152,15 @@ public class PieceOfCake {
             k = Math.abs(Math.toDegrees(Math.atan(k)));
             k = BigDecimal.valueOf(k).setScale(1,BigDecimal.ROUND_HALF_UP).doubleValue();
 
-            System.out.println(p.x + " " + p.y);
-            System.out.println(k);
+            if (Math.abs(Math.round(p.x)-p.x) < eps && Math.abs(Math.round(p.y)-p.y) < eps){
+                System.out.println(Math.round(p.x) + " " + Math.round(p.y));
+            }   else {
+                System.out.println(p.x + " " + p.y);
+            }
+            if (Math.abs(Math.round(k)-k) < eps){
+            System.out.println(Math.round(k));
+            } else System.out.println(k);
+
         } else System.out.println(-1);
 //        System.out.println(s);
 
