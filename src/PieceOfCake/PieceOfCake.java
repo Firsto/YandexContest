@@ -45,7 +45,7 @@ public class PieceOfCake {
         Point p = new Point();
         Line line1 = new Line(p,p);
         Line line2 = new Line(p,p);
-        int m = 2000;
+        int m = 1000;
         int n = polygon.size();
         for (int j = 0; j < n; j++) {
 
@@ -66,12 +66,13 @@ public class PieceOfCake {
 //                System.out.println(s + " -- ip: " + intersectPoint2);
 //                System.out.printf("Squares: base %f; left %f; right %f \n", polygonSquare(polygon), polygonSquare(halfpoly1), polygonSquare(halfpoly2));
 //                System.out.println(line1);
-                for (int k = 1; k <= m; k++) {
-                    p = part_segment(polygon.get(0), polygon.get(1), i, m - k);
+                for (int k = 1; k < m; k++) {
+                    p = part_segment(intersectPoint1, intersectPoint2, k, m - k);
+//                    System.out.println(p);
                     line2 = perpendicularLine(line1, p);
                     quartpoly[0].clear();quartpoly[1].clear();quartpoly[2].clear();quartpoly[3].clear();
-                    dividePolygonByLine(halfpoly1, line2, quartpoly[0], quartpoly[1], intersectPoint1, intersectPoint2);
-                    dividePolygonByLine(halfpoly2, line2, quartpoly[2], quartpoly[3], intersectPoint1, intersectPoint2);
+                    dividePolygonByLine(halfpoly1, line2, quartpoly[0], quartpoly[1], p, p);
+                    dividePolygonByLine(halfpoly2, line2, quartpoly[2], quartpoly[3], p, p);
 
                     if (
                         polygonSquare(quartpoly[0])!=0 &&
