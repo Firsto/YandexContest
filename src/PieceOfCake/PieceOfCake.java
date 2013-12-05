@@ -1,5 +1,9 @@
 package PieceOfCake;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.math.BigDecimal;
 import java.util.*;
 
 /**
@@ -15,13 +19,29 @@ public class PieceOfCake {
 //        System.out.println((double) 20);
 //        System.exit(0);
         ArrayList<Point> polygon = new ArrayList<Point>();
-        polygon.add(new Point(-2, 3));
-        polygon.add(new Point(1, 4));
-        polygon.add(new Point(4, -2));
-        polygon.add(new Point(3, -4));
-        polygon.add(new Point(-1, -3));
-        System.out.println("Base polygon: " + polygon);
-        System.out.println("polygon Square = " + polygonSquare(polygon));
+//        polygon.add(new Point(0, 0));
+//        polygon.add(new Point(0, 2));
+//        polygon.add(new Point(2, 2));
+//        polygon.add(new Point(2, 0));
+        BufferedReader rdr = new BufferedReader(new InputStreamReader(System.in));
+        int n = 0;
+        String str = "";
+        try {
+            n = Integer.parseInt(rdr.readLine());
+            for (int i = 0; i < n; i++) {
+                str = rdr.readLine();
+                double x = Double.parseDouble(str.split(" ")[0]);
+                double y = Double.parseDouble(str.split(" ")[1]);
+                polygon.add(new Point(x,y));
+            }
+        } catch (IOException e) {
+            System.exit(-1);
+        }
+
+//        System.out.println("Base polygon: " + polygon);
+        double ps = polygonSquare(polygon);
+        double psq = ps/4;
+//        System.out.println("polygon Square = " + ps + " ; quart = " + psq);
 //        Line line1 = new Line(new Point(6,1.56), new Point(6,-0.7));
         ArrayList<Point> halfpoly1 = new ArrayList<Point>();
         ArrayList<Point> halfpoly2 = new ArrayList<Point>();
@@ -40,13 +60,19 @@ public class PieceOfCake {
 
         ArrayList<Point> s = new ArrayList<>();
         ArrayList<Point> sv = new ArrayList<>();
+        ArrayList<Point> qp1 = new ArrayList<>();
+        ArrayList<Point> qp2 = new ArrayList<>();
         Point intersectPoint1 = new Point();
         Point intersectPoint2 = new Point();
         Point p = new Point();
         Line line1 = new Line(p,p);
         Line line2 = new Line(p,p);
+        Line line3 = new Line(p,p);
         int m = 2000;
-        int n = polygon.size();
+        n = polygon.size();
+        int n1 = 0; int n2 = 0;
+        boolean isFound = false;
+        searching:
         for (int j = 0; j < n; j++) {
 
             for (int i = 1; i <= m; i++) {
@@ -66,9 +92,28 @@ public class PieceOfCake {
 //                System.out.println(s + " -- ip: " + intersectPoint2);
 //                System.out.printf("Squares: base %f; left %f; right %f \n", polygonSquare(polygon), polygonSquare(halfpoly1), polygonSquare(halfpoly2));
 //                System.out.println(line1);
+                n1 = halfpoly1.size(); n2 = halfpoly2.size();
                 for (int k = 1; k < m; k++) {
                     p = part_segment(intersectPoint1, intersectPoint2, k, m - k);
+/*
+                    qp1.clear(); qp2.clear(); sv.clear();
+                    qp2.addAll(halfpoly1); qp2.addAll(halfpoly2);
+                    if (qp1.isEmpty() || qp2.isEmpty()) continue;
+                    qp1.add(p); qp2.add(1, p);
+                    qp1.add(qp1.get(0)); qp2.add(qp2.get(0));
+                    qp1.remove(0); qp2.remove(0);
+
+                    npart_convex(qp1, 2, sv);
+                    line2 = new Line(p, sv.get(0));
+                    npart_convex(qp2, 2, sv);
+                    line3 = new Line(p, sv.get(1));
+
+                    if (is_equal_line(line2, line3)) {
+                        System.out.println("BINGO!");
+                        break searching;
+                    }*/
 //                    System.out.println(p);
+
                     line2 = perpendicularLine(line1, p);
                     quartpoly[0].clear();quartpoly[1].clear();quartpoly[2].clear();quartpoly[3].clear();
                     dividePolygonByLine(halfpoly1, line2, quartpoly[0], quartpoly[1], p, p);
@@ -76,13 +121,11 @@ public class PieceOfCake {
 
                     if (
                         polygonSquare(quartpoly[0])!=0 &&
-                        Math.abs (polygonSquare(quartpoly[0]) - polygonSquare(quartpoly[1])) < 0.01 &&
-                        Math.abs (polygonSquare(quartpoly[2]) - polygonSquare(quartpoly[3])) < 0.01
-//                        Math.round(polygonSquare(quartpoly[0])) == Math.round(polygonSquare(quartpoly[2])) &&
-//                        Math.round(polygonSquare(quartpoly[1])) == Math.round(polygonSquare(quartpoly[3])) &&
-//                        polygonSquare(quartpoly[0])!=0
+                                Math.abs(psq - polygonSquare(quartpoly[0])) < 0.001 &&
+                                Math.abs(psq - polygonSquare(quartpoly[2])) < 0.001 &&
+                                Math.abs(psq - polygonSquare(quartpoly[3])) < 0.001
                             ){
-                        System.out.println("BINGO!");
+                        /*System.out.println("BINGO!");
                         System.out.println("halfpoly1 : " + halfpoly1);
                         System.out.println("halfpoly1 square = " + polygonSquare(halfpoly1));
                         System.out.println("halfpoly2 : " + halfpoly2);
@@ -90,12 +133,27 @@ public class PieceOfCake {
                         for (int l = 0; l < quartpoly.length; l++) {
                             ArrayList<Point> points = quartpoly[l];
                             System.out.println("Polygon #" + l + " " + points + " with S = " + polygonSquare(points));
-                         }
+                         }*/
+                        isFound = true;
+                        break searching;
                     }
                 }
             }
         }
+        if (isFound) {
+            intersectPoint1.x = BigDecimal.valueOf(intersectPoint1.x).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
+            intersectPoint1.y = BigDecimal.valueOf(intersectPoint1.y).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
 
+            p.x = BigDecimal.valueOf(p.x).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
+            p.y = BigDecimal.valueOf(p.y).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
+
+            double k = (intersectPoint1.y - p.y)/(intersectPoint2.x - p.x);
+            k = Math.abs(Math.toDegrees(Math.atan(k)));
+            k = BigDecimal.valueOf(k).setScale(1,BigDecimal.ROUND_HALF_UP).doubleValue();
+
+            System.out.println(p.x + " " + p.y);
+            System.out.println(k);
+        } else System.out.println(-1);
 //        System.out.println(s);
 
 //        System.out.println("First polygon : " + halfpoly1);
@@ -186,12 +244,43 @@ public class PieceOfCake {
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 
+    //Лежит ли точка справа от отрезка в обходе против часовой стрелки?
+    static boolean ccw (Point a, Point b, Point c)
+    {
+        return triangleSquare (a, b, c) > eps;
+    }
+    // выпуклый ли многоугольник?
+    static boolean is_convex (ArrayList<Point> polygon)
+    {
+        int l, i, r;
+        int n = polygon.size();
+        boolean isccw = ccw (polygon.get(n-1), polygon.get(0), polygon.get(1));
+        for (i = 1; i < n; ++ i)
+        {
+            l = (i - 1 + n) % n;
+            r = (i + 1) % n;
+            if (ccw (polygon.get(l), polygon.get(i), polygon.get(r)) != isccw)
+                return false;
+        }
+        return true;
+    }
     static double polygonSquare(ArrayList<Point> plist){
-        double s = 0;
-        for(int i = 0; i < plist.size() - 1; i++)
-            s += triangleSquare(plist.get(0), plist.get(i), plist.get(i + 1));
+//        double s = 0;
+//        for(int i = 0; i < plist.size() - 1; i++)
+//            s += triangleSquare(plist.get(0), plist.get(i), plist.get(i + 1));
+//
+//        return s;
 
-        return s;
+        int i, j;
+        double s = 0;
+        for (i = 0; i < plist.size(); ++ i)
+        {
+            j = (i + 1) % plist.size();
+            s += plist.get(i).x * plist.get(j).y - plist.get(j).x * plist.get(i).y;
+        }
+        return Math.abs(0.5 * s);
+
+//        return BigDecimal.valueOf(d).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
     }
     // знак точки при подставлении в уравнение прямой
     static int point_in_line (Line l, Point p)
@@ -279,10 +368,10 @@ public class PieceOfCake {
 //        Iterator<Point> i1 = s.iterator(), i2 = s.iterator();
         Point i1 = new Point(), i2 = new Point();
 
+        Point jtp;
         for ( i = 0; i < s.size(); i++) {
             Point itp = s.get(i);
 //            jt.next();
-            Point jtp;
             if (i == s.size()-1) jtp = s.get(0);
             else jtp = s.get(i+1);
 
@@ -368,7 +457,7 @@ public class PieceOfCake {
         }
         if (Math.abs(a - area) <= eps) return v.get(i);
         return part_segment (v.get(i), v.get(i + 1), area - a,
-                Math.abs (triangleSquare (v.get(0), v.get(i), v.get(i + 1)) - area + a));
+                Math.abs (triangleSquare(v.get(0), v.get(i), v.get(i + 1)) - area + a));
     }
     // разрезание выпуклого многоугольника на k равных частей
     static void npart_convex (ArrayList<Point> v, int k, ArrayList<Point> s)

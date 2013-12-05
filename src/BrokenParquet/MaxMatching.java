@@ -30,7 +30,12 @@ public class MaxMatching {
 
     // Usage example
     public static void main(String[] args) {
-        int res = maxMatching(new boolean[][] { { true, true , true }, { false, false , false}, { true, true , true} });
+        int res = maxMatching(new boolean[][] {
+                { false, true , false , false },
+                { false, false , true , false },
+                { false, false , false , true },
+                { false, false , false , false }
+        });
         System.out.println(res);
     }
 }
