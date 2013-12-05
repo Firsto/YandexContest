@@ -45,7 +45,7 @@ public class PieceOfCake {
         Point p = new Point();
         Line line1 = new Line(p,p);
         Line line2 = new Line(p,p);
-        int m = 1000;
+        int m = 2000;
         int n = polygon.size();
         for (int j = 0; j < n; j++) {
 
