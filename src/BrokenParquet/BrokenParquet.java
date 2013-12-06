@@ -92,8 +92,9 @@ public class BrokenParquet {
                             l++;
                         }
                     }
-                        if (l < m) for (int j = 0; j < m - l; j++) sb.append('.');
+                        if (l < m) for (int j = 0; j < m-l; j++) sb.append('.');
                         s = sb.toString();
+//                        System.out.println(s);
                         s.trim();
 //                        s = s.substring(0,m);
                         chars[i] = s.toCharArray();
@@ -125,9 +126,9 @@ public class BrokenParquet {
                 if (c == '*') {
                     w++;
                     if (j > 0 && chars[i][j-1] == '*') g[o].add(o-1);
-                    if (j < chars[i].length-1 && chars[i][j+1] == '*') g[o].add(o+1);
-                    if (i > 0 && chars[i-1][j] == '*') g[o].add(o-n);
-                    if (i < chars.length-2 && chars[i+1][j] == '*') g[o].add(o+n);
+                    if (j <= chars[i].length-2 && chars[i][j+1] == '*') g[o].add(o+1);
+                    if (i > 0 && chars[i-1][j] == '*') g[o].add(o-m);
+                    if (i <= chars.length-2 && chars[i+1][j] == '*') g[o].add(o+m);
                 }
                 o++;
             }
@@ -138,7 +139,8 @@ public class BrokenParquet {
     } catch (StackOverflowError e) {
         System.err.println("reported recursion level was "+e.getStackTrace().length);
             System.exit(0);
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             System.exit(0);
         }
 //        } catch (Exception e) {
