@@ -5,6 +5,7 @@ import java.util.*;
 public class MaxMatching2 {
 
     static boolean findPath(List<Integer>[] g, int u1, int[] matching, boolean[] vis) {
+        if (vis[u1]) return false;
         vis[u1] = true;
         for (int v : g[u1]) {
             int u2 = matching[v];
@@ -30,15 +31,22 @@ public class MaxMatching2 {
 
     // Usage example
     public static void main(String[] args) {
-        int n1 = 4;
-        int n2 = 4;
+        int n1 = 12;
+        int n2 = 12;
         List<Integer>[] g = new List[n1];
         for (int i = 0; i < n1; i++) {
             g[i] = new ArrayList<Integer>();
         }
         g[0].add(1);
+        g[0].add(4);
         g[1].add(2);
         g[2].add(3);
+        g[3].add(7);
+        g[4].add(8);
+        g[7].add(11);
+        g[8].add(9);
+        g[9].add(10);
+        g[10].add(11);
         System.out.println(maxMatching(g, n2));
     }
 }

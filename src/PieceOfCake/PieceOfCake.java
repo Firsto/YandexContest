@@ -15,6 +15,7 @@ import java.util.*;
 
 public class PieceOfCake {
     final static double eps = 1e-8;
+//    final static double eps = Double.MIN_VALUE;
     public static void main(String[] args) {
 //        System.out.println((double) 20);
 //        System.exit(0);
@@ -30,15 +31,21 @@ public class PieceOfCake {
             n = Integer.parseInt(rdr.readLine());
             for (int i = 0; i < n; i++) {
                 str = rdr.readLine();
-                double x = Double.parseDouble(str.split(" ")[0]);
-                double y = Double.parseDouble(str.split(" ")[1]);
+//                double x = Double.parseDouble(str.split(" ")[0]);
+                int x = Integer.parseInt(str.split(" ")[0]);
+//                double y = Double.parseDouble(str.split(" ")[1]);
+                int y = Integer.parseInt(str.split(" ")[1]);
                 polygon.add(new Point(x,y));
             }
         } catch (IOException e) {
-            System.out.println(-1);
-            System.exit(-1);
+            System.out.print(-1);
+            System.exit(0);
         }
-
+        if (!is_convex(polygon)) {
+            System.out.print(-1);
+            System.exit(0);
+        }
+//        System.out.println(polygon);
 //        System.out.println("Base polygon: " + polygon);
         double ps = polygonSquare(polygon);
         double psq = ps/4;
@@ -96,7 +103,7 @@ public class PieceOfCake {
                 n1 = halfpoly1.size(); n2 = halfpoly2.size();
                 for (int k = 1; k < m; k++) {
                     p = part_segment(intersectPoint1, intersectPoint2, k, m - k);
-/*
+
                     qp1.clear(); qp2.clear(); sv.clear();
                     qp2.addAll(halfpoly1); qp2.addAll(halfpoly2);
                     if (qp1.isEmpty() || qp2.isEmpty()) continue;
@@ -111,11 +118,13 @@ public class PieceOfCake {
 
                     if (is_equal_line(line2, line3)) {
                         System.out.println("BINGO!");
+                        isFound = true;
                         break searching;
-                    }*/
-//                    System.out.println(p);
+                    }
+                    System.out.println(p);
 
-                    line2 = perpendicularLine(line1, p);
+
+                    /*line2 = perpendicularLine(line1, p);
                     quartpoly[0].clear();quartpoly[1].clear();quartpoly[2].clear();quartpoly[3].clear();
                     dividePolygonByLine(halfpoly1, line2, quartpoly[0], quartpoly[1], p, p);
                     dividePolygonByLine(halfpoly2, line2, quartpoly[2], quartpoly[3], p, p);
@@ -126,7 +135,7 @@ public class PieceOfCake {
                                 Math.abs(psq - polygonSquare(quartpoly[2])) < 0.001 &&
                                 Math.abs(psq - polygonSquare(quartpoly[3])) < 0.001
                             ){
-                        /*System.out.println("BINGO!");
+                        *//*System.out.println("BINGO!");
                         System.out.println("halfpoly1 : " + halfpoly1);
                         System.out.println("halfpoly1 square = " + polygonSquare(halfpoly1));
                         System.out.println("halfpoly2 : " + halfpoly2);
@@ -134,34 +143,41 @@ public class PieceOfCake {
                         for (int l = 0; l < quartpoly.length; l++) {
                             ArrayList<Point> points = quartpoly[l];
                             System.out.println("Polygon #" + l + " " + points + " with S = " + polygonSquare(points));
-                         }*/
+                         }*//*
                         isFound = true;
                         break searching;
-                    }
+                    }*/
                 }
             }
         }
         if (isFound) {
-            intersectPoint1.x = BigDecimal.valueOf(intersectPoint1.x).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
-            intersectPoint1.y = BigDecimal.valueOf(intersectPoint1.y).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
+//            intersectPoint1.x = BigDecimal.valueOf(intersectPoint1.x).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
+//            intersectPoint1.y = BigDecimal.valueOf(intersectPoint1.y).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
 
-            p.x = BigDecimal.valueOf(p.x).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
-            p.y = BigDecimal.valueOf(p.y).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
+//            p.x = BigDecimal.valueOf(p.x).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
+//            p.y = BigDecimal.valueOf(p.y).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
 
-            double k = (intersectPoint1.y - p.y)/(intersectPoint2.x - p.x);
-            k = Math.abs(Math.toDegrees(Math.atan(k)));
-            k = BigDecimal.valueOf(k).setScale(1,BigDecimal.ROUND_HALF_UP).doubleValue();
+            double k = (intersectPoint2.y - p.y)/(intersectPoint2.x - p.x);
+            if (k < 0) {
+                dividePolygonByLine(polygon, line2, halfpoly1, halfpoly2, intersectPoint1, intersectPoint2);
+                k = (intersectPoint1.y - p.y)/(intersectPoint1.x - p.x);
+            }
+//            System.out.println(k);
+            k = Math.toDegrees(Math.atan(k));
+//            k = BigDecimal.valueOf(k).setScale(1,BigDecimal.ROUND_HALF_UP).doubleValue();
 
             if (Math.abs(Math.round(p.x)-p.x) < eps && Math.abs(Math.round(p.y)-p.y) < eps){
                 System.out.println(Math.round(p.x) + " " + Math.round(p.y));
             }   else {
                 System.out.println(p.x + " " + p.y);
             }
+//            System.out.println(p.x + " " + p.y);
             if (Math.abs(Math.round(k)-k) < eps){
-            System.out.println(Math.round(k));
-            } else System.out.println(k);
+            System.out.print(Math.round(k));
+            } else
+                System.out.print(k);
 
-        } else System.out.println(-1);
+        } else System.out.print(-1);
 //        System.out.println(s);
 
 //        System.out.println("First polygon : " + halfpoly1);

@@ -83,9 +83,9 @@ public class MaxFlowDinic {
 //        addEdge(graph, 0, 2, 2);
 //        addEdge(graph, 1, 2, 2);
 //        System.out.println(maxFlow(graph, 0, 2));
-        addEdge(graph, 0, 1, 5);
-        addEdge(graph, 1, 2, 10);
-        addEdge(graph, 2, 3, 7);
+        addEdge(graph, 0, 1, 1);
+        addEdge(graph, 1, 2, 1);
+        addEdge(graph, 2, 3, 1);
 //        addEdge(graph, 2, 3, 1);
 //        addEdge(graph, 4, 5, 1);
 //        addEdge(graph, 5, 6, 1);

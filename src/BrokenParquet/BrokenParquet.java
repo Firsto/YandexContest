@@ -1,5 +1,12 @@
 package BrokenParquet;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Razor
@@ -7,93 +14,88 @@ package BrokenParquet;
  * Time: 13:10
  */
 public class BrokenParquet {
-    public static void main(String[] args) {
-        int[][] capacity = { { 0, 1, 1, 0 }, { 0, 0, 1, 1 }, { 1, 1, 1, 0 } , { 0, 1, 0, 1 } };
-        int n = capacity.length;
-        MaxFlowPreflow flow = new MaxFlowPreflow();
-        flow.init(n);
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++)
-                if (capacity[i][j] != 0)
-                    flow.addEdge(i, j, capacity[i][j]);
-        System.out.println(flow.maxFlow(0, 2));
+    static boolean findPath(List<Integer>[] g, int u1, int[] matching, boolean[] vis) {
+        if (vis[u1]) return false;
+        vis[u1] = true;
+        for (int v : g[u1]) {
+            int u2 = matching[v];
+            if (u2 == -1 || !vis[u2] && findPath(g, u2, matching, vis)) {
+                matching[v] = u1;
+                return true;
+            }
+        }
+        return false;
     }
 
-
-    static class MaxFlowPreflow {
-
-        int[][] cap;
-
-        public void init(int nodes) {
-            cap = new int[nodes][nodes];
+    public static int maxMatching(List<Integer>[] g, int n2) {
+        int n1 = g.length;
+        int[] matching = new int[n2];
+        Arrays.fill(matching, -1);
+        int matches = 0;
+        for (int u = 0; u < n1; u++) {
+            if (findPath(g, u, matching, new boolean[n1]))
+                ++matches;
         }
+        return matches;
+    }
 
-        public void addEdge(int s, int t, int capacity) {
-            cap[s][t] = capacity;
-        }
+    public static void main(String[] args) throws Exception {
 
-        public int maxFlow(int s, int t) {
-            int n = cap.length;
+        BufferedReader rdr = new BufferedReader(new InputStreamReader(System.in));
+        int n=0,m=0,a=0,b=0;
+//        try {
+            String s = rdr.readLine();
+        if (s == null) System.exit(0);
+            String[] num = s.split("[^\\p{Digit}*]");
+//        System.out.println(Arrays.toString(num));
+        if (num.length != 4) System.exit(0);
 
-            int[] h = new int[n];
-            h[s] = n - 1;
+        try {
+             n = Integer.parseInt(num[0]);
+             m = Integer.parseInt(num[1]);
+             a = Integer.parseInt(num[2]);
+             b = Integer.parseInt(num[3]);
+        } catch(Exception e) {System.exit(0);}
 
-            int[] maxh = new int[n];
+        char[][] chars = new char[n][m];
+        s = "";
 
-            int[][] f = new int[n][n];
-            int[] e = new int[n];
-
-            for (int i = 0; i < n; ++i) {
-                f[s][i] = cap[s][i];
-                f[i][s] = -f[s][i];
-                e[i] = cap[s][i];
-            }
-
-            for (int sz = 0;;) {
-                if (sz == 0) {
-                    for (int i = 0; i < n; ++i)
-                        if (i != s && i != t && e[i] > 0) {
-                            if (sz != 0 && h[i] > h[maxh[0]])
-                                sz = 0;
-                            maxh[sz++] = i;
-                        }
-                }
-                if (sz == 0)
-                    break;
-                while (sz != 0) {
-                    int i = maxh[sz - 1];
-                    boolean pushed = false;
-                    for (int j = 0; j < n && e[i] != 0; ++j) {
-                        if (h[i] == h[j] + 1 && cap[i][j] - f[i][j] > 0) {
-                            int df = Math.min(cap[i][j] - f[i][j], e[i]);
-                            f[i][j] += df;
-                            f[j][i] -= df;
-                            e[i] -= df;
-                            e[j] += df;
-                            if (e[i] == 0)
-                                --sz;
-                            pushed = true;
-                        }
-                    }
-                    if (!pushed) {
-                        h[i] = Integer.MAX_VALUE;
-                        for (int j = 0; j < n; ++j)
-                            if (h[i] > h[j] + 1 && cap[i][j] - f[i][j] > 0)
-                                h[i] = h[j] + 1;
-                        if (h[i] > h[maxh[0]]) {
-                            sz = 0;
-                            break;
-                        }
-                    }
+            for (int i = 0; i < chars.length; i++) {
+                if ((s = rdr.readLine()) != null) {
+                s.trim();
+                chars[i] = s.toCharArray();
+                chars[i] = Arrays.copyOf(chars[i], m);// chars[i].length > m ? m : chars[i].length);
                 }
             }
-
-            int flow = 0;
-            for (int i = 0; i < n; i++)
-                flow += f[s][i];
-
-            return flow;
+            rdr.close();
+        int n1 = m*n;
+        int n2 = n1;
+        List<Integer>[] g = new List[n1];
+        for (int i = 0; i < n1; i++) {
+            g[i] = new ArrayList<Integer>();
         }
+        int o = 0, w = 0;
+        for (int i = 0; i < chars.length; i++) {
+            for (int j = 0; j < chars[i].length; j++) {
+                char c = chars[i][j];
+                if (c == '*') {
+                    w++;
+                    if (j > 0 && chars[i][j-1] == '*') g[o].add(o-1);
+                    if (j < chars[i].length-1 && chars[i][j+1] == '*') g[o].add(o+1);
+                    if (i > 0 && chars[i-1][j] == '*') g[o].add(o-n);
+                    if (i < chars.length-2 && chars[i+1][j] == '*') g[o].add(o+n);
+                }
+                o++;
+            }
+        }
+        int d = maxMatching(g, n2)/2;
+        if (2*b>a) System.out.print(d*a+(w-d*2)*b);
+        else System.out.print(w * b);
 
+//        } catch (Exception e) {
+////            System.out.println(0);
+////            System.out.println(e);
+//            System.exit(0);
+//        }
     }
 }
