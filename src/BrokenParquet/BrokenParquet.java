@@ -32,7 +32,7 @@ public class BrokenParquet {
         int[] matching = new int[n2];
         Arrays.fill(matching, -1);
         int matches = 0;
-        for (int u = 0; u < n1; u++) {
+        for (int u = 0; u < n1; ++u) {
             if (findPath(g, u, matching, new boolean[n1]))
                 ++matches;
 //            if (matches>36300)
@@ -45,18 +45,17 @@ public class BrokenParquet {
         try {
         BufferedReader rdr = new BufferedReader(new InputStreamReader(System.in));
         int n=0,m=0,a=0,b=0;
-
+        StringBuilder sb = new StringBuilder();
             String s = "";
 
         try {
             int c;
 
-                StringBuilder sb = new StringBuilder();
+
 
                 while ((c = rdr.read()) != '\n') {
                     sb.append((char) c);
                     s = sb.toString();
-                    s.trim();
                 }
         } catch (IOException e) {
             System.exit(0);
@@ -82,8 +81,8 @@ public class BrokenParquet {
                 try {
 
                         int c;
-                    for (int i = 0; i < chars.length; i++) {
-                        StringBuilder sb = new StringBuilder();
+                    for (int i = 0; i < chars.length; ++i) {
+                        sb.delete(0, sb.length());
                         int l = 0;
                         while ((c = rdr.read()) != -1) {
                         if ((char) c == '\n') break;
@@ -94,9 +93,6 @@ public class BrokenParquet {
                     }
                         if (l < m) for (int j = 0; j < m-l; j++) sb.append('.');
                         s = sb.toString();
-//                        System.out.println(s);
-                        s.trim();
-//                        s = s.substring(0,m);
                         chars[i] = s.toCharArray();
                     }
                     rdr.close();
@@ -120,8 +116,8 @@ public class BrokenParquet {
             g[i] = new ArrayList<Integer>();
         }
         int o = 0, w = 0;
-        for (int i = 0; i < chars.length; i++) {
-            for (int j = 0; j < chars[i].length; j++) {
+        for (int i = 0; i < chars.length; ++i) {
+            for (int j = 0; j < chars[i].length; ++j) {
                 char c = chars[i][j];
                 if (c == '*') {
                     w++;
