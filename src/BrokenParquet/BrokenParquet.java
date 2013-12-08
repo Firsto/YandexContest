@@ -14,7 +14,7 @@ import java.util.List;
  * Time: 13:10
  */
 public class BrokenParquet {
-    static boolean findPath(List<Integer>[] g, int u1, int[] matching, boolean[] vis) {
+    static boolean findPath(int[][] g, int u1, int[] matching, boolean[] vis) {
         if (vis[u1]) return false;
         vis[u1] = true;
         for (int v : g[u1]) {
@@ -27,7 +27,7 @@ public class BrokenParquet {
         return false;
     }
 
-    public static int maxMatching(List<Integer>[] g, int n2) {
+    public static int maxMatching(int[][] g, int n2) {
         int n1 = g.length;
         int[] matching = new int[n2];
         Arrays.fill(matching, -1);
@@ -111,22 +111,23 @@ public class BrokenParquet {
             rdr.close();
         int n1 = m*n;
         int n2 = n1;
-        List<Integer>[] g = new List[n1];
-        for (int i = 0; i < n1; i++) {
-            g[i] = new ArrayList<Integer>();
-        }
-        int o = 0, w = 0;
+        int[][] g = new int[n1][4];
+//        for (int i = 0; i < n1; i++) {
+//            g[i] = new ArrayList<Integer>();
+//        }
+        int o = 0, w = 0, t = 0;
         for (int i = 0; i < chars.length; ++i) {
             for (int j = 0; j < chars[i].length; ++j) {
                 char c = chars[i][j];
                 if (c == '*') {
-                    w++;
-                    if (j > 0 && chars[i][j-1] == '*') g[o].add(o-1);
-                    if (j <= chars[i].length-2 && chars[i][j+1] == '*') g[o].add(o+1);
-                    if (i > 0 && chars[i-1][j] == '*') g[o].add(o-m);
-                    if (i <= chars.length-2 && chars[i+1][j] == '*') g[o].add(o+m);
+                    ++w;
+                    t = 0;
+                    if (j > 0 && chars[i][j-1] == '*') g[o][t++] = (o-1);
+                    if (j <= chars[i].length-2 && chars[i][j+1] == '*') g[o][t++] = (o+1);
+                    if (i > 0 && chars[i-1][j] == '*') g[o][t++] = (o-m);
+                    if (i <= chars.length-2 && chars[i+1][j] == '*') g[o][t] = (o+m);
                 }
-                o++;
+                ++o;
             }
         }
         int d = maxMatching(g, n2)/2;
