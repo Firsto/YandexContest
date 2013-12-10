@@ -6,18 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/statement.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="DELETED" beforePath="C:\Users\Razor\IdeaProjects\YandexContest\src\Baseline predictors\statement.pdf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" afterPath="$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/HKM.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BrokenParquet/HopcroftKarp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java" afterPath="$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YandexContest.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/PieceOfCake.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386326453862" ignored="false" />
-    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386494880272" ignored="false" />
+    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386647874082" ignored="false" />
     <file path="/BrokenParquet.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386493598535" ignored="false" />
     <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386233463715" ignored="false" />
     <file path="/sdsdsd.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385732532179" ignored="false" />
@@ -26,6 +23,9 @@
     <file path="/MaxMatching2.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386318969046" ignored="false" />
     <file path="/RegExp Fragment (BrokenParquet.java:1304).regexp" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386332791621" ignored="false" />
     <file path="/SimpleRecommender.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386519513216" ignored="false" />
+    <file path="/HopcroftKarp.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386664140939" ignored="false" />
+    <file path="/MaxFlowEdmondKarp.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386667194040" ignored="false" />
+    <file path="/HKM.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386678885941" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +33,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel url="file://$PROJECT_DIR$" />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -40,6 +45,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -92,38 +98,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" line="132" class="BrokenParquet.BrokenParquet" package="BrokenParquet">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" line="118" class="BrokenParquet.BrokenParquet" package="BrokenParquet">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
     </line_breakpoints>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -133,11 +108,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SimpleRecommender.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java">
+      <file leaf-file-name="BrokenParquet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="29" selection-start="1995" selection-end="1995" vertical-scroll-proportion="0.29054055">
-              <folding />
+            <state line="53" column="53" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HopcroftKarp.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BrokenParquet/HopcroftKarp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="116" column="143" selection-start="5799" selection-end="5799" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#5094#5112#0" expanded="true" />
+                <element signature="e#5221#5250#0" expanded="true" />
+                <element signature="e#5356#5374#0" expanded="true" />
+                <element signature="e#5487#5516#0" expanded="true" />
+                <element signature="e#5751#5769#0" expanded="true" />
+                <element signature="e#5880#5889#0" expanded="true" />
+                <element signature="e#13973#13982#0" expanded="true" />
+                <element signature="e#16096#16125#0" expanded="true" />
+                <element signature="e#16261#16270#0" expanded="true" />
+                <element signature="e#35284#35314#0" expanded="true" />
+                <element signature="e#36473#36503#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HKM.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BrokenParquet/HKM.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="38" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.80254775">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,29 +176,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowTest.java" />
-        <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowPreflow.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/MinCostFlowSimple.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/sdsdsd.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/sdsd.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowFordFulkerson.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/css.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/kk.java" />
-        <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowDinic.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/MaxMatching2.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/MaxMatching.java" />
         <option value="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" />
-        <option value="$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java" />
+        <option value="$PROJECT_DIR$/src/BrokenParquet/dsadsad.java" />
+        <option value="$PROJECT_DIR$/src/BrokenParquet/HopcroftKarp.java" />
+        <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java" />
+        <option value="$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" />
+        <option value="$PROJECT_DIR$/src/BrokenParquet/HKM.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="426" />
-    <option name="y" value="62" />
-    <option name="width" value="1457" />
-    <option name="height" value="1007" />
+    <option name="x" value="104" />
+    <option name="y" value="17" />
+    <option name="width" value="1464" />
+    <option name="height" value="825" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -237,8 +249,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -309,6 +319,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,69 +335,15 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="last.edited.regexp" value="dasd a ." />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Application.SimpleRecommender">
-    <configuration default="false" name="MaxMatching" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="BrokenParquet.MaxMatching" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="YandexContest" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="PieceOfCake" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="PieceOfCake.PieceOfCake" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="YandexContest" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MaxFlowDinic" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="BrokenParquet.MaxFlowDinic" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="YandexContest" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.HKM">
     <configuration default="false" name="BrokenParquet" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="BrokenParquet.BrokenParquet" />
       <option name="VM_PARAMETERS" />
@@ -424,6 +382,54 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="MaxFlowEdmondKarp" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="BrokenParquet.MaxFlowEdmondKarp" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="YandexContest" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="HopcroftKarp" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="BrokenParquet.HopcroftKarp" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="YandexContest" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="HKM" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="BrokenParquet.HKM" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="YandexContest" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -436,19 +442,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -476,6 +469,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -513,19 +519,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.MaxMatching" />
-      <item index="1" class="java.lang.String" itemvalue="Application.PieceOfCake" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MaxFlowDinic" />
-      <item index="3" class="java.lang.String" itemvalue="Application.BrokenParquet" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SimpleRecommender" />
+      <item index="0" class="java.lang.String" itemvalue="Application.BrokenParquet" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SimpleRecommender" />
+      <item index="2" class="java.lang.String" itemvalue="Application.MaxFlowEdmondKarp" />
+      <item index="3" class="java.lang.String" itemvalue="Application.HopcroftKarp" />
+      <item index="4" class="java.lang.String" itemvalue="Application.HKM" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SimpleRecommender" />
-        <item index="1" class="java.lang.String" itemvalue="Application.BrokenParquet" />
-        <item index="2" class="java.lang.String" itemvalue="Application.PieceOfCake" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MaxFlowDinic" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MaxMatching" />
+        <item index="0" class="java.lang.String" itemvalue="Application.HKM" />
+        <item index="1" class="java.lang.String" itemvalue="Application.HopcroftKarp" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MaxFlowEdmondKarp" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SimpleRecommender" />
+        <item index="4" class="java.lang.String" itemvalue="Application.BrokenParquet" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -632,25 +638,45 @@
     <option name="localTasksCounter" value="19" />
     <servers />
   </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="426" y="62" width="1457" height="1007" extended-state="0" />
+    <frame x="104" y="17" width="1464" height="825" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16714698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16640502" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54588234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2599432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33294117" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33281004" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27746078" sideWeight="0.25449103" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2781362" sideWeight="0.7270588" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27294117" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27746078" sideWeight="0.48952097" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25598803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -763,13 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="30" selection-start="2073" selection-end="2073" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MaxFlowDinic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="29" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.0">
@@ -791,36 +810,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="772" column="58" selection-start="28561" selection-end="28597" vertical-scroll-proportion="0.035472974" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="33" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.03626943" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java">
+    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="28" selection-start="3658" selection-end="3658" vertical-scroll-proportion="0.059322033">
+        <state line="70" column="29" selection-start="1995" selection-end="1995" vertical-scroll-proportion="-0.37683523">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="72" selection-start="5585" selection-end="5585" vertical-scroll-proportion="0.6164383">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://R:/downloads/LogLikelihood.java">
+    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/HopcroftKarp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="116" column="143" selection-start="5799" selection-end="5799" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#5094#5112#0" expanded="true" />
+            <element signature="e#5221#5250#0" expanded="true" />
+            <element signature="e#5356#5374#0" expanded="true" />
+            <element signature="e#5487#5516#0" expanded="true" />
+            <element signature="e#5751#5769#0" expanded="true" />
+            <element signature="e#5880#5889#0" expanded="true" />
+            <element signature="e#13973#13982#0" expanded="true" />
+            <element signature="e#16096#16125#0" expanded="true" />
+            <element signature="e#16261#16270#0" expanded="true" />
+            <element signature="e#35284#35314#0" expanded="true" />
+            <element signature="e#36473#36503#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java">
+    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="29" selection-start="1995" selection-end="1995" vertical-scroll-proportion="0.29054055">
-          <folding />
+        <state line="53" column="53" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BrokenParquet/HKM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="38" selection-start="1342" selection-end="1342" vertical-scroll-proportion="0.80254775">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
