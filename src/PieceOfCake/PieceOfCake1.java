@@ -3,8 +3,7 @@ package PieceOfCake;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.math.BigDecimal;
-import java.util.*;
+import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,7 +12,7 @@ import java.util.*;
  * Time: 21:12
  */
 
-public class PieceOfCake {
+public class PieceOfCake1 {
     final static double eps = 1e-8;
 //    final static double eps = Double.MIN_VALUE;
     public static void main(String[] args) {
@@ -110,7 +109,7 @@ public class PieceOfCake {
                 if (ps0 < ps1) {intersectPoint2.x = p.x;intersectPoint2.y=p.y;continue;}
 
                 if (polygonSquare(halfpoly1)!=polygonSquare(halfpoly2)) continue;
-                for (int k = 1; k < 64; k++) {
+                for (int k = 1; k < m; k++) {
 //                    p = part_segment(intersectPoint1, intersectPoint2, k, m - k);
 /*
                     qp1.clear(); qp2.clear(); sv.clear();
