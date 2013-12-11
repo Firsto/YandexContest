@@ -77,15 +77,15 @@ public class PieceOfCake {
         Line line1 = new Line(p,p);
         Line line2 = new Line(p,p);
         Line line3 = new Line(p,p);
-        int m = 2000;
+        int m = 1000000;
         n = polygon.size();
         int n1 = 0; int n2 = 0;
         boolean isFound = false;
         searching:
         for (int j = 0; j < n; j++) {
 //            intersectPoint1 = polygon.get(j);
-            for (int i = 0; i <= m; i++) {
-                intersectPoint1 = part_segment(polygon.get(j), polygon.get(j==n-1?0:j+1), i, m-i);
+            intersectPoint1 = part_segment(polygon.get(j), polygon.get(j==n-1?0:j+1), 1, 1);
+            for (int i = 0; i < 64; i++) {
                 p = intersectPoint1;
                 s.clear(); sv.clear(); halfpoly1.clear(); halfpoly2.clear();
                 s.addAll(polygon);
@@ -147,9 +147,9 @@ public class PieceOfCake {
 
                     if (
                         polygonSquare(quartpoly[0])!=0 &&
-                                Math.abs(psq - polygonSquare(quartpoly[0])) < 0.0001 &&
-                                Math.abs(psq - polygonSquare(quartpoly[2])) < 0.0001 &&
-                                Math.abs(psq - polygonSquare(quartpoly[3])) < 0.0001
+                                Math.abs(psq - polygonSquare(quartpoly[0])) < 0.00001 &&
+                                Math.abs(psq - polygonSquare(quartpoly[2])) < 0.00001 &&
+                                Math.abs(psq - polygonSquare(quartpoly[3])) < 0.00001
                             ){
                         System.out.println("BINGO!");
                         System.out.println("halfpoly1 : " + halfpoly1);
