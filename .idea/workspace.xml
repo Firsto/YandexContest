@@ -11,8 +11,8 @@
     </list>
     <ignored path="YandexContest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/PieceOfCake.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386856497065" ignored="false" />
-    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386769236490" ignored="false" />
+    <file path="/PieceOfCake.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386936714513" ignored="false" />
+    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386856812274" ignored="false" />
     <file path="/BrokenParquet.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386493598535" ignored="false" />
     <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386233463715" ignored="false" />
     <file path="/sdsdsd.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385732532179" ignored="false" />
@@ -111,6 +111,66 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="113" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="121" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="124" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="128" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="112" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -126,37 +186,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="119" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="122" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="126" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="204" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -184,9 +214,9 @@
       <file leaf-file-name="PieceOfCake.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="168" column="51" selection-start="8092" selection-end="8092" vertical-scroll-proportion="0.4379562">
+            <state line="200" column="171" selection-start="10063" selection-end="10063" vertical-scroll-proportion="0.5368957">
               <folding>
-                <element signature="e#1935#1942#0" expanded="true" />
+                <element signature="e#1944#1951#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -244,8 +274,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="104" />
-    <option name="y" value="10" />
+    <option name="x" value="81" />
+    <option name="y" value="12" />
     <option name="width" value="1464" />
     <option name="height" value="825" />
   </component>
@@ -691,7 +721,11 @@
       <created>1386769248082</created>
       <updated>1386769248082</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="YandexContest geom">
+      <created>1386856820778</created>
+      <updated>1386856820778</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -715,7 +749,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="104" y="10" width="1464" height="825" extended-state="0" />
+    <frame x="81" y="12" width="1464" height="825" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16640502" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -728,11 +762,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33083832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27746078" sideWeight="0.22305389" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27746078" sideWeight="0.21407185" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27746078" sideWeight="0.4296407" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3458084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27746078" sideWeight="0.41167665" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37275448" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -925,9 +959,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="51" selection-start="8092" selection-end="8092" vertical-scroll-proportion="0.4379562">
+        <state line="200" column="171" selection-start="10063" selection-end="10063" vertical-scroll-proportion="0.5368957">
           <folding>
-            <element signature="e#1935#1942#0" expanded="true" />
+            <element signature="e#1944#1951#0" expanded="true" />
           </folding>
         </state>
       </provider>

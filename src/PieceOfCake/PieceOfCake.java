@@ -49,7 +49,7 @@ public class PieceOfCake {
 //        System.out.println("Base polygon: " + polygon);
         double ps = polygonSquare(polygon);
         double psq = ps/4;
-        double p0 = 0, p1 = 0, ps0 = 0, ps1 = 0, ps2 = 0, ps3 = 0;
+        double p0 = 0, p1 = 0, ps0 = 0, ps1 = 0, ps2 = 0, ps3 = 0, qps = 0;
 //        System.out.println("polygon Square = " + ps + " ; quart = " + psq);
 //        Line line1 = new Line(new Point(6,1.56), new Point(6,-0.7));
         ArrayList<Point> halfpoly1 = new ArrayList<Point>();
@@ -99,6 +99,7 @@ public class PieceOfCake {
 //            p = part_segment(polygon.get(j), polygon.get(j==n-1?0:j+1), 1, 1);
             for (int i = 0; i < 64; i++) {
                 if (i!=0) p = part_segment(leftpoint, rightpoint, 1, 1);
+//                System.out.println(p);
                 intersectPoint1.x = p.x;intersectPoint1.y=p.y;
                 pt.x=p.x;pt.y=p.y;
                 s.clear(); sv.clear(); halfpoly1.clear(); halfpoly2.clear();
@@ -111,6 +112,7 @@ public class PieceOfCake {
                 }
                 npart_convex(s, 2, sv);
                 intersectPoint2 = sv.get(0);
+//                System.out.println(intersectPoint2);
                 line1 = new Line(intersectPoint1, intersectPoint2);
                 dividePolygonByLine(polygon, line1, halfpoly1, halfpoly2, intersectPoint1, intersectPoint2);
 //                System.out.println(s + " -- ip: " + intersectPoint2);
@@ -120,8 +122,8 @@ public class PieceOfCake {
                 p0 = polygonSquare(halfpoly1);
                 p1 = polygonSquare(halfpoly2);
 
-//                System.out.println("HALFPOLY 1 : " + halfpoly1 + " ; SQ : " + p0);
-//                System.out.println("HALFPOLY 2 : " + halfpoly2 + " ; SQ : " + p1);
+                System.out.println("HALFPOLY 1 : " + halfpoly1 + " ; SQ : " + p0);
+                System.out.println("HALFPOLY 2 : " + halfpoly2 + " ; SQ : " + p1);
 
 
 //                if (p0 < p1) {rightpoint.x = p.x;rightpoint.y=p.y;continue;}
@@ -155,7 +157,7 @@ public class PieceOfCake {
 */
 
                     p = part_segment(intersectPoint1, intersectPoint2, 1, 1);
-                    System.out.println("p = " + p + " ; ip1 = " + intersectPoint1 + " ; ip2 = " + intersectPoint2);
+//                    System.out.println("p = " + p + " ; ip1 = " + intersectPoint1 + " ; ip2 = " + intersectPoint2);
                     line2 = perpendicularLine(line1, p);
                     quartpoly[0].clear();quartpoly[1].clear();quartpoly[2].clear();quartpoly[3].clear();
                     dividePolygonByLine(halfpoly1, line2, quartpoly[0], quartpoly[1], pp0, pp1);
@@ -163,14 +165,15 @@ public class PieceOfCake {
 //                    System.out.println("pp0 : " + pp0 + " ; pp1 : " + pp1 + " ; pp2 : " + pp2 + " ; pp3 : " + pp3);
                     ps0 = polygonSquare(quartpoly[0]);
                     ps1 = polygonSquare(quartpoly[1]);
+                    if (k==1) qps = ps1;
                     ps2 = polygonSquare(quartpoly[2]);
                     ps3 = polygonSquare(quartpoly[3]);
+                    if (ps0==0) continue;
                     System.out.println("qp0sq: " + ps0 + " ; qp1sq: " + ps1 + " ; qp2sq: " + ps2 + " ; qp3sq: " + ps3);
 //                    System.out.println(quartpoly[0] + " -- " + quartpoly[2]);
-                    if (ps0 > ps1 && ps0 != ps2) {intersectPoint1.x = p.x;intersectPoint1.y=p.y;continue;}
-                    if (ps0 < ps1 && ps0 != ps2) {intersectPoint2.x = p.x;intersectPoint2.y=p.y;continue;}
-
-
+//                    System.exit(0);
+                    if (ps0 > psq  /*ps1 > ps2 && ps0 != ps2*/) {intersectPoint1.x = p.x;intersectPoint1.y=p.y;continue;}
+                    if (ps0 < psq  /*ps1 < ps2 && ps0 != ps2*/) {intersectPoint2.x = p.x;intersectPoint2.y=p.y;continue;}
                     if (
                         polygonSquare(quartpoly[0])!=0 &&
                                 Math.abs(psq - polygonSquare(quartpoly[0])) < eps &&
@@ -181,11 +184,11 @@ public class PieceOfCake {
 //                                ps3 == psq
 
                             ){
-                        System.out.println("BINGO!");
-                        System.out.println("halfpoly1 : " + halfpoly1);
-                        System.out.println("halfpoly1 square = " + polygonSquare(halfpoly1));
-                        System.out.println("halfpoly2 : " + halfpoly2);
-                        System.out.println("halfpoly2 square = " + polygonSquare(halfpoly2));
+//                        System.out.println("BINGO!");
+//                        System.out.println("halfpoly1 : " + halfpoly1);
+//                        System.out.println("halfpoly1 square = " + polygonSquare(halfpoly1));
+//                        System.out.println("halfpoly2 : " + halfpoly2);
+//                        System.out.println("halfpoly2 square = " + polygonSquare(halfpoly2));
 //                        System.out.println("k = " + k);
                         for (int l = 0; l < quartpoly.length; l++) {
                             ArrayList<Point> points = quartpoly[l];
@@ -199,8 +202,8 @@ public class PieceOfCake {
 //                    System.out.println("halfpoly2 : " + halfpoly2 + " ; halfpoly2 square = " + polygonSquare(halfpoly2));
 //                    System.out.println("k = " + k);
                 }
-                if (ps0!=0 && ps0 < ps2) {rightpoint.x = pt.x;rightpoint.y=pt.y;}
-                if (ps0!=0 && ps0 > ps2) {leftpoint.x = pt.x;leftpoint.y=pt.y;}
+                if (ps0!=0 && (ps0 < psq  )) {rightpoint.x = pt.x;rightpoint.y=pt.y;}
+                if (ps0!=0 && (ps0 > psq  )) {leftpoint.x = pt.x;leftpoint.y=pt.y;}
 
             }
         }
@@ -269,7 +272,7 @@ public class PieceOfCake {
         return s;
     }
 */
-// лежит ли точка в прямоугольнике, который образуют заданные точки
+
     static boolean point_in_box (Point t, Point p1, Point p2)
     {
         return  (Math.abs (t.x - Math.min(p1.x, p2.x)) <= eps || Math.min(p1.x, p2.x) <= t.x) &&
@@ -304,7 +307,7 @@ public class PieceOfCake {
         return perimeter;
     }
 
-    // отрезки :: деление отрезка в заданном отношении
+
     static Point part_segment (Point p1, Point p2, double m, double n)
     {
         Point t = new Point();
@@ -314,6 +317,14 @@ public class PieceOfCake {
     }
 
     static double triangleSquare(Point p1, Point p2, Point p3){
+
+        ArrayList<Point> plist = new ArrayList<>();
+        plist.add(p1);
+        plist.add(p2);
+        plist.add(p3);
+        return polygonSquare(plist);
+
+        /*
         double
                 a = distance(p1, p2),
                 b = distance(p2, p3),
@@ -321,14 +332,15 @@ public class PieceOfCake {
         double p = (a + b + c) / 2;
 
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+        */
     }
 
-    //Лежит ли точка справа от отрезка в обходе против часовой стрелки?
+
     static boolean ccw (Point a, Point b, Point c)
     {
         return triangleSquare (a, b, c) > eps;
     }
-    // выпуклый ли многоугольник?
+
     static boolean is_convex (ArrayList<Point> polygon)
     {
         int l, i, r;
@@ -361,18 +373,18 @@ public class PieceOfCake {
 
 //        return BigDecimal.valueOf(d).setScale(6,BigDecimal.ROUND_HALF_UP).doubleValue();
     }
-    // знак точки при подставлении в уравнение прямой
+
     static int point_in_line (Line l, Point p)
     {
         double s = l.a * p.x + l.b * p.y + l.c;
         return s < - eps ? - 1 : s > eps ? 1 : 0;
     }
-    // параллельны ли прямые?
+
     static boolean is_parallel_line (Line l1, Line l2)
     {
         return Math.abs (l1.a * l2.b - l2.a * l1.b) <= eps;
     }
-    // совпадают ли прямые?
+
     static boolean is_equal_line (Line l1, Line l2)
     {
         return Math.abs (l1.a * l2.b - l2.a * l1.b) <= eps &&
@@ -396,25 +408,22 @@ public class PieceOfCake {
 
         return pl;
     }
-    // расположение многоугольника отосительно прямой
-//        1 - находится с положительной стороны
-//        - 1 - находится с отрицательной стороны
-//        0 - прямая пересекает одну из сторон многоугольника (сторону а не вершину)
+
     static int polygon_for_line (ArrayList<Point> polygon, Line l)
     {
         int i, j;
-        int s = - 2; // знак
+        int s = - 2;
         for (i = 0; i < polygon.size(); ++ i)
         {
-            int t = point_in_line (l, polygon.get(i)); // положение вершины относительно прямой
-            if (t != 0)        // если точка не принадлежить прямой
-                if (s != - 2)     // если s мы вычислили
-                    if (t != s)        // если знаки различны, то прямая пересекает сторону многоугольника
+            int t = point_in_line (l, polygon.get(i));
+            if (t != 0)
+                if (s != - 2)
+                    if (t != s)
                         return 0;
                     else
                     {}
                 else
-                    s = t; // если s мы ещё не вычислили, присваиваем ему вычисленное значение
+                    s = t;
         }
         if (s == - 2) return 0;
         return s;
@@ -439,9 +448,9 @@ public class PieceOfCake {
 //        ArrayList<Point> v2 = new ArrayList<Point>();
 //        Point p1 = new Point();
 //        Point p2 = new Point();*/
-        // находим точки пересечение прямой с многоугольником и вставляем их в многоугольник
-        int c = 0; // счётчик пересечений многоугольника с прямой
-        ArrayList<Point> s = new ArrayList<Point>(); // представляем многоугольник как список вершин
+
+        int c = 0;
+        ArrayList<Point> s = new ArrayList<Point>();
         s.addAll(polygon);
 //        Iterator<Point> it = s.iterator(), jt = s.iterator();
 //        Iterator<Point> i1 = s.iterator(), i2 = s.iterator();
@@ -454,20 +463,20 @@ public class PieceOfCake {
             if (i == s.size()-1) jtp = s.get(0);
             else jtp = s.get(i+1);
 
-            // пересекаем прямую со стороной
+
             Point t = new Point();
             int flag = cross_segment_line (itp, jtp, l, t);
-            // если прямая проходит по стороне
+
             if (flag == 2)
             {
                 if (polygon_for_line (polygon, l) > 0)    v1 = polygon;
                 else    v2 = polygon;
                 return;
             }
-            // если прямая и сторона не пересекаются
+
             if (flag == 0) continue;
 
-            // если прямая проходит через вершину многоугольника
+
             if (Math.abs (t.x - (itp).x) <= eps && Math.abs (t.y - (itp).y) <= eps)
             {
                 if (c == 0) i1 = s.get(i);
@@ -477,19 +486,19 @@ public class PieceOfCake {
             }
             if (Math.abs (t.x - (jtp).x) <= eps && Math.abs (t.y - (jtp).y) <= eps) continue;
 
-            // иначе прямая пересекает сторону, вставляем точку пересечения в многоугольник
+
             i++;
 //            itp = s.get(i);
 //            s.add(s.indexOf(itp), t);
             s.add(i, t);
 
-            // увеличиваем счётчик пересечений многоугольника с прямой
+
             if (c == 0) i1 = s.get(i);
             else i2 = s.get(i);
             ++ c;
         }
 
-        // если прямая не пересекает многоугольник
+
         if (c != 2)
         {
             if (polygon_for_line (polygon, l) > 0)    v1 = polygon;
@@ -497,7 +506,7 @@ public class PieceOfCake {
             return;
         }
 
-        // представляем многоугольник массивом точек
+
         n = s.size ();
         ArrayList<Point> all = new ArrayList<Point>();
         all.addAll(s);
@@ -508,12 +517,12 @@ public class PieceOfCake {
             if (s.get(i).x == i2.x && s.get(i).y == i2.y) j2 = i;
         }
 
-        // режем многоугольник
+
         p1.x = all.get(j1).x; p1.y = all.get(j1).y;
         p2.x = all.get(j2).x; p2.y = all.get(j2).y;
         dividePolygon(all, j1, j2, v1, v2);
 
-        // если многоугольники имеют не то расположение которое нам требуется - меняем их местами
+
         if (polygon_for_line (v1, l) < 0);  {
             ArrayList<Point> tv = new ArrayList<Point>();
             tv.addAll(v1);
@@ -521,7 +530,7 @@ public class PieceOfCake {
             v2.clear(); v2.addAll(tv);
         }
     }
-    // разрезание выпуклого многоугольника в отношении площадей m:n
+
     static Point part_convex (ArrayList<Point> v, double m, double n)
     {
         double area = Math.abs(polygonSquare(v)) / (m + n) * m;
@@ -538,11 +547,12 @@ public class PieceOfCake {
         return part_segment (v.get(i), v.get(i + 1), area - a,
                 Math.abs (triangleSquare(v.get(0), v.get(i), v.get(i + 1)) - area + a));
     }
-    // разрезание выпуклого многоугольника на k равных частей
+
     static void npart_convex (ArrayList<Point> v, int k, ArrayList<Point> s)
     {
         double area = Math.abs(polygonSquare(v));
         double a = area / (double) k;
+//        System.out.println(" a = " + a);
         int i;
         for (i = 1; i < k; ++ i)
             s.add(part_convex(v, a * i, area - a * i));
