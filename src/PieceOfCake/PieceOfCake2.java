@@ -3,8 +3,7 @@ package PieceOfCake;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.math.BigDecimal;
-import java.util.*;
+import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,7 +12,7 @@ import java.util.*;
  * Time: 21:12
  */
 
-public class PieceOfCake {
+public class PieceOfCake2 {
     final static double eps = 1e-14;
 //    final static double eps = Double.MIN_VALUE;
     public static void main(String[] args) {
