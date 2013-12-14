@@ -123,8 +123,8 @@ public class PieceOfCake {
                 p1 = polygonSquare(halfpoly2);
 
 //                if (p0!=p1) continue ;
-//                System.out.println("HALFPOLY 1 : " + halfpoly1 + " ; SQ : " + p0);
-//                System.out.println("HALFPOLY 2 : " + halfpoly2 + " ; SQ : " + p1);
+                System.out.println("HALFPOLY 1 : " + halfpoly1 + " ; SQ : " + p0);
+                System.out.println("HALFPOLY 2 : " + halfpoly2 + " ; SQ : " + p1);
 
 //                if (p0 < p1) {rightpoint.x = p.x;rightpoint.y=p.y;continue;}
 //                if (p0 > p1) {leftpoint.x = p.x;leftpoint.y=p.y;continue;}
@@ -170,7 +170,7 @@ public class PieceOfCake {
                     if (k==1) qps = ps1;
                     ps2 = polygonSquare(quartpoly[2]);
                     ps3 = polygonSquare(quartpoly[3]);
-//                    System.out.println("qp0sq: " + ps0 + " ; qp1sq: " + ps1 + " ; qp2sq: " + ps2 + " ; qp3sq: " + ps3);
+                    System.out.println("qp0sq: " + ps0 + " ; qp1sq: " + ps1 + " ; qp2sq: " + ps2 + " ; qp3sq: " + ps3);
 //                    System.out.println("0#> " + quartpoly[0] + " -- 1#> " + quartpoly[1] + " -- 2#> " + quartpoly[2] + " -- 3#> " +quartpoly[3]);
 //                    if (k==4) break ;
                     if (ps0==0) continue;
