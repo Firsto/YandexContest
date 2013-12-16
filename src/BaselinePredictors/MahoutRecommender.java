@@ -53,6 +53,7 @@ import static BaselinePredictors.MahoutRecommender.Preconditions.*;
  * Time: 23:52
  */
 public class MahoutRecommender {
+    /*
     public static void main(String[] args) throws Exception {
         // Create a data source from the CSV file
         File userPreferencesFile = new File("data/dataset1.csv");
@@ -72,7 +73,7 @@ public class MahoutRecommender {
             System.out.println(recommendedItem);
         }
     }
-
+*/
 
     public interface RecommendedItem {
         long getItemID();
@@ -338,7 +339,7 @@ public class MahoutRecommender {
         long nextLong();
         long peek();
     }
-    public abstract class AbstractLongPrimitiveIterator implements LongPrimitiveIterator {
+    public abstract static class AbstractLongPrimitiveIterator implements LongPrimitiveIterator {
 
         @Override
         public Long next() {
@@ -25000,7 +25001,7 @@ public class MahoutRecommender {
             }
         }
     }
-
+     /*
     public static class GenericUserBasedRecommender extends AbstractRecommender implements UserBasedRecommender {
 
         private static final Logger log = LoggerFactory.getLogger(GenericUserBasedRecommender.class);
@@ -25197,6 +25198,6 @@ public class MahoutRecommender {
             }
         }
     }
-
+             */
 
 }
