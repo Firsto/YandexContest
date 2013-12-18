@@ -6,14 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/SlopeOne.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BaselinePredictors/MahoutRecommender.java" afterPath="$PROJECT_DIR$/src/BaselinePredictors/MahoutRecommender.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/LinearRegression.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/svd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YandexContest.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/PieceOfCake.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387003604309" ignored="false" />
-    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387163174876" ignored="false" />
+    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387298138136" ignored="false" />
     <file path="/BrokenParquet.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386493598535" ignored="false" />
     <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387043193310" ignored="false" />
     <file path="/sdsdsd.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385732532179" ignored="false" />
@@ -608,6 +609,7 @@
     <file path="$PROJECT_DIR$/src/BaselinePredictors/mahout/org/apache/mahout/classifier/discriminative/WinnowTrainer.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387041059855" ignored="false" />
     <file path="/MahoutRecommender.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387163465615" ignored="false" />
     <file path="/SlopeOne.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387164710501" ignored="false" />
+    <file path="/LinearRegression.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387299002212" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -627,6 +629,43 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" line="38" class="BrokenParquet.BrokenParquet" package="BrokenParquet">
         <option name="ENABLED" value="true" />
@@ -719,43 +758,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </breakpoint_any>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -768,16 +770,16 @@
       <file leaf-file-name="SimpleRecommender.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="45" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+            <state line="24" column="24" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SlopeOne.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SlopeOne.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SlopeOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="73" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.6787879">
+            <state line="34" column="52" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#207#233#0" expanded="true" />
                 <element signature="e#547#561#0" expanded="true" />
@@ -794,40 +796,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="LinearRegression.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/LinearRegression.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="2" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="svd" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/svd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="21" selection-start="102" selection-end="102" vertical-scroll-proportion="0.05230386">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="MahoutRecommender.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/MahoutRecommender.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="341" column="27" selection-start="12826" selection-end="12826" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#113031#113053#0" expanded="true" />
-                <element signature="e#167555#167577#0" expanded="true" />
-                <element signature="e#168211#168233#0" expanded="true" />
-                <element signature="e#168396#168418#0" expanded="true" />
-                <element signature="e#168580#168602#0" expanded="true" />
-                <element signature="e#252425#252448#0" expanded="true" />
-                <element signature="e#270951#270971#0" expanded="true" />
-                <element signature="e#271011#271038#0" expanded="true" />
-                <element signature="e#271788#271801#0" expanded="true" />
-                <element signature="e#273556#273568#0" expanded="true" />
-                <element signature="e#280698#280711#0" expanded="true" />
-                <element signature="e#287659#287675#0" expanded="true" />
-                <element signature="e#320638#320650#0" expanded="true" />
-                <element signature="e#323738#323750#0" expanded="true" />
-                <element signature="e#324162#324174#0" expanded="true" />
-                <element signature="e#324583#324595#0" expanded="true" />
-                <element signature="e#392043#392059#0" expanded="true" />
-                <element signature="e#398739#398751#0" expanded="true" />
-                <element signature="e#408196#408205#0" expanded="true" />
-                <element signature="e#537685#537716#0" expanded="true" />
-                <element signature="e#552346#552363#0" expanded="true" />
-                <element signature="e#568739#568745#0" expanded="true" />
-                <element signature="e#619090#619096#0" expanded="true" />
-                <element signature="e#620501#620507#0" expanded="true" />
-                <element signature="e#714592#714605#0" expanded="true" />
-                <element signature="e#715525#715538#0" expanded="true" />
-                <element signature="e#746519#746541#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -835,7 +826,7 @@
       <file leaf-file-name="AbstractRecommender.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/impl/recommender/AbstractRecommender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="64" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0">
+            <state line="24" column="56" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -885,9 +876,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/BrokenParquet/MaxMatching2.java" />
-        <option value="$PROJECT_DIR$/src/BrokenParquet/MaxMatching.java" />
-        <option value="$PROJECT_DIR$/src/BrokenParquet/dsadsad.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/HopcroftKarp.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" />
@@ -901,6 +889,9 @@
         <option value="$PROJECT_DIR$/YandexContest.iml" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/MahoutRecommender.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/SlopeOne.java" />
+        <option value="$PROJECT_DIR$/src/BaselinePredictors/ss.java" />
+        <option value="$PROJECT_DIR$/src/BaselinePredictors/LinearRegression.java" />
+        <option value="$PROJECT_DIR$/src/BaselinePredictors/svd" />
       </list>
     </option>
   </component>
@@ -958,6 +949,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1032,7 +1024,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1048,13 +1039,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="last.edited.regexp" value="dasd a ." />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="last.edited.regexp" value="dasd a ." />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1166,6 +1157,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1191,19 +1195,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1385,7 +1376,11 @@
       <created>1387111621246</created>
       <updated>1387111621246</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="YandexContest recommender">
+      <created>1387164881655</created>
+      <updated>1387164881655</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1420,16 +1415,16 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2599432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26492792" sideWeight="0.21529412" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26492792" sideWeight="0.3435294" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26492792" sideWeight="0.4117647" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37176472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26492792" sideWeight="0.6564706" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37176472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964337" sideWeight="0.7400568" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1504,16 +1499,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/impl/recommender/AbstractCandidateItemsStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="1320" selection-end="1960" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/recommender/MostSimilarItemsCandidateItemsStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1088" selection-end="1238" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/neighborhood/UserNeighborhood.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="0" selection-start="1145" selection-end="1500" vertical-scroll-proportion="0.332696" />
@@ -1563,7 +1548,7 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/impl/recommender/AbstractRecommender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="64" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0">
+        <state line="24" column="56" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1578,49 +1563,20 @@
     <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/MahoutRecommender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="341" column="27" selection-start="12826" selection-end="12826" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#113031#113053#0" expanded="true" />
-            <element signature="e#167555#167577#0" expanded="true" />
-            <element signature="e#168211#168233#0" expanded="true" />
-            <element signature="e#168396#168418#0" expanded="true" />
-            <element signature="e#168580#168602#0" expanded="true" />
-            <element signature="e#252425#252448#0" expanded="true" />
-            <element signature="e#270951#270971#0" expanded="true" />
-            <element signature="e#271011#271038#0" expanded="true" />
-            <element signature="e#271788#271801#0" expanded="true" />
-            <element signature="e#273556#273568#0" expanded="true" />
-            <element signature="e#280698#280711#0" expanded="true" />
-            <element signature="e#287659#287675#0" expanded="true" />
-            <element signature="e#320638#320650#0" expanded="true" />
-            <element signature="e#323738#323750#0" expanded="true" />
-            <element signature="e#324162#324174#0" expanded="true" />
-            <element signature="e#324583#324595#0" expanded="true" />
-            <element signature="e#392043#392059#0" expanded="true" />
-            <element signature="e#398739#398751#0" expanded="true" />
-            <element signature="e#408196#408205#0" expanded="true" />
-            <element signature="e#537685#537716#0" expanded="true" />
-            <element signature="e#552346#552363#0" expanded="true" />
-            <element signature="e#568739#568745#0" expanded="true" />
-            <element signature="e#619090#619096#0" expanded="true" />
-            <element signature="e#620501#620507#0" expanded="true" />
-            <element signature="e#714592#714605#0" expanded="true" />
-            <element signature="e#715525#715538#0" expanded="true" />
-            <element signature="e#746519#746541#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="45" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+        <state line="24" column="24" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SlopeOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="73" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.6787879">
+        <state line="34" column="52" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#207#233#0" expanded="true" />
             <element signature="e#547#561#0" expanded="true" />
@@ -1633,6 +1589,20 @@
             <element signature="e#6052#6066#0" expanded="true" />
             <element signature="e#6127#6143#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/LinearRegression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="2" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/svd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="21" selection-start="102" selection-end="102" vertical-scroll-proportion="0.05230386">
+          <folding />
         </state>
       </provider>
     </entry>
