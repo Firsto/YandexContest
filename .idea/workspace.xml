@@ -6,15 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/LinearRegression.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/svd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/SVD.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/SVD2.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/svd2_c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YandexContest.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/PieceOfCake.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387003604309" ignored="false" />
-    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387298138136" ignored="false" />
+    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387459130946" ignored="false" />
     <file path="/BrokenParquet.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386493598535" ignored="false" />
     <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387043193310" ignored="false" />
     <file path="/sdsdsd.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385732532179" ignored="false" />
@@ -22,7 +22,7 @@
     <file path="/a.dummy" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386223773907" ignored="false" />
     <file path="/MaxMatching2.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386318969046" ignored="false" />
     <file path="/RegExp Fragment (BrokenParquet.java:1304).regexp" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386332791621" ignored="false" />
-    <file path="/SimpleRecommender.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386519513216" ignored="false" />
+    <file path="/SimpleRecommender.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387454545981" ignored="false" />
     <file path="/HopcroftKarp.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386664140939" ignored="false" />
     <file path="/MaxFlowEdmondKarp.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386667194040" ignored="false" />
     <file path="/HKM.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386678885941" ignored="false" />
@@ -610,6 +610,9 @@
     <file path="/MahoutRecommender.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387163465615" ignored="false" />
     <file path="/SlopeOne.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387164710501" ignored="false" />
     <file path="/LinearRegression.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387299002212" ignored="false" />
+    <file path="/SVD.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387458740423" ignored="false" />
+    <file path="/svd" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387437692757" ignored="false" />
+    <file path="/SVD2.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387455870510" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -770,7 +773,7 @@
       <file leaf-file-name="SimpleRecommender.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="24" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+            <state line="19" column="11" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -780,18 +783,7 @@
         <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SlopeOne.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="34" column="52" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#207#233#0" expanded="true" />
-                <element signature="e#547#561#0" expanded="true" />
-                <element signature="e#614#628#0" expanded="true" />
-                <element signature="e#681#695#0" expanded="true" />
-                <element signature="e#1266#1280#0" expanded="true" />
-                <element signature="e#4516#4530#0" expanded="true" />
-                <element signature="e#4591#4607#0" expanded="true" />
-                <element signature="e#5299#5313#0" expanded="true" />
-                <element signature="e#6052#6066#0" expanded="true" />
-                <element signature="e#6127#6143#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -805,10 +797,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="svd" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="svd" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/svd">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="21" selection-start="102" selection-end="102" vertical-scroll-proportion="0.05230386">
+            <state line="53" column="5" selection-start="998" selection-end="998" vertical-scroll-proportion="53.76">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SVD.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="123" column="46" selection-start="3392" selection-end="3392" vertical-scroll-proportion="0.57377046">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SVD2.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVD2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="256" column="52" selection-start="7839" selection-end="7839" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="svd2_c" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/svd2_c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="33" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PieceOfCake2.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="33" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -823,28 +853,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractRecommender.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/impl/recommender/AbstractRecommender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="56" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GenericUserBasedRecommender.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/impl/recommender/GenericUserBasedRecommender.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="37" column="7" selection-start="1704" selection-end="1727" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RefreshHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/impl/common/RefreshHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="7" selection-start="1026" selection-end="1057" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -876,14 +888,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/BrokenParquet/HopcroftKarp.java" />
-        <option value="$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java" />
-        <option value="$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" />
         <option value="$PROJECT_DIR$/src/BrokenParquet/HKM.java" />
         <option value="$PROJECT_DIR$/src/PieceOfCake/test" />
         <option value="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake2.java" />
         <option value="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" />
-        <option value="$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/mahout/org/apache/mahout/Version.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/mahout/org/apache/mahout/cf/taste/impl/model/file/FileDataModel.java" />
         <option value="$PROJECT_DIR$/YandexContest.iml" />
@@ -892,14 +900,18 @@
         <option value="$PROJECT_DIR$/src/BaselinePredictors/ss.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/LinearRegression.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/svd" />
+        <option value="$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java" />
+        <option value="$PROJECT_DIR$/src/BaselinePredictors/svd2_c" />
+        <option value="$PROJECT_DIR$/src/BaselinePredictors/SVD2.java" />
+        <option value="$PROJECT_DIR$/src/BaselinePredictors/SVD.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="358" />
-    <option name="y" value="13" />
-    <option name="width" value="1519" />
-    <option name="height" value="1007" />
+    <option name="x" value="132" />
+    <option name="y" value="5" />
+    <option name="width" value="1464" />
+    <option name="height" value="807" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -949,7 +961,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -981,6 +992,24 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PieceOfCake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YandexContest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="YandexContest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -998,32 +1027,11 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="BaselinePredictors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YandexContest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="YandexContest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BaselinePredictors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mahout-core-0.7-sources.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1039,13 +1047,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="last.edited.regexp" value="dasd a ." />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1056,25 +1064,9 @@
       <recent name="org.apache.mahout.cf.taste.impl.neighborhood" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SlopeOne">
+  <component name="RunManager" selected="Application.SVD">
     <configuration default="false" name="SimpleRecommender" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SimpleRecommender" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="YandexContest" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="HopcroftKarp" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="BrokenParquet.HopcroftKarp" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1143,6 +1135,22 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="SVD" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SVD" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="YandexContest" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -1155,19 +1163,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -1195,6 +1190,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1233,18 +1241,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.SimpleRecommender" />
-      <item index="1" class="java.lang.String" itemvalue="Application.HopcroftKarp" />
-      <item index="2" class="java.lang.String" itemvalue="Application.HKM" />
-      <item index="3" class="java.lang.String" itemvalue="Application.PieceOfCake" />
-      <item index="4" class="java.lang.String" itemvalue="Application.SlopeOne" />
+      <item index="1" class="java.lang.String" itemvalue="Application.HKM" />
+      <item index="2" class="java.lang.String" itemvalue="Application.PieceOfCake" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SlopeOne" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SVD" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SlopeOne" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SVD" />
         <item index="1" class="java.lang.String" itemvalue="Application.SimpleRecommender" />
-        <item index="2" class="java.lang.String" itemvalue="Application.PieceOfCake" />
-        <item index="3" class="java.lang.String" itemvalue="Application.HKM" />
-        <item index="4" class="java.lang.String" itemvalue="Application.HopcroftKarp" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SlopeOne" />
+        <item index="3" class="java.lang.String" itemvalue="Application.PieceOfCake" />
+        <item index="4" class="java.lang.String" itemvalue="Application.HKM" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1383,7 +1391,7 @@
     <option name="localTasksCounter" value="27" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -1404,7 +1412,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="358" y="13" width="1519" height="1007" extended-state="0" />
+    <frame x="132" y="5" width="1464" height="807" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16588235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1415,17 +1423,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2599432" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26492792" sideWeight="0.3435294" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934132" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36461538" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26462197" sideWeight="0.21846154" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26492792" sideWeight="0.6564706" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37176472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26462197" sideWeight="0.41692308" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964337" sideWeight="0.7400568" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2986111" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964337" sideWeight="0.7400568" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1499,31 +1507,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/neighborhood/UserNeighborhood.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1145" selection-end="1500" vertical-scroll-proportion="0.332696" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/recommender/Rescorer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="34" selection-start="1411" selection-end="1933" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/common/LongPair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="7" selection-start="876" selection-end="911" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/recommender/UserBasedRecommender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="7" selection-start="859" selection-end="859" vertical-scroll-proportion="0.12045889" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/recommender/CandidateItemsStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1161" selection-end="1416" vertical-scroll-proportion="0.34742647" />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/similarity/UserSimilarity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="73" selection-start="1915" selection-end="1915" vertical-scroll-proportion="0.0" />
@@ -1553,42 +1536,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/impl/recommender/GenericUserBasedRecommender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="7" selection-start="1704" selection-end="1727" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/MahoutRecommender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="341" column="27" selection-start="12826" selection-end="12826" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="24" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SlopeOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="52" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#207#233#0" expanded="true" />
-            <element signature="e#547#561#0" expanded="true" />
-            <element signature="e#614#628#0" expanded="true" />
-            <element signature="e#681#695#0" expanded="true" />
-            <element signature="e#1266#1280#0" expanded="true" />
-            <element signature="e#4516#4530#0" expanded="true" />
-            <element signature="e#4591#4607#0" expanded="true" />
-            <element signature="e#5299#5313#0" expanded="true" />
-            <element signature="e#6052#6066#0" expanded="true" />
-            <element signature="e#6127#6143#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1599,10 +1550,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="63" selection-start="840" selection-end="840" vertical-scroll-proportion="0.84541065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="33" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SlopeOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="52" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/impl/recommender/GenericUserBasedRecommender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="7" selection-start="1704" selection-end="1727" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="11" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/svd">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="102" selection-end="102" vertical-scroll-proportion="0.05230386">
+        <state line="53" column="5" selection-start="998" selection-end="998" vertical-scroll-proportion="53.76">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/svd2_c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="33" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVD2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="256" column="52" selection-start="7839" selection-end="7839" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="46" selection-start="3392" selection-end="3392" vertical-scroll-proportion="0.57377046">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
