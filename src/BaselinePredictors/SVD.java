@@ -87,7 +87,7 @@ public class SVD {
         for (int i = 0; i < t; i++) {
             ui = Integer.parseInt(rec[i].split(" ")[0]);
             mi = Integer.parseInt(rec[i].split(" ")[1]);
-//            double result = svd.mu + svd.b_u[ui] + svd.b_v[mi] + svd.u_f[ui][0]*svd.u_f[ui][1] + svd.v_f[mi][0]*svd.v_f[mi][1];
+//            double result = svd.mu + svd.b_u[ui] + svd.b_v[mi] + svd.u_f[ui][0]*svd.u_f[ui][1]*svd.u_f[ui][2] + svd.v_f[mi][0]*svd.v_f[mi][1]*svd.v_f[mi][2];
             double result = svd.mu + svd.b_u[ui] + svd.b_v[mi];
             System.out.println(result);
         }
@@ -118,7 +118,7 @@ public class SVD {
     void learn() {
 //    learning
         int count = 0;
-        while (Math.abs(old_rmse - rmse) > 0.000001 ) {
+        while (Math.abs(old_rmse - rmse) > 0.001 ) {
             old_rmse = rmse;
             rmse = 0;
             for (int u = 0; u < l.length; ++u) {

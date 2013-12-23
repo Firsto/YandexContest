@@ -4,19 +4,17 @@ package BaselinePredictors;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Map.Entry;
 
-public class SVD2 {
+public class SVD22 {
 
-    int MAX_RATINGS = 100001; // Ratings in entire training set (+1)
-    int MAX_CUSTOMERS = 1001; // Customers in the entire training set (+1)
-    int MAX_MOVIES = 1001; // Movies in the entire training set (+1)
-    int MAX_FEATURES = 1; // Number of features to use
-    int MIN_EPOCHS = 1; // Minimum number of epochs per feature
+    int MAX_RATINGS = 1000001; // Ratings in entire training set (+1)
+    int MAX_CUSTOMERS = 10001; // Customers in the entire training set (+1)
+    int MAX_MOVIES = 10001; // Movies in the entire training set (+1)
+    int MAX_FEATURES = 10; // Number of features to use
+    int MIN_EPOCHS = 3; // Minimum number of epochs per feature
     int MAX_EPOCHS = 200; // Max epochs per feature
 
     double MIN_IMPROVEMENT = 0.0001; // Minimum improvement required to continue current feature
@@ -55,11 +53,11 @@ public class SVD2 {
 
 
         int m_nRatingCount; // Current number of loaded ratings
-        Data_[] m_aRatings; // = new Data_[MAX_RATINGS]; // Array of ratings data
-        Movie[] m_aMovies; // = new Movie[MAX_MOVIES]; // Array of movie metrics
-        Customer[] m_aCustomers; // = new Customer[MAX_CUSTOMERS]; // Array of customer metrics
-        float[][] m_aMovieFeatures; // = new float[MAX_FEATURES][MAX_MOVIES]; // Array of features by movie (using floats to save space)
-        float[][] m_aCustFeatures; // = new float [MAX_FEATURES][MAX_CUSTOMERS]; // Array of features by customer (using floats to save space)
+        Data_[] m_aRatings = new Data_[MAX_RATINGS]; // Array of ratings data
+        Movie[] m_aMovies = new Movie[MAX_MOVIES]; // Array of movie metrics
+        Customer[] m_aCustomers = new Customer[MAX_CUSTOMERS]; // Array of customer metrics
+        float[][] m_aMovieFeatures = new float[MAX_FEATURES][MAX_MOVIES]; // Array of features by movie (using floats to save space)
+        float[][] m_aCustFeatures = new float [MAX_FEATURES][MAX_CUSTOMERS]; // Array of features by customer (using floats to save space)
         Map<Integer, Integer> m_mCustIds; // Map for one time translation of ids to compact array index
         float glAverage;
 
@@ -105,8 +103,7 @@ public class SVD2 {
 //-------------------------------------------------------------------
     int k,u,m,d,t,ui,mi;
     String[] rec;
-    String[] learn;
-//
+    //
 // LoadHistory
 // - Loop through all of the files in the training directory
 //
@@ -124,7 +121,14 @@ public class SVD2 {
             BufferedReader rdr = new BufferedReader(new InputStreamReader(System.in));
             String str = "";
 
-
+            str = rdr.readLine();
+            try{
+            k = Integer.parseInt(str.split(" ")[0]);
+            u = Integer.parseInt(str.split(" ")[1]);
+            m = Integer.parseInt(str.split(" ")[2]);
+            d = Integer.parseInt(str.split(" ")[3]);
+            t = Integer.parseInt(str.split(" ")[4]);
+            } catch(Exception e) {System.exit(0);}
             MAX_CUSTOMERS = u;
             MAX_MOVIES = m;
             MAX_RATINGS = m*u;
@@ -153,10 +157,10 @@ public class SVD2 {
 
 
 //            MAX_FEATURES = 1;
-//                rec = new String[t];
+                rec = new String[t];
                 int value;
                 if (d>0) for (int i = 0; i < d; i++) {
-                    str = learn[i];
+                    str = rdr.readLine();
                     ui=0;mi=0;value = 0;
                     try {
                     ui = Integer.parseInt(str.split(" ")[0]);
@@ -173,12 +177,12 @@ public class SVD2 {
                     m_nRatingCount++;
                     glAverage += value;
                 }
-//                if (t>0) for (int i = 0; i < t; i++) {
-//                    str = rdr.readLine();
-//                    rec[i] = str;
+                if (t>0) for (int i = 0; i < t; i++) {
+                    str = rdr.readLine();
+                    rec[i] = str;
 //                ui = Integer.parseInt(str.split(" ")[0]);
 //                mi = Integer.parseInt(str.split(" ")[1]);
-//                }
+                }
             rdr.close();
 
             glAverage /= (MAX_RATINGS-1);
@@ -427,9 +431,9 @@ public class SVD2 {
 
 
     public static void main(String[] args) throws IOException {
-        SVD2 engine = new SVD2();
+        SVD22 engine = new SVD22();
 
-        BufferedReader rdr = new BufferedReader(new InputStreamReader(System.in));
+/*        BufferedReader rdr = new BufferedReader(new InputStreamReader(System.in));
         String str = "";
 
         str = rdr.readLine();
@@ -440,26 +444,10 @@ public class SVD2 {
         engine.t = Integer.parseInt(str.split(" ")[4]);
         engine.MAX_CUSTOMERS = engine.u;
         engine.MAX_MOVIES = engine.m;
-        engine.MAX_FEATURES = engine.m*engine.u;
+        engine.MAX_FEATURES = 1;
+        */
 
         engine.init();
-        engine.learn = new String[engine.d];
-        engine.rec = new String[engine.t];
-
-        if (engine.d>0) for (int i = 0; i < engine.d; i++) {
-            str = rdr.readLine();
-            engine.learn[i] = str;
-//                ui = Integer.parseInt(str.split(" ")[0]);
-//                mi = Integer.parseInt(str.split(" ")[1]);
-        }
-
-        if (engine.t>0) for (int i = 0; i < engine.t; i++) {
-            str = rdr.readLine();
-            engine.rec[i] = str;
-//                ui = Integer.parseInt(str.split(" ")[0]);
-//                mi = Integer.parseInt(str.split(" ")[1]);
-        }
-
         engine.LoadHistory();
         engine.CalcMetrics();
         engine.CalcFeatures();
