@@ -18,17 +18,15 @@ package BaselinePredictors;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class SVD {
 
 // thx to http://habrahabr.ru/company/surfingbird/blog/141959/
 
     double lambda1 = 0.0;
-    double lambda2 = 0.0;
-    double eta = 0.1;
-    int features = 2;
+    double lambda2 = 0.015;
+    double eta = 0.01;
+    int features = 3;
 
     double[][] l;
 
@@ -57,7 +55,7 @@ public class SVD {
             svd.v_f = new double[m][svd.features];
             for (int i=0; i<m; ++i) {
                 for (int f=0; f < svd.features; ++f) {
-                    svd.v_f[i][f] = 0.05 * (f+1);
+                    svd.v_f[i][f] = 0.1;
                 }
             }
             svd.total = d;
@@ -82,13 +80,16 @@ public class SVD {
         }
 
         svd.learn();
-        svd.print_all();
-
+//        svd.print_all();
+        double result = 0;
         for (int i = 0; i < t; i++) {
             ui = Integer.parseInt(rec[i].split(" ")[0]);
             mi = Integer.parseInt(rec[i].split(" ")[1]);
-//            double result = svd.mu + svd.b_u[ui] + svd.b_v[mi] + svd.u_f[ui][0]*svd.u_f[ui][1]*svd.u_f[ui][2] + svd.v_f[mi][0]*svd.v_f[mi][1]*svd.v_f[mi][2];
-            double result = svd.mu + svd.b_u[ui] + svd.b_v[mi];
+
+//            result = svd.mu + svd.b_u[ui] + svd.b_v[mi] + svd.u_f[ui][0]*svd.u_f[ui][1]*svd.u_f[ui][2] + svd.v_f[mi][0]*svd.v_f[mi][1]*svd.v_f[mi][2];
+            result = svd.mu + svd.b_u[ui] + svd.b_v[mi] + svd.u_f[ui][0]*svd.u_f[ui][1]*svd.u_f[ui][2] + svd.v_f[mi][0]*svd.v_f[mi][1]*svd.v_f[mi][2];
+//            result = svd.mu + svd.b_u[ui] + svd.b_v[mi];
+//            double result = svd.mu + svd.b_u[ui] + svd.b_v[mi];
             System.out.println(result);
         }
     }
@@ -113,7 +114,7 @@ public class SVD {
     double err = 0;
     double rmse = 1;
     double old_rmse = 0;
-    double threshold = 0.01;
+    double threshold = 0.1;
 
     void learn() {
 //    learning

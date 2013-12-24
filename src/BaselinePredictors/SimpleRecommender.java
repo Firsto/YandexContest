@@ -78,7 +78,8 @@ public class SimpleRecommender {
             System.out.print(uw[i] + " ");
         }
         System.out.println();
-
+        System.out.println(uw[1]*mw[0]);
+        System.out.println(uw[2]*mw[1]);
     }
 
     public static double getPearsonCorrelation(double[] scores1,double[] scores2){

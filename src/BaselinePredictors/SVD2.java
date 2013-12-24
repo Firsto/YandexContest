@@ -4,24 +4,22 @@ package BaselinePredictors;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Map.Entry;
 
 public class SVD2 {
 
-    int MAX_RATINGS = 100001; // Ratings in entire training set (+1)
-    int MAX_CUSTOMERS = 1001; // Customers in the entire training set (+1)
-    int MAX_MOVIES = 1001; // Movies in the entire training set (+1)
+    int MAX_RATINGS = 10101; // Ratings in entire training set (+1)
+    int MAX_CUSTOMERS = 101; // Customers in the entire training set (+1)
+    int MAX_MOVIES = 101; // Movies in the entire training set (+1)
     int MAX_FEATURES = 1; // Number of features to use
-    int MIN_EPOCHS = 1; // Minimum number of epochs per feature
+    int MIN_EPOCHS = 2; // Minimum number of epochs per feature
     int MAX_EPOCHS = 200; // Max epochs per feature
 
-    double MIN_IMPROVEMENT = 0.0001; // Minimum improvement required to continue current feature
+    double MIN_IMPROVEMENT = 0.001; // Minimum improvement required to continue current feature
     double INIT = 0.1; // Initialization value for features
-    double LRATE = 0.001; // Learning rate parameter
+    double LRATE = 0.01; // Learning rate parameter
     double K = 0.015; // Regularization parameter used to minimize over-fitting
 
     //HashMap<Integer, Integer> IdMap;
@@ -120,8 +118,6 @@ public class SVD2 {
         glAverage = 0;
 //        System.out.println("Hi!");
 
-        try {
-            BufferedReader rdr = new BufferedReader(new InputStreamReader(System.in));
             String str = "";
 
 
@@ -179,17 +175,10 @@ public class SVD2 {
 //                ui = Integer.parseInt(str.split(" ")[0]);
 //                mi = Integer.parseInt(str.split(" ")[1]);
 //                }
-            rdr.close();
+
 
             glAverage /= (MAX_RATINGS-1);
 
-        }
-
-        catch(IOException e)
-        {
-//            System.out.println("DAFUQ U WRITIN");
-            System.exit(0);
-        }
     }
 
     void CalcMetrics()
@@ -291,7 +280,7 @@ public class SVD2 {
                 cnt++;
                 sq = 0;
                 rmse_last = rmse;
-
+//                System.out.println(cnt);
                 for (i=0; i<m_nRatingCount; i++)
                 {
                     rating = m_aRatings[i];
@@ -440,7 +429,7 @@ public class SVD2 {
         engine.t = Integer.parseInt(str.split(" ")[4]);
         engine.MAX_CUSTOMERS = engine.u;
         engine.MAX_MOVIES = engine.m;
-        engine.MAX_FEATURES = engine.m*engine.u;
+        engine.MAX_FEATURES = 1;
 
         engine.init();
         engine.learn = new String[engine.d];
@@ -459,7 +448,7 @@ public class SVD2 {
 //                ui = Integer.parseInt(str.split(" ")[0]);
 //                mi = Integer.parseInt(str.split(" ")[1]);
         }
-
+        rdr.close();
         engine.LoadHistory();
         engine.CalcMetrics();
         engine.CalcFeatures();
