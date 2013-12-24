@@ -18,7 +18,7 @@ package BaselinePredictors;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
+import java.util.WeakHashMap;
 
 public class SVDtw {
 
@@ -28,7 +28,10 @@ public class SVDtw {
     double lambda2 = 0.015;
     double eta = 0.01;
 
-    double[][] l;
+    //    int[][] l;
+    WeakHashMap<Integer,Integer> ratings = new WeakHashMap<>();
+//    int[] cust;
+//    int[] rate;
 
     public static void main(String[] args) {
         SVDtw svd = new SVDtw();
@@ -44,14 +47,15 @@ public class SVDtw {
             m = Integer.parseInt(str.split(" ")[2]);
             d = Integer.parseInt(str.split(" ")[3]);
             t = Integer.parseInt(str.split(" ")[4]);
-            svd.l = new double[u][m];
+//            svd.l = new int[u][m];
             svd.b_u = new double[u];
             svd.b_v = new double[m];
             svd.u_f = new double[u];
             svd.v_f = new double[m];
 //            Arrays.fill(svd.u_f, 0.1);
 //            Arrays.fill(svd.v_f, 0.1);
-
+//            svd.cust = new int[d];
+//            svd.rate = new int[d];
             svd.total = d;
 //            rec = new String[t];
             ut = new int[t];
@@ -62,7 +66,10 @@ public class SVDtw {
                 ui = Integer.parseInt(str.split(" ")[0]);
                 mi = Integer.parseInt(str.split(" ")[1]);
                 value = Integer.parseInt(str.split(" ")[2]);
-                svd.l[ui][mi] = value;
+//                svd.l[ui][mi] = value;
+                svd.ratings.put(ui*10000+mi,value);
+//                svd.cust[i]=ui*10000+mi;
+//                svd.rate[i]=value;
             }
             for (int i = 0; i < t; i++) {
                 str = rdr.readLine();
@@ -77,7 +84,7 @@ public class SVDtw {
         }
 
         svd.learn();
-        svd.print_all();
+//        svd.print_all();
         double result = 0;
 
         for (int i = 0; i < t; i++) {
@@ -117,17 +124,18 @@ public class SVDtw {
 
     void learn() {
 //    learning
-        int count = 0;
+        int count = 0; int rt=0;
         while (Math.abs(old_rmse - rmse) > 0.001 ) {
-            if (iter_no>300)break;
+//            if (iter_no>300)break;
             old_rmse = rmse;
             rmse = 0;
-            for (int u = 0; u < l.length; ++u) {
-                for (int v = 0; v < l[u].length; ++v) {
+            for (int u = 0; u < b_u.length; ++u) {
+                for (int v = 0; v < b_v.length; ++v) {
                     if(u_f[u]==0)u_f[u]=0.1;
                     if(v_f[v]==0)v_f[v]=0.1;
+                    if (ratings.containsKey(u*10000+v)) rt = ratings.get(u*10000+v); else rt=0;
 //                    err = l[u][v] - (mu + b_u[u] + b_v[v] + dot(u_f[u] , v_f[v]) );
-                    err = l[u][v] - ( b_u[u] + b_v[v] + u_f[u] * v_f[v] );
+                    err = rt - ( b_u[u] + b_v[v] + u_f[u] * v_f[v] );
                     rmse += err * err;
                     //  update predictors
                     mu += eta * err;
