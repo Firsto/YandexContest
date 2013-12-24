@@ -18,24 +18,25 @@ package BaselinePredictors;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
-public class SVD {
+public class SVDtw {
 
 // thx to http://habrahabr.ru/company/surfingbird/blog/141959/
 
     double lambda1 = 0.0;
     double lambda2 = 0.015;
     double eta = 0.01;
-    int features = 1;
 
     double[][] l;
 
     public static void main(String[] args) {
-        SVD svd = new SVD();
+        SVDtw svd = new SVDtw();
         BufferedReader rdr = new BufferedReader(new InputStreamReader(System.in));
         String str = "";
         int k=10, u=3, m=3, d=5, t=4, ui=0,mi=0;
-        String[] rec = new String[0];
+//        String[] rec = new String[0];
+        int[] ut=new int[0],mt=new int[0];
         try {
             str = rdr.readLine();
             k = Integer.parseInt(str.split(" ")[0]);
@@ -46,20 +47,15 @@ public class SVD {
             svd.l = new double[u][m];
             svd.b_u = new double[u];
             svd.b_v = new double[m];
-            svd.u_f = new double[u][svd.features];
-            for (int i=0; i<u; ++i) {
-                for (int f=0; f < svd.features; ++f) {
-                    svd.u_f[i][f] = 0.1;
-                }
-            }
-            svd.v_f = new double[m][svd.features];
-            for (int i=0; i<m; ++i) {
-                for (int f=0; f < svd.features; ++f) {
-                    svd.v_f[i][f] = 0.1;
-                }
-            }
+            svd.u_f = new double[u];
+            svd.v_f = new double[m];
+//            Arrays.fill(svd.u_f, 0.1);
+//            Arrays.fill(svd.v_f, 0.1);
+
             svd.total = d;
-            rec = new String[t];
+//            rec = new String[t];
+            ut = new int[t];
+            mt = new int[t];
             int value;
             for (int i = 0; i < d; i++) {
                 str = rdr.readLine();
@@ -70,10 +66,11 @@ public class SVD {
             }
             for (int i = 0; i < t; i++) {
                 str = rdr.readLine();
-                rec[i] = str;
-//                ui = Integer.parseInt(str.split(" ")[0]);
-//                mi = Integer.parseInt(str.split(" ")[1]);
+//                rec[i] = str;
+                ut[i] = Integer.parseInt(str.split(" ")[0]);
+                mt[i] = Integer.parseInt(str.split(" ")[1]);
             }
+            rdr.close();
         } catch (IOException e) {
             System.out.print(-1);
             System.exit(0);
@@ -84,15 +81,15 @@ public class SVD {
         double result = 0;
 
         for (int i = 0; i < t; i++) {
-            ui = Integer.parseInt(rec[i].split(" ")[0]);
-            mi = Integer.parseInt(rec[i].split(" ")[1]);
+            ui = ut[i];
+            mi = mt[i];
 
 //            result = svd.mu + svd.b_u[ui] + svd.b_v[mi] + svd.u_f[ui][0]*svd.u_f[ui][1]*svd.u_f[ui][2] + svd.v_f[mi][0]*svd.v_f[mi][1]*svd.v_f[mi][2];
 //            result = svd.mu + svd.b_u[ui] + svd.b_v[mi] + svd.u_f[ui][0]*svd.u_f[ui][1]*svd.u_f[ui][2] + svd.v_f[mi][0]*svd.v_f[mi][1]*svd.v_f[mi][2];
             double uf,vf,fr=0;
-            for (int j = 0; j < svd.features; j++) {
-                fr += svd.u_f[ui][j]*svd.v_f[mi][j];
-            }
+
+                fr += svd.u_f[ui]*svd.v_f[mi];
+
 
             result = fr;
 //            result = svd.mu + svd.b_u[ui] + svd.b_v[mi];
@@ -102,20 +99,14 @@ public class SVD {
         }
     }
 
-    double dot(double[] v1, double[] v2) {
-        double res = 0;
-        for(int i=0; i < features; ++i) {
-            res += v1[i] * v2[i];
-        }
-        return res;
-    }
 
 
     double mu = 0;
     double[] b_u;
     double[] b_v;
-    double[][] u_f;
-    double[][] v_f;
+    double[] u_f;
+    double[] v_f;
+    double uf=0.1,mf=0.1;
     int total;
 
     int iter_no = 0;
@@ -128,28 +119,27 @@ public class SVD {
 //    learning
         int count = 0;
         while (Math.abs(old_rmse - rmse) > 0.001 ) {
+            if (iter_no>300)break;
             old_rmse = rmse;
             rmse = 0;
             for (int u = 0; u < l.length; ++u) {
                 for (int v = 0; v < l[u].length; ++v) {
-
+                    if(u_f[u]==0)u_f[u]=0.1;
+                    if(v_f[v]==0)v_f[v]=0.1;
 //                    err = l[u][v] - (mu + b_u[u] + b_v[v] + dot(u_f[u] , v_f[v]) );
-                    err = l[u][v] - ( b_u[u] + b_v[v] + dot(u_f[u] , v_f[v]) );
+                    err = l[u][v] - ( b_u[u] + b_v[v] + u_f[u] * v_f[v] );
                     rmse += err * err;
-    //  update predictors
+                    //  update predictors
                     mu += eta * err;
                     b_u[u] += eta * (err - lambda2 * b_u[u]);
                     b_v[v] += eta * (err - lambda2 * b_v[v]);
-                    for (int i = 0; i < features; i++) {
-                        u_f[u][i] += eta * (err * v_f[v][i] - lambda2 * u_f[u][i]);
-                    }
-                    for (int i = 0; i < features; i++) {
-                        v_f[v][i] += eta * (err * u_f[u][i] - lambda2 * v_f[v][i]);
-                    }
+
+                        u_f[u] += eta * (err * v_f[v] - lambda2 * u_f[u]);
+                        v_f[v] += eta * (err * u_f[u] - lambda2 * v_f[v]);
                 }
             }
             ++iter_no;
-
+//            System.out.println(iter_no);
             rmse = Math.sqrt(rmse / total);
 //            System.out.print("Iteration iter_no:"+(++count)+"\tRMSE=" + rmse + "\n");
 
@@ -176,13 +166,13 @@ public class SVD {
         print_array(b_u, "User base:");
         print_array(b_v, "Item base:");
         System.out.print("User features:\n");
-        for(int u=0; u < u_f.length; ++u) {
-            print_array(u_f[u], "  user "+u+":");
-        }
+
+            print_array(u_f, "  user :");
+
         System.out.print("Item features:\n");
-        for(int v=0; v < v_f.length; ++v) {
-            print_array(v_f[v], "  item "+v+":");
-        }
+
+            print_array(v_f, "  item :");
+
     }
 
 }

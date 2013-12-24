@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class SVD2 {
+public class SVD23 {
 
     int MAX_RATINGS = 10101; // Ratings in entire training set (+1)
     int MAX_CUSTOMERS = 101; // Customers in the entire training set (+1)
@@ -17,10 +17,10 @@ public class SVD2 {
     int MIN_EPOCHS = 2; // Minimum number of epochs per feature
     int MAX_EPOCHS = 200; // Max epochs per feature
 
-    double MIN_IMPROVEMENT = 0.001; // Minimum improvement required to continue current feature
-    double INIT = 0.1; // Initialization value for features
-    double LRATE = 0.01; // Learning rate parameter
-    double K = 0.015; // Regularization parameter used to minimize over-fitting
+    float MIN_IMPROVEMENT = 0.001f; // Minimum improvement required to continue current feature
+    float INIT = 0.1f; // Initialization value for features
+    float LRATE = 0.01f; // Learning rate parameter
+    float K = 0.015f; // Regularization parameter used to minimize over-fitting
 
     //HashMap<Integer, Integer> IdMap;
     //Iterator IdItr = IdMap.entrySet().iterator();
@@ -29,8 +29,8 @@ public class SVD2 {
     {
         int RatingCount;
         int RatingSum;
-        double RatingAvg;
-        double PseudoAvg; // Weighted average used to deal with small movie counts
+        float RatingAvg;
+        float PseudoAvg; // Weighted average used to deal with small movie counts
     };
 
     class Customer
@@ -38,8 +38,8 @@ public class SVD2 {
         int CustomerId;
         int RatingCount;
         int RatingSum;
-        double RatingAvg;
-        double PseudoAvg;
+        float RatingAvg;
+        float PseudoAvg;
     };
 
     class Data_
@@ -52,17 +52,17 @@ public class SVD2 {
 
 
 
-        int m_nRatingCount; // Current number of loaded ratings
-        Data_[] m_aRatings; // = new Data_[MAX_RATINGS]; // Array of ratings data
-        Movie[] m_aMovies; // = new Movie[MAX_MOVIES]; // Array of movie metrics
-        Customer[] m_aCustomers; // = new Customer[MAX_CUSTOMERS]; // Array of customer metrics
-        float[][] m_aMovieFeatures; // = new float[MAX_FEATURES][MAX_MOVIES]; // Array of features by movie (using floats to save space)
-        float[][] m_aCustFeatures; // = new float [MAX_FEATURES][MAX_CUSTOMERS]; // Array of features by customer (using floats to save space)
-        Map<Integer, Integer> m_mCustIds; // Map for one time translation of ids to compact array index
-        float glAverage;
+    int m_nRatingCount; // Current number of loaded ratings
+    Data_[] m_aRatings; // = new Data_[MAX_RATINGS]; // Array of ratings data
+    Movie[] m_aMovies; // = new Movie[MAX_MOVIES]; // Array of movie metrics
+    Customer[] m_aCustomers; // = new Customer[MAX_CUSTOMERS]; // Array of customer metrics
+    float[] m_aMovieFeatures; // = new float[MAX_FEATURES][MAX_MOVIES]; // Array of features by movie (using floats to save space)
+    float[] m_aCustFeatures; // = new float [MAX_FEATURES][MAX_CUSTOMERS]; // Array of features by customer (using floats to save space)
+    Map<Integer, Integer> m_mCustIds; // Map for one time translation of ids to compact array index
+    float glAverage;
 
-//        double PredictRating(short movieId, int custId, int feature, float cache, boolean bTrailing=true);
-//        double PredictRating(short movieId, int custId);
+//        float PredictRating(short movieId, int custId, int feature, float cache, boolean bTrailing=true);
+//        float PredictRating(short movieId, int custId);
 
 //bool ReadNumber(wchar_t* pwzBufferIn, int nLength, int &nPosition, wchar_t* pwzBufferOut);
 //bool ParseInt(wchar_t* pwzBuffer, int nLength, int &nPosition, int& nValue);
@@ -86,27 +86,25 @@ public class SVD2 {
         m_aRatings = new Data_[MAX_RATINGS]; // Array of ratings data
         m_aMovies = new Movie[MAX_MOVIES]; // Array of movie metrics
         m_aCustomers = new Customer[MAX_CUSTOMERS]; // Array of customer metrics
-        m_aMovieFeatures = new float[MAX_FEATURES][MAX_MOVIES]; // Array of features by movie (using floats to save space)
-        m_aCustFeatures = new float [MAX_FEATURES][MAX_CUSTOMERS];
+        m_aMovieFeatures = new float[MAX_MOVIES]; // Array of features by movie (using floats to save space)
+        m_aCustFeatures = new float [MAX_CUSTOMERS];
         m_mCustIds = new HashMap<>();
         m_nRatingCount = 0;
 
         ui = new int[t];
         mi = new int[t];
 
-        for (int f=0; f<MAX_FEATURES; f++)
-        {
-            for (int i=0; i<MAX_MOVIES; i++) m_aMovieFeatures[f][i] = (float)INIT;
-            for (int i=0; i<MAX_CUSTOMERS; i++) m_aCustFeatures[f][i] = (float)INIT;
-        }
+        for (int i=0; i<MAX_MOVIES; i++) m_aMovieFeatures[i] = (float)INIT;
+        for (int i=0; i<MAX_CUSTOMERS; i++) m_aCustFeatures[i] = (float)INIT;
+
     }
 
-//-------------------------------------------------------------------
+    //-------------------------------------------------------------------
 // Data Loading / Saving
 //-------------------------------------------------------------------
     int k,u,m,d,t;
     int[] ui, mi;
-//    String[] rec;
+    //    String[] rec;
 //    String[] learn;
 //
 // LoadHistory
@@ -122,34 +120,34 @@ public class SVD2 {
         glAverage = 0;
 //        System.out.println("Hi!");
 
-            String str = "";
+        String str = "";
 
 
-            MAX_CUSTOMERS = u;
-            MAX_MOVIES = m;
-            MAX_RATINGS = d;
+        MAX_CUSTOMERS = u;
+        MAX_MOVIES = m;
+        MAX_RATINGS = d;
 
 
-            for (int i = 0; i < MAX_RATINGS; i++) {
-                m_aRatings[i] = new Data_();
-                m_aRatings[i].CustId = 0;
-                m_aRatings[i].MovieId = 0;
-                m_aRatings[i].Rating = 0;
-                m_aRatings[i].Cache = 0;
-            }
+        for (int i = 0; i < MAX_RATINGS; i++) {
+            m_aRatings[i] = new Data_();
+            m_aRatings[i].CustId = 0;
+            m_aRatings[i].MovieId = 0;
+            m_aRatings[i].Rating = 0;
+            m_aRatings[i].Cache = 0;
+        }
 
-            for (int i = 0; i<MAX_MOVIES; i++) {
-                m_aMovies[i] = new Movie();
-                m_aMovies[i].RatingCount = 0;
-                m_aMovies[i].RatingSum = 0;
-            }
+        for (int i = 0; i<MAX_MOVIES; i++) {
+            m_aMovies[i] = new Movie();
+            m_aMovies[i].RatingCount = 0;
+            m_aMovies[i].RatingSum = 0;
+        }
 
-            for (int i = 0; i<MAX_CUSTOMERS; i++) {
-                m_aCustomers[i] = new Customer();
-                m_aCustomers[i].RatingCount = 0;
-                m_aCustomers[i].RatingSum = 0;
-                m_aCustomers[i].CustomerId = i;
-            }
+        for (int i = 0; i<MAX_CUSTOMERS; i++) {
+            m_aCustomers[i] = new Customer();
+            m_aCustomers[i].RatingCount = 0;
+            m_aCustomers[i].RatingSum = 0;
+            m_aCustomers[i].CustomerId = i;
+        }
 
 
 //            MAX_FEATURES = 1;
@@ -220,8 +218,8 @@ public class SVD2 {
         for (i = 0; i<MAX_MOVIES; i++)
         {
             Movie movie = m_aMovies[i];
-            movie.RatingAvg = movie.RatingSum / (1.0 * movie.RatingCount);
-            movie.PseudoAvg = (3.23 * 25.0 + movie.RatingSum) / (25.0 + movie.RatingCount);
+            movie.RatingAvg = movie.RatingSum / (1.0f * movie.RatingCount);
+            movie.PseudoAvg = (3.23f * 25.0f + movie.RatingSum) / (25.0f + movie.RatingCount);
 //            m_aMovies[i]=movie;
 //            System.out.println(m_aMovies[i].PseudoAvg);
 //            System.out.println(movie.RatingAvg);
@@ -229,8 +227,8 @@ public class SVD2 {
 
         for (i = 0; i<MAX_CUSTOMERS; i++) {
             Customer cust = m_aCustomers[i]; //m_aCustomers[i].RatingCount = 0;
-            cust.RatingAvg = cust.RatingSum / (1.0 * cust.RatingCount);
-            cust.PseudoAvg = (3.23 * 25.0 + cust.RatingSum) / (25.0 + cust.RatingCount);
+            cust.RatingAvg = cust.RatingSum / (1.0f * cust.RatingCount);
+            cust.PseudoAvg = (3.23f * 25.0f + cust.RatingSum) / (25.0f + cust.RatingCount);
 //            System.out.println(m_aCustomers[i].PseudoAvg);
 //            m_aCustomers[i]=cust;
         }
@@ -242,13 +240,12 @@ public class SVD2 {
     {
         int f, e, i, custId, cnt = 0;
         Data_ rating;
-        double err, p, sq, rmse_last=0, rmse = 2.0;
+        float err, p, sq, rmse_last=0f, rmse = 2.0f;
         short movieId;
         float cf, mf;
 
 
-        for (f=0; f<MAX_FEATURES; f++)
-        {
+
 //            System.out.printf("- %d - \n", f);
 
 // Keep looping until you have passed a minimum number
@@ -266,23 +263,23 @@ public class SVD2 {
                     custId = rating.CustId;
 
 // Predict rating and calc error
-                    p = PredictRating(movieId, custId, f, rating.Cache, true);
+                    p = PredictRating(movieId, custId, rating.Cache, true);
 //                    System.out.println(p);
 //                    err = (1.0 * rating.Rating - (glAverage+(glAverage-m_aMovies[movieId].PseudoAvg)+(glAverage-m_aCustomers[custId].PseudoAvg)) - p);
-                    err = (1.0 * rating.Rating - p);
+                    err = (1.0f * rating.Rating - p);
                     sq += err*err;
 
 // Cache off old feature values
-                    cf = m_aCustFeatures[f][custId];
-                    mf = m_aMovieFeatures[f][movieId];
+                    cf = m_aCustFeatures[custId];
+                    mf = m_aMovieFeatures[movieId];
 
 // Cross-train the features
-                    m_aCustFeatures[f][custId] += (float)(LRATE * (err * mf - K * cf));
-                    m_aMovieFeatures[f][movieId] += (float)(LRATE * (err * cf - K * mf));
+                    m_aCustFeatures[custId] += (float)(LRATE * (err * mf - K * cf));
+                    m_aMovieFeatures[movieId] += (float)(LRATE * (err * cf - K * mf));
                 }
 
 //                rmse = Math.sqrt(sq / m_nRatingCount);
-                rmse = Math.sqrt(sq / m_nRatingCount);
+                rmse = (float)Math.sqrt(sq / m_nRatingCount);
 
 //                System.out.printf(" <set x='%d' y='%f' /> \n", cnt, rmse);
             }
@@ -292,42 +289,42 @@ public class SVD2 {
             {
                 rating = m_aRatings[i];
 //                System.out.println("oldcache: " + rating.Cache);
-                rating.Cache = (float)PredictRating(rating.MovieId, rating.CustId, f, rating.Cache, false);
+                rating.Cache = (float)PredictRating(rating.MovieId, rating.CustId, rating.Cache, false);
 //                System.out.println("RC : " + rating.Cache);
             }
 
-        }
+
     }
 
     void ProcessTest() {
 
-        double predicted;
+        float predicted;
         int movieId, custId, rating;
-        double rmse = 0.0;
+        float rmse = 0.0f;
 
 
         for (int i = 0; i < t; i++) {
-         //   ui = Integer.parseInt(rec[i].split(" ")[0]);
-         //   mi = Integer.parseInt(rec[i].split(" ")[1]);
+            //   ui = Integer.parseInt(rec[i].split(" ")[0]);
+            //   mi = Integer.parseInt(rec[i].split(" ")[1]);
 
-                custId = ui[i];
-                movieId = mi[i];
+            custId = ui[i];
+            movieId = mi[i];
 
-                rating = 0;
+            rating = 0;
 //                predicted = glAverage+(glAverage-m_aMovies[movieId].PseudoAvg)+(glAverage-m_aCustomers[custId].PseudoAvg)+PredictRating((short)movieId, custId);
 //            System.out.println("GLAVERAGE " + glAverage);
 
             predicted = PredictRating((short)movieId, custId);
-                rmse += Math.pow(predicted - rating, 2);
+            rmse += Math.pow(predicted - rating, 2);
 //            System.out.println(rmse);
 //            System.out.println("Predicted: " + PredictRating((short)movieId,custId));
 //            System.out.println(PredictRating((short)movieId,custId));
 //                System.out.println("Customer: " + custId+", Movie: "+movieId+", Rating: "+predicted);
-                System.out.println(predicted);
+            System.out.println(predicted);
         }
 
 
-            rmse = Math.sqrt(rmse / m_nRatingCount);
+//        rmse = Math.sqrt(rmse / m_nRatingCount);
 
 //            System.out.println("RMSE = "+rmse);
 
@@ -340,30 +337,30 @@ public class SVD2 {
 
         int i,j;
 
-        for (i = 0; i<MAX_FEATURES; i++) {
+
             for (j=1; j<MAX_CUSTOMERS; j++)
-                System.out.println(j+","+i+","+m_aCustFeatures[i][j]);
+                System.out.println(j+","+m_aCustFeatures[j]);
             for (j=1; j<MAX_MOVIES; j++)
-                System.out.println(j+","+i+","+m_aMovieFeatures[i][j]);
-        }
+                System.out.println(j+","+m_aMovieFeatures[j]);
+
 
 
     }
 
-    double PredictRating(short movieId, int custId, int feature, float cache, boolean bTrailing)
+    float PredictRating(short movieId, int custId,  float cache, boolean bTrailing)
     {
 // Get cached value for old features or default to an average
-        double sum = (cache > 0) ? cache : 1; //m_aMovies[movieId].PseudoAvg;
+        float sum = (cache > 0) ? cache : 1; //m_aMovies[movieId].PseudoAvg;
 
 // Add contribution of current feature
-        sum += m_aMovieFeatures[feature][movieId] * m_aCustFeatures[feature][custId];
+        sum += m_aMovieFeatures[movieId] * m_aCustFeatures[custId];
         if (sum > 10) sum = 10;
         if (sum < 0) sum = 0;
 
 // Add up trailing defaults values
         if (bTrailing)
         {
-            sum += (MAX_FEATURES-feature-1) * (INIT * INIT);
+            sum += (-1) * (INIT * INIT);
             if (sum > 10) sum = 10;
             if (sum < 0) sum = 0;
         }
@@ -377,16 +374,15 @@ public class SVD2 {
 // - It loops through the entire list of finished features
 //
 
-    double PredictRating(short movieId, int custId)
+    float PredictRating(short movieId, int custId)
     {
-        double sum = 1; //m_aMovies[movieId].PseudoAvg;
+        float sum = 1; //m_aMovies[movieId].PseudoAvg;
 
-        for (int f=0; f<MAX_FEATURES; f++)
-        {
-            sum += m_aMovieFeatures[f][movieId] * m_aCustFeatures[f][custId];
+
+            sum += m_aMovieFeatures[movieId] * m_aCustFeatures[custId];
             if (sum > 10) sum = 10;
             if (sum < 0) sum = 0;
-        }
+
 
         return sum;
     }
@@ -394,7 +390,7 @@ public class SVD2 {
 
 
     public static void main(String[] args) throws IOException {
-        SVD2 engine = new SVD2();
+        SVD23 engine = new SVD23();
 
         BufferedReader rdr = new BufferedReader(new InputStreamReader(System.in));
         String str = "";
@@ -417,26 +413,26 @@ public class SVD2 {
         int ui=0,mi=0,value = 0;
         if (engine.d>0) for (int i = 0; i < engine.d; i++) {
             str = rdr.readLine();
-                try {
-                    ui = Integer.parseInt(str.split(" ")[0]);
-                    mi = Integer.parseInt(str.split(" ")[1]);
-                    value = (int) Double.parseDouble(str.split(" ")[2]);
-                } catch(Exception e) {System.exit(0);}
-                engine.m_aRatings[engine.m_nRatingCount].MovieId = (short)mi;
-                engine.m_aRatings[engine.m_nRatingCount].CustId = ui;
-                engine.m_aRatings[engine.m_nRatingCount].Rating = (byte)value;
-                engine.m_aRatings[engine.m_nRatingCount].Cache = 0;
-                engine.m_nRatingCount++;
-                engine.glAverage += value;
-            }
+            try {
+                ui = Integer.parseInt(str.split(" ")[0]);
+                mi = Integer.parseInt(str.split(" ")[1]);
+                value = (int) Float.parseFloat(str.split(" ")[2]);
+            } catch(Exception e) {System.exit(0);}
+            engine.m_aRatings[engine.m_nRatingCount].MovieId = (short)mi;
+            engine.m_aRatings[engine.m_nRatingCount].CustId = ui;
+            engine.m_aRatings[engine.m_nRatingCount].Rating = (byte)value;
+            engine.m_aRatings[engine.m_nRatingCount].Cache = 0;
+            engine.m_nRatingCount++;
+            engine.glAverage += value;
+        }
         engine.glAverage /= (engine.MAX_RATINGS-1);
 
 
         if (engine.t>0) for (int i = 0; i < engine.t; i++) {
             str = rdr.readLine();
 //            engine.rec[i] = str;
-                engine.ui[i] = Integer.parseInt(str.split(" ")[0]);
-                engine.mi[i] = Integer.parseInt(str.split(" ")[1]);
+            engine.ui[i] = Integer.parseInt(str.split(" ")[0]);
+            engine.mi[i] = Integer.parseInt(str.split(" ")[1]);
         }
         rdr.close();
 

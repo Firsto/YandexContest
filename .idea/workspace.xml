@@ -6,17 +6,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/SVD23.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/SVDtw.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BaselinePredictors/SVDtwo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BaselinePredictors/SVD.java" afterPath="$PROJECT_DIR$/src/BaselinePredictors/SVD.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BaselinePredictors/SVD2.java" afterPath="$PROJECT_DIR$/src/BaselinePredictors/SVD2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java" afterPath="$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YandexContest.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/PieceOfCake.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387003604309" ignored="false" />
-    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387802311742" ignored="false" />
+    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387847465141" ignored="false" />
     <file path="/BrokenParquet.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386493598535" ignored="false" />
-    <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387789573498" ignored="false" />
+    <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387883432962" ignored="false" />
     <file path="/sdsdsd.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385732532179" ignored="false" />
     <file path="/MaxMatching.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386225924905" ignored="false" />
     <file path="/a.dummy" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386223773907" ignored="false" />
@@ -610,10 +612,14 @@
     <file path="/MahoutRecommender.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387163465615" ignored="false" />
     <file path="/SlopeOne.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387164710501" ignored="false" />
     <file path="/LinearRegression.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387299002212" ignored="false" />
-    <file path="/SVD.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387804805320" ignored="false" />
+    <file path="/SVD.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387861042421" ignored="false" />
     <file path="/svd" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387437692757" ignored="false" />
-    <file path="/SVD2.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387805444082" ignored="false" />
+    <file path="/SVD2.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387851930451" ignored="false" />
     <file path="/JAMASVD.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387778202111" ignored="false" />
+    <file path="/SVD23.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387861300744" ignored="false" />
+    <file path="/SVDwof.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387862121909" ignored="false" />
+    <file path="/SVDtw.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387882205548" ignored="false" />
+    <file path="/SVDtwo.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387884514217" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -761,7 +767,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/BaselinePredictors/SVD2.java" line="153" class="BaselinePredictors.SVD2" package="BaselinePredictors">
+      <breakpoint url="file://$PROJECT_DIR$/src/BaselinePredictors/SVD2.java" line="164" class="BaselinePredictors.SVD2" package="BaselinePredictors">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -776,7 +782,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/BaselinePredictors/SVD2.java" line="186" class="BaselinePredictors.SVD2" package="BaselinePredictors">
+      <breakpoint url="file://$PROJECT_DIR$/src/BaselinePredictors/SVD2.java" line="169" class="BaselinePredictors.SVD2" package="BaselinePredictors">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -791,7 +797,22 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/BaselinePredictors/SVD2.java" line="191" class="BaselinePredictors.SVD2" package="BaselinePredictors">
+      <breakpoint url="file://$PROJECT_DIR$/src/BaselinePredictors/SVD2.java" line="441" class="BaselinePredictors.SVD2" package="BaselinePredictors">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/BaselinePredictors/SVDtw.java" line="140" class="BaselinePredictors.SVDtw" package="BaselinePredictors">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -819,19 +840,50 @@
       <file leaf-file-name="SVD2.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVD2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="22" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
+            <state line="21" column="11" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SVD.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVD.java">
+      <file leaf-file-name="SVD23.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVD23.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="25" selection-start="3382" selection-end="3382" vertical-scroll-proportion="0.035413153">
+            <state line="90" column="64" selection-start="3306" selection-end="3306" vertical-scroll-proportion="124.76">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SVD.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="134" column="64" selection-start="3877" selection-end="3877" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SVDtw.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVDtw.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="14" selection-start="2190" selection-end="2190" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SVDtwo.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVDtwo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="131" column="69" selection-start="3806" selection-end="3806" vertical-scroll-proportion="0.49519232">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -904,10 +956,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake2.java" />
-        <option value="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" />
-        <option value="$PROJECT_DIR$/src/BaselinePredictors/mahout/org/apache/mahout/Version.java" />
-        <option value="$PROJECT_DIR$/src/BaselinePredictors/mahout/org/apache/mahout/cf/taste/impl/model/file/FileDataModel.java" />
         <option value="$PROJECT_DIR$/YandexContest.iml" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/MahoutRecommender.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/SlopeOne.java" />
@@ -919,15 +967,18 @@
         <option value="$PROJECT_DIR$/src/BaselinePredictors/JAMASVD.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/SVD22.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/SVD2.java" />
+        <option value="$PROJECT_DIR$/src/BaselinePredictors/SVD23.java" />
+        <option value="$PROJECT_DIR$/src/BaselinePredictors/SVDwof.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/SVD.java" />
+        <option value="$PROJECT_DIR$/src/BaselinePredictors/SVDtw.java" />
+        <option value="$PROJECT_DIR$/src/BaselinePredictors/SVDtwo.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="303" />
-    <option name="y" value="5" />
-    <option name="width" value="1519" />
-    <option name="height" value="1007" />
+    <option name="x" value="131" />
+    <option name="width" value="1462" />
+    <option name="height" value="853" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1063,13 +1114,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="last.edited.regexp" value="dasd a ." />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1081,39 +1132,7 @@
       <recent name="org.apache.mahout.cf.taste.impl.neighborhood" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SVD">
-    <configuration default="false" name="SimpleRecommender" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SimpleRecommender" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="YandexContest" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="SlopeOne" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SlopeOne" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="YandexContest" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.SVDtwo">
     <configuration default="false" name="SVD" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SVD" />
       <option name="VM_PARAMETERS" />
@@ -1130,8 +1149,40 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="SVD2" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SVD2" />
+    <configuration default="false" name="SVD23" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SVD23" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="YandexContest" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SVDwof" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SVDwof" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="YandexContest" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SVDtw" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SVDtw" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1152,8 +1203,8 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="JAMASVD" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="BaselinePredictors.JAMASVD" />
+    <configuration default="false" name="SVDtwo" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SVDtwo" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1182,19 +1233,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1220,6 +1258,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1257,19 +1308,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.SimpleRecommender" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SlopeOne" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SVD" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SVD2" />
-      <item index="4" class="java.lang.String" itemvalue="Application.JAMASVD" />
+      <item index="0" class="java.lang.String" itemvalue="Application.SVD" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SVD23" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SVDwof" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SVDtw" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SVDtwo" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SVD" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SVD2" />
-        <item index="2" class="java.lang.String" itemvalue="Application.JAMASVD" />
-        <item index="3" class="java.lang.String" itemvalue="Application.SimpleRecommender" />
-        <item index="4" class="java.lang.String" itemvalue="Application.SlopeOne" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SVDtwo" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SVDtw" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SVD" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SVDwof" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SVD23" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1433,27 +1484,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="303" y="5" width="1519" height="1007" extended-state="0" />
-    <editor active="false" />
+    <frame x="131" y="0" width="1462" height="853" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16588235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38936782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3045977" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2599432" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32705882" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32614943" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36461538" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2642416" sideWeight="0.20588236" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2642857" sideWeight="0.18390805" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2642416" sideWeight="0.53764707" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2564706" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2642857" sideWeight="0.47988507" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3347701" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964337" sideWeight="0.7400568" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1528,23 +1579,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/impl/common/RefreshHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="7" selection-start="1026" selection-end="1057" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/BaselinePredictors/mahout-core-0.7-sources.jar!/org/apache/mahout/cf/taste/impl/recommender/AbstractRecommender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="56" selection-start="1122" selection-end="1122" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/LinearRegression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="2" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SlopeOne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="52" selection-start="1336" selection-end="1336" vertical-scroll-proportion="0.0">
@@ -1606,13 +1640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVD22.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="33" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0">
@@ -1620,19 +1647,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVD22.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVD2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
+        <state line="21" column="11" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVD23.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="64" selection-start="3306" selection-end="3306" vertical-scroll-proportion="124.76">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="25" selection-start="3382" selection-end="3382" vertical-scroll-proportion="0.035413153">
+        <state line="134" column="64" selection-start="3877" selection-end="3877" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVDtw.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="14" selection-start="2190" selection-end="2190" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SVDtwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="69" selection-start="3806" selection-end="3806" vertical-scroll-proportion="0.49519232">
+          <folding />
         </state>
       </provider>
     </entry>
