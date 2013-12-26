@@ -13,13 +13,13 @@ public class SVD2 {
     int MAX_RATINGS = 10101; // Ratings in entire training set (+1)
     int MAX_CUSTOMERS = 101; // Customers in the entire training set (+1)
     int MAX_MOVIES = 101; // Movies in the entire training set (+1)
-    int MAX_FEATURES = 3; // Number of features to use
-    int MIN_EPOCHS = 10; // Minimum number of epochs per feature
+    int MAX_FEATURES = 64; // Number of features to use
+    int MIN_EPOCHS = 120; // Minimum number of epochs per feature
     int MAX_EPOCHS = 200; // Max epochs per feature
 
-    double MIN_IMPROVEMENT = 0.001; // Minimum improvement required to continue current feature
+    double MIN_IMPROVEMENT = 0.0001; // Minimum improvement required to continue current feature
     double INIT = 0.1; // Initialization value for features
-    double LRATE = 0.01; // Learning rate parameter
+    double LRATE = 0.001; // Learning rate parameter
     double K = 0.015; // Regularization parameter used to minimize over-fitting
 
     //HashMap<Integer, Integer> IdMap;
@@ -179,6 +179,7 @@ public class SVD2 {
             cid = rating.CustId;
             m_aCustomers[cid].RatingCount++;
             m_aCustomers[cid].RatingSum += rating.Rating;
+//            m_aCustomers[cid].CustomerId = cid;
 // Add customers (using a map to re-number id's to array indexes)
 
 //            itr m_mCustIds.find(rating.CustId);
@@ -326,11 +327,8 @@ public class SVD2 {
                 System.out.println(predicted);
         }
 
-
-            rmse = Math.sqrt(rmse / m_nRatingCount);
-
+//            rmse = Math.sqrt(rmse / m_nRatingCount);
 //            System.out.println("RMSE = "+rmse);
-
 
     }
 
@@ -353,19 +351,20 @@ public class SVD2 {
     double PredictRating(short movieId, int custId, int feature, float cache, boolean bTrailing)
     {
 // Get cached value for old features or default to an average
-        double sum = (cache > 0) ? cache : 1; //m_aMovies[movieId].PseudoAvg;
+//        double sum = (cache > 0) ? cache : 1;// m_aMovies[movieId].PseudoAvg;
+        double sum = (cache > 0) ? cache : m_aMovies[movieId].PseudoAvg;
 
 // Add contribution of current feature
         sum += m_aMovieFeatures[feature][movieId] * m_aCustFeatures[feature][custId];
         if (sum > 10) sum = 10;
-        if (sum < 0) sum = 0;
+        if (sum < 1) sum = 1;
 
 // Add up trailing defaults values
         if (bTrailing)
         {
             sum += (MAX_FEATURES-feature-1) * (INIT * INIT);
             if (sum > 10) sum = 10;
-            if (sum < 0) sum = 0;
+            if (sum < 1) sum = 1;
         }
 
         return sum;
@@ -379,13 +378,14 @@ public class SVD2 {
 
     double PredictRating(short movieId, int custId)
     {
-        double sum = 1; //m_aMovies[movieId].PseudoAvg;
+//        double sum = 1; //m_aMovies[movieId].PseudoAvg;
+        double sum = m_aMovies[movieId].PseudoAvg;
 
         for (int f=0; f<MAX_FEATURES; f++)
         {
             sum += m_aMovieFeatures[f][movieId] * m_aCustFeatures[f][custId];
             if (sum > 10) sum = 10;
-            if (sum < 0) sum = 0;
+            if (sum < 1) sum = 1;
         }
 
         return sum;
@@ -429,7 +429,7 @@ public class SVD2 {
                 engine.m_nRatingCount++;
                 engine.glAverage += value;
             }
-        engine.glAverage /= (engine.MAX_RATINGS-1);
+        engine.glAverage /= (engine.MAX_RATINGS);
 
 
         if (engine.t>0) for (int i = 0; i < engine.t; i++) {

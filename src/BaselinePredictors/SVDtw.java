@@ -27,7 +27,7 @@ public class SVDtw {
 
     double lambda1 = 0.0;
     double lambda2 = 0.015;
-    double eta = 0.01;
+    double eta = 0.001;
 
     //    int[][] l;
     WeakHashMap<Integer,Integer> ratings = new WeakHashMap<>();
@@ -96,7 +96,7 @@ public class SVDtw {
 //            result = svd.mu + svd.b_u[ui] + svd.b_v[mi] + svd.u_f[ui][0]*svd.u_f[ui][1]*svd.u_f[ui][2] + svd.v_f[mi][0]*svd.v_f[mi][1]*svd.v_f[mi][2];
             double uf,vf,fr=0;
 
-                fr += svd.u_f[ui]*svd.v_f[mi];
+            fr += svd.u_f[ui]*svd.v_f[mi];
 
 
             result = fr;
@@ -143,8 +143,8 @@ public class SVDtw {
                     b_u[u] += eta * (err - lambda2 * b_u[u]);
                     b_v[v] += eta * (err - lambda2 * b_v[v]);
 
-                        u_f[u] += eta * (err * v_f[v] - lambda2 * u_f[u]);
-                        v_f[v] += eta * (err * u_f[u] - lambda2 * v_f[v]);
+                    u_f[u] += eta * (err * v_f[v] - lambda2 * u_f[u]);
+                    v_f[v] += eta * (err * u_f[u] - lambda2 * v_f[v]);
                 }
             }
             ++iter_no;
@@ -176,11 +176,11 @@ public class SVDtw {
         print_array(b_v, "Item base:");
         System.out.print("User features:\n");
 
-            print_array(u_f, "  user :");
+        print_array(u_f, "  user :");
 
         System.out.print("Item features:\n");
 
-            print_array(v_f, "  item :");
+        print_array(v_f, "  item :");
 
     }
 
