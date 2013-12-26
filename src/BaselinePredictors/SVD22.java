@@ -131,7 +131,7 @@ public class SVD22 {
             } catch(Exception e) {System.exit(0);}
             MAX_CUSTOMERS = u;
             MAX_MOVIES = m;
-            MAX_RATINGS = m*u;
+            MAX_RATINGS = d;
 
 
             for (int i = 0; i < MAX_RATINGS; i++) {

@@ -26,7 +26,7 @@ public class SVD {
     double lambda1 = 0.0;
     double lambda2 = 0.015;
     double eta = 0.01;
-    int features = 1;
+    int features = 5;
 
     double[][] l;
 
@@ -55,7 +55,7 @@ public class SVD {
             svd.v_f = new double[m][svd.features];
             for (int i=0; i<m; ++i) {
                 for (int f=0; f < svd.features; ++f) {
-                    svd.v_f[i][f] = 0.1;
+                    svd.v_f[i][f] = 0.05 * f ;
                 }
             }
             svd.total = d;
@@ -95,8 +95,8 @@ public class SVD {
             }
 
             result = fr;
+//            result = svd.mu + svd.b_u[ui] + svd.b_v[mi] ;
 //            result = svd.mu + svd.b_u[ui] + svd.b_v[mi];
-//            double result = svd.mu + svd.b_u[ui] + svd.b_v[mi];
             result=svd.mu-result;
             System.out.println(result>10?10:result);
         }
@@ -122,29 +122,30 @@ public class SVD {
     double err = 0;
     double rmse = 1;
     double old_rmse = 0;
-    double threshold = 0.1;
-
+    double threshold = 0.01;
+    double ut,vt;
     void learn() {
 //    learning
         int count = 0;
-        while (Math.abs(old_rmse - rmse) > 0.001 ) {
+        while (Math.abs(old_rmse - rmse) > 0.00001 ) {
             old_rmse = rmse;
             rmse = 0;
             for (int u = 0; u < l.length; ++u) {
                 for (int v = 0; v < l[u].length; ++v) {
 
 //                    err = l[u][v] - (mu + b_u[u] + b_v[v] + dot(u_f[u] , v_f[v]) );
-                    err = l[u][v] - ( b_u[u] + b_v[v] + dot(u_f[u] , v_f[v]) );
+//                    err = l[u][v] - ( b_u[u] + b_v[v] + dot(u_f[u] , v_f[v]) );
+                    err = l[u][v] - ( dot(u_f[u] , v_f[v]) );
                     rmse += err * err;
     //  update predictors
                     mu += eta * err;
                     b_u[u] += eta * (err - lambda2 * b_u[u]);
                     b_v[v] += eta * (err - lambda2 * b_v[v]);
+
                     for (int i = 0; i < features; i++) {
-                        u_f[u][i] += eta * (err * v_f[v][i] - lambda2 * u_f[u][i]);
-                    }
-                    for (int i = 0; i < features; i++) {
-                        v_f[v][i] += eta * (err * u_f[u][i] - lambda2 * v_f[v][i]);
+                        ut = u_f[u][i]; vt = v_f[v][i];
+                        u_f[u][i] += eta * (err * vt - lambda2 * ut);
+                        v_f[v][i] += eta * (err * ut - lambda2 * vt);
                     }
                 }
             }

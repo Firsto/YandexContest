@@ -18,6 +18,7 @@ package BaselinePredictors;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.WeakHashMap;
 
 public class SVDtw {
@@ -52,8 +53,8 @@ public class SVDtw {
             svd.b_v = new double[m];
             svd.u_f = new double[u];
             svd.v_f = new double[m];
-//            Arrays.fill(svd.u_f, 0.1);
-//            Arrays.fill(svd.v_f, 0.1);
+            Arrays.fill(svd.u_f, 0.1);
+            Arrays.fill(svd.v_f, 0.1);
 //            svd.cust = new int[d];
 //            svd.rate = new int[d];
             svd.total = d;
@@ -99,7 +100,7 @@ public class SVDtw {
 
 
             result = fr;
-//            result = svd.mu + svd.b_u[ui] + svd.b_v[mi];
+//            result = svd.mu + svd.b_u[ui] + svd.b_v[mi] + fr;
 //            double result = svd.mu + svd.b_u[ui] + svd.b_v[mi];
             result=svd.mu-result;
             System.out.println(result>10?10:result);
@@ -120,22 +121,22 @@ public class SVDtw {
     double err = 0;
     double rmse = 1;
     double old_rmse = 0;
-    double threshold = 0.1;
+    double threshold = 0.01;
 
     void learn() {
 //    learning
         int count = 0; int rt=0;
-        while (Math.abs(old_rmse - rmse) > 0.001 ) {
+        while (Math.abs(old_rmse - rmse) > 0.00001 ) {
 //            if (iter_no>300)break;
             old_rmse = rmse;
             rmse = 0;
             for (int u = 0; u < b_u.length; ++u) {
                 for (int v = 0; v < b_v.length; ++v) {
-                    if(u_f[u]==0)u_f[u]=0.1;
-                    if(v_f[v]==0)v_f[v]=0.1;
+//                    if(u_f[u]==0)u_f[u]=0.1;
+//                    if(v_f[v]==0)v_f[v]=0.1;
                     if (ratings.containsKey(u*10000+v)) rt = ratings.get(u*10000+v); else rt=0;
-//                    err = l[u][v] - (mu + b_u[u] + b_v[v] + dot(u_f[u] , v_f[v]) );
-                    err = rt - ( b_u[u] + b_v[v] + u_f[u] * v_f[v] );
+                    err = rt - (mu + b_u[u] + b_v[v] + u_f[u] * v_f[v]);
+//                    err = rt - ( b_u[u] + b_v[v] + u_f[u] * v_f[v] );
                     rmse += err * err;
                     //  update predictors
                     mu += eta * err;

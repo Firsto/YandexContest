@@ -13,8 +13,8 @@ public class SVD2 {
     int MAX_RATINGS = 10101; // Ratings in entire training set (+1)
     int MAX_CUSTOMERS = 101; // Customers in the entire training set (+1)
     int MAX_MOVIES = 101; // Movies in the entire training set (+1)
-    int MAX_FEATURES = 1; // Number of features to use
-    int MIN_EPOCHS = 2; // Minimum number of epochs per feature
+    int MAX_FEATURES = 3; // Number of features to use
+    int MIN_EPOCHS = 10; // Minimum number of epochs per feature
     int MAX_EPOCHS = 200; // Max epochs per feature
 
     double MIN_IMPROVEMENT = 0.001; // Minimum improvement required to continue current feature
@@ -407,7 +407,7 @@ public class SVD2 {
         engine.t = Integer.parseInt(str.split(" ")[4]);
         engine.MAX_CUSTOMERS = engine.u;
         engine.MAX_MOVIES = engine.m;
-        engine.MAX_FEATURES = 1;
+//        engine.MAX_FEATURES = 1;
         engine.MAX_RATINGS = engine.d;
 
         engine.init();

@@ -24,7 +24,7 @@ public class SVDtwo {
 // thx to http://habrahabr.ru/company/surfingbird/blog/141959/
 
     double lambda1 = 0.0;
-    double lambda2 = 0.15;
+    double lambda2 = 0.015;
     double eta = 0.01;
 
     double[][] l;
@@ -76,7 +76,7 @@ public class SVDtwo {
         }
 
         svd.learn();
-        svd.print_all();
+//        svd.print_all();
         double result = 0;
 
         for (int i = 0; i < t; i++) {
@@ -112,13 +112,13 @@ public class SVDtwo {
     double err = 0;
     double rmse = 1;
     double old_rmse = 0;
-    double threshold = 0.1;
+    double threshold = 0.01;
 
     void learn() {
 //    learning
         int count = 0;
-        while (Math.abs(old_rmse - rmse) > 0.001 ) {
-            if (iter_no>300)break;
+        while (Math.abs(old_rmse - rmse) > 0.0001 ) {
+//            if (iter_no>300)break;
             old_rmse = rmse;
             rmse = 0;
             for (int u = 0; u < l.length; ++u) {
