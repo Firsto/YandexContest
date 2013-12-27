@@ -179,7 +179,7 @@ public class SVD2 {
             cid = rating.CustId;
             m_aCustomers[cid].RatingCount++;
             m_aCustomers[cid].RatingSum += rating.Rating;
-//            m_aCustomers[cid].CustomerId = cid;
+            m_aCustomers[cid].CustomerId = cid;
 // Add customers (using a map to re-number id's to array indexes)
 
 //            itr m_mCustIds.find(rating.CustId);
