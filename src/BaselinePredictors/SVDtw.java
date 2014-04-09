@@ -18,7 +18,6 @@ package BaselinePredictors;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.WeakHashMap;
 
 public class SVDtw {
@@ -53,8 +52,8 @@ public class SVDtw {
             svd.b_v = new double[m];
             svd.u_f = new double[u];
             svd.v_f = new double[m];
-            Arrays.fill(svd.u_f, 0.1);
-            Arrays.fill(svd.v_f, 0.1);
+//            Arrays.fill(svd.u_f, 0.1);
+//            Arrays.fill(svd.v_f, 0.1);
 //            svd.cust = new int[d];
 //            svd.rate = new int[d];
             svd.total = d;
@@ -96,11 +95,11 @@ public class SVDtw {
 //            result = svd.mu + svd.b_u[ui] + svd.b_v[mi] + svd.u_f[ui][0]*svd.u_f[ui][1]*svd.u_f[ui][2] + svd.v_f[mi][0]*svd.v_f[mi][1]*svd.v_f[mi][2];
             double uf,vf,fr=0;
 
-            fr += svd.u_f[ui]*svd.v_f[mi];
+                fr += svd.u_f[ui]*svd.v_f[mi];
 
 
             result = fr;
-//            result = svd.mu + svd.b_u[ui] + svd.b_v[mi] + fr;
+//            result = svd.mu + svd.b_u[ui] + svd.b_v[mi];
 //            double result = svd.mu + svd.b_u[ui] + svd.b_v[mi];
             result=svd.mu-result;
             System.out.println(result>10?10:result);
@@ -121,30 +120,30 @@ public class SVDtw {
     double err = 0;
     double rmse = 1;
     double old_rmse = 0;
-    double threshold = 0.01;
+    double threshold = 0.1;
 
     void learn() {
 //    learning
         int count = 0; int rt=0;
-        while (Math.abs(old_rmse - rmse) > 0.00001 ) {
+        while (Math.abs(old_rmse - rmse) > 0.001 ) {
 //            if (iter_no>300)break;
             old_rmse = rmse;
             rmse = 0;
             for (int u = 0; u < b_u.length; ++u) {
                 for (int v = 0; v < b_v.length; ++v) {
-//                    if(u_f[u]==0)u_f[u]=0.1;
-//                    if(v_f[v]==0)v_f[v]=0.1;
+                    if(u_f[u]==0)u_f[u]=0.1;
+                    if(v_f[v]==0)v_f[v]=0.1;
                     if (ratings.containsKey(u*10000+v)) rt = ratings.get(u*10000+v); else rt=0;
-                    err = rt - (mu + b_u[u] + b_v[v] + u_f[u] * v_f[v]);
-//                    err = rt - ( b_u[u] + b_v[v] + u_f[u] * v_f[v] );
+//                    err = l[u][v] - (mu + b_u[u] + b_v[v] + dot(u_f[u] , v_f[v]) );
+                    err = rt - ( b_u[u] + b_v[v] + u_f[u] * v_f[v] );
                     rmse += err * err;
                     //  update predictors
                     mu += eta * err;
                     b_u[u] += eta * (err - lambda2 * b_u[u]);
                     b_v[v] += eta * (err - lambda2 * b_v[v]);
 
-                    u_f[u] += eta * (err * v_f[v] - lambda2 * u_f[u]);
-                    v_f[v] += eta * (err * u_f[u] - lambda2 * v_f[v]);
+                        u_f[u] += eta * (err * v_f[v] - lambda2 * u_f[u]);
+                        v_f[v] += eta * (err * u_f[u] - lambda2 * v_f[v]);
                 }
             }
             ++iter_no;
@@ -176,11 +175,11 @@ public class SVDtw {
         print_array(b_v, "Item base:");
         System.out.print("User features:\n");
 
-        print_array(u_f, "  user :");
+            print_array(u_f, "  user :");
 
         System.out.print("Item features:\n");
 
-        print_array(v_f, "  item :");
+            print_array(v_f, "  item :");
 
     }
 

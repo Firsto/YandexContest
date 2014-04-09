@@ -18,7 +18,6 @@ package BaselinePredictors;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.WeakHashMap;
 
 public class SVD {
 
@@ -29,8 +28,7 @@ public class SVD {
     double eta = 0.01;
     int features = 10;
 
-    WeakHashMap<Integer,Integer> ratings = new WeakHashMap<>();
-//    double[][] l;
+    double[][] l;
 
     public static void main(String[] args) {
         SVD svd = new SVD();
@@ -45,7 +43,7 @@ public class SVD {
             m = Integer.parseInt(str.split(" ")[2]);
             d = Integer.parseInt(str.split(" ")[3]);
             t = Integer.parseInt(str.split(" ")[4]);
-//            svd.l = new double[u][m];
+            svd.l = new double[u][m];
             svd.b_u = new double[u];
             svd.b_v = new double[m];
             svd.u_f = new double[u][svd.features];
@@ -68,8 +66,7 @@ public class SVD {
                 ui = Integer.parseInt(str.split(" ")[0]);
                 mi = Integer.parseInt(str.split(" ")[1]);
                 value = Integer.parseInt(str.split(" ")[2]);
-//                svd.l[ui][mi] = value;
-                svd.ratings.put(ui*10000+mi,value);
+                svd.l[ui][mi] = value;
             }
             for (int i = 0; i < t; i++) {
                 str = rdr.readLine();
@@ -83,7 +80,7 @@ public class SVD {
         }
 
         svd.learn();
-//        svd.print_all();
+        svd.print_all();
         double result = 0;
 
         for (int i = 0; i < t; i++) {
@@ -134,23 +131,21 @@ public class SVD {
         while (Math.abs(old_rmse - rmse) > 0.00001 ) {
             old_rmse = rmse;
             rmse = 0;
-            for (int u = 0; u < b_u.length; ++u) {
-                for (int v = 0; v < b_v.length; ++v) {
+            for (int u = 0; u < l.length; ++u) {
+                for (int v = 0; v < l[u].length; ++v) {
 
 //                    err = l[u][v] - (mu + b_u[u] + b_v[v] + dot(u_f[u] , v_f[v]) );
-//                    err = l[u][v] - ( b_u[u] + b_v[v] + dot(u_f[u] , v_f[v]) );
-                    if (ratings.containsKey(u*10000+v)) rt = ratings.get(u*10000+v); else rt=0;
-                    err = rt - ( dot(u_f[u] , v_f[v]) );
+                    err = l[u][v] - ( b_u[u] + b_v[v] + dot(u_f[u] , v_f[v]) );
                     rmse += err * err;
     //  update predictors
                     mu += eta * err;
                     b_u[u] += eta * (err - lambda2 * b_u[u]);
                     b_v[v] += eta * (err - lambda2 * b_v[v]);
-
                     for (int i = 0; i < features; i++) {
-                        ut = u_f[u][i]; vt = v_f[v][i];
-                        u_f[u][i] += eta * (err * vt - lambda2 * ut);
-                        v_f[v][i] += eta * (err * ut - lambda2 * vt);
+                        u_f[u][i] += eta * (err * v_f[v][i] - lambda2 * u_f[u][i]);
+                    }
+                    for (int i = 0; i < features; i++) {
+                        v_f[v][i] += eta * (err * u_f[u][i] - lambda2 * v_f[v][i]);
                     }
                 }
             }
