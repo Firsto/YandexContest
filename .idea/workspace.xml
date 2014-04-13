@@ -12,7 +12,7 @@
     <ignored path="YandexContest.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/PieceOfCake.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387003604309" ignored="false" />
-    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397312501364" ignored="false" />
+    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397370266814" ignored="false" />
     <file path="/BrokenParquet.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386493598535" ignored="false" />
     <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397050737802" ignored="false" />
     <file path="/sdsdsd.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385732532179" ignored="false" />
@@ -616,7 +616,7 @@
     <file path="/SVDwof.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387862121909" ignored="false" />
     <file path="/SVDtw.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387936967068" ignored="false" />
     <file path="/SVDtwo.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387884514217" ignored="false" />
-    <file path="/FormatsParserConverter.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397320895828" ignored="false" />
+    <file path="/FormatsParserConverter.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397388479724" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -837,10 +837,10 @@
       <file leaf-file-name="FormatsParserConverter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="20" selection-start="2496" selection-end="2496" vertical-scroll-proportion="1.225">
+            <state line="164" column="26" selection-start="6864" selection-end="6864" vertical-scroll-proportion="0.41103202">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1378#1399#0" expanded="true" />
+                <element signature="e#375#396#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -889,8 +889,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="494" />
-    <option name="y" value="7" />
+    <option name="x" value="533" />
+    <option name="y" value="13" />
     <option name="width" value="1441" />
     <option name="height" value="1035" />
   </component>
@@ -1010,13 +1010,13 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="last.edited.regexp" value="dasd a ." />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1135,19 +1135,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1173,6 +1160,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1374,7 +1374,11 @@
       <created>1397056795678</created>
       <updated>1397056795678</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="YandexContest — Summer 2014&#10;                     &#10; FormatParserConverter">
+      <created>1397321563898</created>
+      <updated>1397321563898</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1398,7 +1402,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="494" y="7" width="1441" height="1035" extended-state="0" />
+    <frame x="533" y="13" width="1441" height="1035" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16588235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1411,11 +1415,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32588235" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36461538" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26323423" sideWeight="0.1856492" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26323423" sideWeight="0.18678816" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26323423" sideWeight="0.48177677" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33257404" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26323423" sideWeight="0.48291573" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33029613" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1465,7 +1469,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="YandexContest — Summer 2014&#10;&#10;FormatParserConverter" />
+    <option name="LAST_COMMIT_MESSAGE" value="YandexContest — Summer 2014&#10;                     &#10; FormatParserConverter" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1486,6 +1490,7 @@
     <MESSAGE value="YandexContest recommender" />
     <MESSAGE value="YandexContest — Summer 2014" />
     <MESSAGE value="YandexContest — Summer 2014&#10;&#10;FormatParserConverter" />
+    <MESSAGE value="YandexContest — Summer 2014&#10;                     &#10; FormatParserConverter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1578,10 +1583,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="20" selection-start="2496" selection-end="2496" vertical-scroll-proportion="1.225">
+        <state line="164" column="26" selection-start="6864" selection-end="6864" vertical-scroll-proportion="0.41103202">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1378#1399#0" expanded="true" />
+            <element signature="e#375#396#0" expanded="true" />
           </folding>
         </state>
       </provider>

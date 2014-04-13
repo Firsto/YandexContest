@@ -14,7 +14,7 @@ import java.util.Map;
  * Time: 20:10
  */
 public class FormatsParserConverter {
-
+    static HashMap<Integer, FileKeeper> fileSystem = new HashMap<Integer, FileKeeper>();
     public static void main(String[] args) {
 
         String inputFormat = "";
@@ -43,7 +43,7 @@ public class FormatsParserConverter {
         for (String s : fileTree) {
             fileList.add(new FileKeeper(s, inputFormat));
         }
-        HashMap<Integer, FileKeeper> fileSystem = new HashMap<Integer, FileKeeper>();
+//        HashMap<Integer, FileKeeper> fileSystem = new HashMap<Integer, FileKeeper>();
         for (FileKeeper fileKeeper : fileList) {
 //            System.out.println(fileKeeper.initialInfo);
             fileKeeper.initialize();
@@ -57,6 +57,8 @@ public class FormatsParserConverter {
                 if (fk.parentName != null && fk.parentName.equals(keeper.name) && (fk.loadLevel == keeper.loadLevel+1)) {
                     fk.parentId = keeper.id;
                     break;
+                } else if (fk.parentName == null) {
+                    fk.parentId = -1;
                 }
             }
         }
@@ -75,27 +77,116 @@ public class FormatsParserConverter {
         }
 
         // OUTPUT FIND
-        if (outputFormat.equals("python")) {
+        if (outputFormat.equals("find")) {
             System.out.println(fileSystem.size());
             for (Map.Entry<Integer, FileKeeper> fileKeeperEntry : fileSystem.entrySet()) {
-//                for (int i = 0; i < fileKeeperEntry.getValue().loadLevel; i++) {
-//                    System.out.print("    ");
-//                }
-                if (fileKeeperEntry.getValue().parentName != null) System.out.print(fileKeeperEntry.getValue().parentName + "   ");
-                System.out.println(fileKeeperEntry.getValue().name + " " + fileKeeperEntry.getKey());
+                int id = fileKeeperEntry.getValue().id;
+                String fullName = "";
+                while (fileSystem.get(id).parentName != null) {
+                    FileKeeper fk = fileSystem.get(id);
+                    if (fk.parentName != null) {
+                        fullName = fk.parentName + "/" + fullName;
+                        id = fk.parentId;
+                    }
+                }
+                System.out.println(fullName + fileKeeperEntry.getValue().name + " " + fileKeeperEntry.getKey());
             }
         }
 
         // OUTPUT PYTHON
-//        if (outputFormat.equals("python")) {
-//            System.out.println(fileSystem.size());
+        if (outputFormat.equals("python")) {
+            System.out.println(fileSystem.size());
+            for (Map.Entry<Integer, FileKeeper> fileKeeperEntry : fileSystem.entrySet()) {
+                for (int i = 0; i < fileKeeperEntry.getValue().loadLevel; i++) {
+                    System.out.print("    ");
+                }
+                System.out.println(fileKeeperEntry.getValue().name + " " + fileKeeperEntry.getKey());
+            }
+        }
+
+        // OUTPUT ACM1
+        if (outputFormat.equals("acm1")) {
+            System.out.println(fileSystem.size());
+            for (Map.Entry<Integer, FileKeeper> fileKeeperEntry : fileSystem.entrySet()) {
+                System.out.println(fileKeeperEntry.getValue().name + " " + fileKeeperEntry.getKey());
+            }
+            for (Map.Entry<Integer, FileKeeper> fileKeeperEntry : fileSystem.entrySet()) {
+                int child = 0;
+                String children = "";
+                for (Map.Entry<Integer, FileKeeper> keeperEntry : fileSystem.entrySet()) {
+                    if (fileKeeperEntry.getValue().id == keeperEntry.getValue().parentId) {
+                        child++;
+                        children += " " + keeperEntry.getValue().id;
+                    }
+                }
+                System.out.println(child + children);
+            }
+        }
+
+        // OUTPUT ACM2
+        if (outputFormat.equals("acm2")) {
+            System.out.println(fileSystem.size());
+            for (Map.Entry<Integer, FileKeeper> fileKeeperEntry : fileSystem.entrySet()) {
+                System.out.println(fileKeeperEntry.getValue().name + " " + fileKeeperEntry.getKey());
+            }
+            for (Map.Entry<Integer, FileKeeper> fileKeeperEntry : fileSystem.entrySet()) {
+                System.out.println(fileKeeperEntry.getValue().parentId);
+            }
+        }
+
+        // OUTPUT ACM3
+        if (outputFormat.equals("acm3")) {
+            System.out.println(fileSystem.size());
+            for (Map.Entry<Integer, FileKeeper> fileKeeperEntry : fileSystem.entrySet()) {
+                System.out.println(fileKeeperEntry.getValue().name + " " + fileKeeperEntry.getKey());
+            }
+            for (Map.Entry<Integer, FileKeeper> fileKeeperEntry : fileSystem.entrySet()) {
+                if (fileKeeperEntry.getValue().parentId == -1) continue;
+                System.out.println(fileKeeperEntry.getValue().parentId + " " + fileKeeperEntry.getValue().id);
+            }
+        }
+
+        // OUTPUT XML
+        if (outputFormat.equals("xml")) {
 //            for (Map.Entry<Integer, FileKeeper> fileKeeperEntry : fileSystem.entrySet()) {
+//                String name = fileKeeperEntry.getValue().name;
+//                int id = fileKeeperEntry.getValue().id;
 //                for (int i = 0; i < fileKeeperEntry.getValue().loadLevel; i++) {
-//                    System.out.print("    ");
+//                    System.out.print("  ");
 //                }
-//                System.out.println(fileKeeperEntry.getValue().name + " " + fileKeeperEntry.getKey());
+//                if (fileKeeperEntry.getValue().type == FileKeeper.Type.DIR) {
+//                    System.out.println("<dir name='" + name + "' id='" + id + "'>");
+//                } else {
+//                    System.out.println("<file name='" + name + "' id='" + id + "'/>");
+//                }
 //            }
-//        }
+            xmlOut(-1);
+        }
+    }
+
+    static void xmlOut(int parentId) {
+        for (Map.Entry<Integer, FileKeeper> fileKeeperEntry : fileSystem.entrySet()) {
+            if (fileKeeperEntry.getValue().parentId == parentId) {
+                String name = fileKeeperEntry.getValue().name;
+                int id = fileKeeperEntry.getValue().id;
+                int level = fileKeeperEntry.getValue().loadLevel;
+                for (int i = 0; i < level; i++) {
+                    System.out.print("  ");
+                }
+
+                if (fileKeeperEntry.getValue().type == FileKeeper.Type.FILE) {
+                    System.out.println("<file name='" + name + "' id='" + id + "'/>");
+                }
+                if (fileKeeperEntry.getValue().type == FileKeeper.Type.DIR) {
+                    System.out.println("<dir name='" + name + "' id='" + id + "'>");
+                    xmlOut(fileKeeperEntry.getKey());
+                    for (int i = 0; i < level; i++) {
+                        System.out.print("  ");
+                    }
+                    System.out.println("</dir>");
+                }
+            }
+        }
     }
 
     static class FileKeeper {
@@ -110,6 +201,7 @@ public class FormatsParserConverter {
         int id;
         int parentId;
         int loadLevel;
+        boolean xmlDirTagClose = false;
 
         FileKeeper(){
         }
