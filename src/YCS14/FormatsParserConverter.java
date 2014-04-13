@@ -22,6 +22,7 @@ public class FormatsParserConverter {
         String[] fileTree = {""};
         int stringsCount = 0;
         String[] parentsTree = {""};
+        ArrayList<String> xmlList = new ArrayList<>();
 
         BufferedReader rdr = new BufferedReader(new InputStreamReader(System.in));
         try {
@@ -48,6 +49,14 @@ public class FormatsParserConverter {
                 }
             }
 
+            if (inputFormat.equals("xml")) {
+                String s = "";
+                while ((s = rdr.readLine()) != null ) {
+                    xmlList.add(s);
+                    if (s.equals("</dir>")) break;
+                }
+            }
+
             rdr.close();
         } catch (IOException e) {
             System.out.println("Input Error");
@@ -55,14 +64,73 @@ public class FormatsParserConverter {
             System.exit(-1);
         }
         ArrayList<FileKeeper> fileList = new ArrayList<>();
-        for (String s : fileTree) {
-            fileList.add(new FileKeeper(s, inputFormat));
-        }
+
+        if (!inputFormat.equals("xml")) {
+            for (String s : fileTree) {
+                fileList.add(new FileKeeper(s, inputFormat));
+            }
 //        HashMap<Integer, FileKeeper> fileSystem = new HashMap<Integer, FileKeeper>();
-        for (FileKeeper fileKeeper : fileList) {
+            for (FileKeeper fileKeeper : fileList) {
 //            System.out.println(fileKeeper.initialInfo);
-            fileKeeper.initialize();
-            fileSystem.put(fileKeeper.id, fileKeeper);
+                fileKeeper.initialize();
+                fileSystem.put(fileKeeper.id, fileKeeper);
+            }
+        }
+
+        if (inputFormat.equals("xml")) {
+//            StringBuilder sb = new StringBuilder();
+//            for (String s : xmlList) {
+//                sb.append(s);
+//            }
+//            parseTag(sb.toString(),"dir");
+//            System.exit(0);
+
+//            if (initialInfo.startsWith("    ")) {
+//                int i = 0;
+//                char[] chars = initialInfo.toCharArray();
+//                while (chars[i] == ' ') {
+//                    i++;
+//                }
+//                this.loadLevel = i/4;
+//            }
+//            String[] cuted = initialInfo.trim().split(" ");
+//            this.name = cuted[0];
+
+            for (String s : xmlList) {
+                if (s.contains("<dir") || s.contains("<file")){
+                    int level = 0;
+                    if (s.startsWith("  ")) {
+                        int i = 0;
+                        char[] chars = s.toCharArray();
+                        while (chars[i] == ' ') {
+                            i++;
+                        }
+                        level = i/2;
+                    }
+                    s = s.trim();
+
+                    FileKeeper fk = new FileKeeper();
+                    fk.loadLevel = level;
+
+                    if (s.contains("<dir")) {
+                        fk.type = FileKeeper.Type.DIR;
+//                        s = s.split(" ")[1] + s.split(" ")[2];
+//                        System.out.println(s.split("'")[1] + " " + s.split("'")[3]);
+                    }
+                    if (s.contains("<file")) {
+                        fk.type = FileKeeper.Type.FILE;
+//                        s = s.split(" ")[1] + s.split(" ")[2];
+//                        System.out.println(s.split("'")[1] + " " + s.split("'")[3]);
+                    }
+                    s = s.split(" ")[1] + s.split(" ")[2];
+                    fk.name = s.split("'")[1];
+                    fk.id = Integer.parseInt(s.split("'")[3]);
+//                    System.out.println(s + " / level " + level);
+                    fileSystem.put(fk.id, fk);
+                }
+            }
+//            System.exit(0);
+            inputFormat = "python";
         }
 
         // Parents detector
@@ -248,6 +316,33 @@ public class FormatsParserConverter {
         }
     }
 
+    public static void parseTag(String line, String tag) {
+        String tagOpen = "<" + tag;
+        String tagClosed = "</" + tag + ">";
+        if (tag.equals("file")) tagClosed = "/>";
+
+        int off = line.indexOf(tagOpen);
+        int offend = line.indexOf(tagClosed)+tagClosed.length();
+
+        String inline = line.substring(off, offend);
+        String subinline = inline.substring(tagOpen.length());
+        String nextline = line.substring(offend);
+
+        while (subinline.contains(tagOpen)) {
+            int suboffend = nextline.indexOf(tagClosed)+tagClosed.length();
+            subinline = subinline.substring(subinline.indexOf(tagOpen)+tagOpen.length()) + nextline.substring(0, suboffend);
+            inline += nextline.substring(0, suboffend);
+            nextline = nextline.substring(suboffend);
+        }
+        System.out.println(inline);
+        nextline = line.substring(line.indexOf(inline)+inline.length());
+//        System.out.println(nextline);
+        subinline = inline.substring(tagOpen.length(), inline.lastIndexOf(tagClosed));
+//        System.out.println(subinline);
+        if (subinline.contains(tagOpen)) parseTag(subinline, tag);
+        if (nextline.contains(tagOpen)) parseTag(nextline, tag);
+    }
+
     static void xmlOut(int parentId) {
         for (Map.Entry<Integer, FileKeeper> fileKeeperEntry : fileSystem.entrySet()) {
             if (fileKeeperEntry.getValue().parentId == parentId) {
@@ -314,6 +409,11 @@ public class FormatsParserConverter {
             if (initialFormat == Format.ACM1 || initialFormat == Format.ACM2 || initialFormat == Format.ACM3) {
                 parseAcm();
             }
+
+            if (initialFormat == Format.XML) {
+                parseXml();
+            }
+
         }
 
         void parseFind() {
@@ -347,6 +447,10 @@ public class FormatsParserConverter {
         void parseAcm() {
             String[] cuted = initialInfo.trim().split(" ");
             this.name = cuted[0];
+        }
+
+        void parseXml() {
+
         }
     }
 

@@ -12,7 +12,7 @@
     <ignored path="YandexContest.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/PieceOfCake.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387003604309" ignored="false" />
-    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397388576859" ignored="false" />
+    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397402711942" ignored="false" />
     <file path="/BrokenParquet.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386493598535" ignored="false" />
     <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397050737802" ignored="false" />
     <file path="/sdsdsd.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385732532179" ignored="false" />
@@ -616,7 +616,7 @@
     <file path="/SVDwof.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387862121909" ignored="false" />
     <file path="/SVDtw.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387936967068" ignored="false" />
     <file path="/SVDtwo.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387884514217" ignored="false" />
-    <file path="/FormatsParserConverter.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397402646830" ignored="false" />
+    <file path="/FormatsParserConverter.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397406836524" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -837,7 +837,7 @@
       <file leaf-file-name="FormatsParserConverter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="50" selection-start="5556" selection-end="5556" vertical-scroll-proportion="0.5516014">
+            <state line="111" column="33" selection-start="3812" selection-end="3812" vertical-scroll-proportion="0.5213523">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#375#396#0" expanded="true" />
@@ -1382,7 +1382,11 @@
       <created>1397388588275</created>
       <updated>1397388588275</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="YandexContest — Summer 2014&#10;                     &#10; FormatParserConverter">
+      <created>1397402719965</created>
+      <updated>1397402719965</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1589,7 +1593,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="50" selection-start="5556" selection-end="5556" vertical-scroll-proportion="0.5516014">
+        <state line="111" column="33" selection-start="3812" selection-end="3812" vertical-scroll-proportion="0.5213523">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#375#396#0" expanded="true" />
