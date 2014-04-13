@@ -6,15 +6,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java" afterPath="$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/YCS14/LongestOverallSubstring.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/YCS14/parser_test.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YandexContest.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/PieceOfCake.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387003604309" ignored="false" />
-    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397402711942" ignored="false" />
+    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397406887674" ignored="false" />
     <file path="/BrokenParquet.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386493598535" ignored="false" />
-    <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397050737802" ignored="false" />
+    <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397409799797" ignored="false" />
     <file path="/sdsdsd.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385732532179" ignored="false" />
     <file path="/MaxMatching.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386225924905" ignored="false" />
     <file path="/a.dummy" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386223773907" ignored="false" />
@@ -617,6 +618,7 @@
     <file path="/SVDtw.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387936967068" ignored="false" />
     <file path="/SVDtwo.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387884514217" ignored="false" />
     <file path="/FormatsParserConverter.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397406836524" ignored="false" />
+    <file path="/LongestOverallSubstring.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397409964493" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -834,13 +836,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FormatsParserConverter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FormatsParserConverter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="33" selection-start="3812" selection-end="3812" vertical-scroll-proportion="0.5213523">
+            <state line="19" column="45" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#375#396#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LongestOverallSubstring.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/YCS14/LongestOverallSubstring.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="57" selection-start="810" selection-end="810" vertical-scroll-proportion="0.18327402">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -869,7 +882,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/BaselinePredictors/MahoutRecommender.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/SlopeOne.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/ss.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/LinearRegression.java" />
@@ -885,6 +897,7 @@
         <option value="$PROJECT_DIR$/src/BaselinePredictors/SVDtw.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/SVD.java" />
         <option value="$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java" />
+        <option value="$PROJECT_DIR$/src/YCS14/LongestOverallSubstring.java" />
       </list>
     </option>
   </component>
@@ -1028,7 +1041,7 @@
       <recent name="org.apache.mahout.cf.taste.impl.neighborhood" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FormatsParserConverter">
+  <component name="RunManager" selected="Application.LongestOverallSubstring">
     <configuration default="false" name="SVD" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SVD" />
       <option name="VM_PARAMETERS" />
@@ -1067,22 +1080,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="SVD22" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SVD22" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="YandexContest" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="SVD23" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SVD23" />
       <option name="VM_PARAMETERS" />
@@ -1118,6 +1115,22 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="LongestOverallSubstring" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="YCS14.LongestOverallSubstring" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="YandexContest" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -1212,17 +1225,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.SVD" />
       <item index="1" class="java.lang.String" itemvalue="Application.SVDtw" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SVD22" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SVD23" />
-      <item index="4" class="java.lang.String" itemvalue="Application.FormatsParserConverter" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SVD23" />
+      <item index="3" class="java.lang.String" itemvalue="Application.FormatsParserConverter" />
+      <item index="4" class="java.lang.String" itemvalue="Application.LongestOverallSubstring" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.FormatsParserConverter" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SVD" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SVDtw" />
-        <item index="3" class="java.lang.String" itemvalue="Application.SVD23" />
-        <item index="4" class="java.lang.String" itemvalue="Application.SVD22" />
+        <item index="0" class="java.lang.String" itemvalue="Application.LongestOverallSubstring" />
+        <item index="1" class="java.lang.String" itemvalue="Application.FormatsParserConverter" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SVD" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SVDtw" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SVD23" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1386,7 +1399,11 @@
       <created>1397402719965</created>
       <updated>1397402719965</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="YandexContest — Summer 2014&#10;                     &#10; FormatParserConverter">
+      <created>1397406893641</created>
+      <updated>1397406893641</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1508,11 +1525,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/svd2_c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="27" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/JAMASVD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="18" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" />
@@ -1593,10 +1605,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="33" selection-start="3812" selection-end="3812" vertical-scroll-proportion="0.5213523">
+        <state line="19" column="45" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#375#396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/YCS14/LongestOverallSubstring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="57" selection-start="810" selection-end="810" vertical-scroll-proportion="0.18327402">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
