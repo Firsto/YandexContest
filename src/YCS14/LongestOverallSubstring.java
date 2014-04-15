@@ -3,7 +3,6 @@ package YCS14;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,13 +13,29 @@ import java.util.ArrayList;
 public class LongestOverallSubstring {
 
     public static void main(String[] args) {
+
+        /*
+
+7
+aslkdsvxcvicparampamibyzxycbiouuidksdafdfasdfasddfsjhsdgsdgui
+sdhakjdliidsuboidasuobuparampamiouboifuoibfodibdubias
+adfoianpdozyucviparampamiovpopozoudvsiopofid
+zjxclbyzparampamipbuyeiorupoiugrogpewoififeuoi
+ipabdofnpouioaupoigaopigupoidaupoparampamidugaogupio
+adfnadpufaparampamiduniadfiojzlxcjvlkzjxcv
+fdiuosdoiiodfhiuodhuiodfuhodfparampamiuhio
+
+         */
+
         int count = 0;
-        ArrayList<String> strings = new ArrayList<>();
+        String strings[] = {""};
+
         BufferedReader rdr = new BufferedReader(new InputStreamReader(System.in));
         try {
             count = Integer.parseInt(rdr.readLine());
+            strings = new String[count];
             for (int i = 0; i < count; i++) {
-                strings.add(rdr.readLine());
+                strings[i] = rdr.readLine();
             }
             rdr.close();
         } catch (IOException e) {
@@ -28,35 +43,28 @@ public class LongestOverallSubstring {
             e.printStackTrace();
             System.exit(-1);
         }
+//        strings_temp = strings.clone();
         String s = "";
-        String str[] = new String[count];
-        String stt[] = new String[count];
-        int o = 0;
-        for (String string : strings) {
-            str[o] = string;
-            stt[o] = string;
-            o++;
-        }
-        for (int i =1; i<=count-1;i++){
 
-            if(str[i-1].length() <= str[i].length()){
-                s=str[i-1];
-                str[i]=str[i-1];
-                str[i-1]=s;
+        for (int i = 0; i < count - 1; i++) {
+            if (strings[i].length() <= strings[i+1].length()) {
+                s = strings[i];
             }
         }
-        String shortest = str[count-1];
-        for(int i=shortest.length()-1;i>=0;i--){
-            for(int j=i; j<=shortest.length()-1;j++){
-                String st=shortest.substring(j-i,j+1);
-                int findcount=0;
-                for(int k=0; k<=str.length-1;k++){
-                    if(stt[k].contains(st)){
+
+//        System.out.println(Arrays.toString(strings));
+//        System.out.println(s);
+        for (int i = s.length() - 1; i >= 0; i--) {
+            for (int j = i; j <= s.length() - 1; j++) {
+                String substring = s.substring(j - i, j + 1);
+                int findcount = 0;
+                for (int k = 0; k <= strings.length - 1; k++) {
+                    if (strings[k].contains(substring)) {
                         findcount++;
                     }
                 }
-                if(findcount==count){
-                    System.out.println(st);
+                if (findcount == count) {
+                    System.out.println(substring);
                     System.exit(0);
                 }
             }
