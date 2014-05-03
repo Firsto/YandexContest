@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sevenzipjbinding-Windows-amd64">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/sevenzipjbinding-Windows-amd64.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

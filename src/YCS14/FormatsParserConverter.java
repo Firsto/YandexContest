@@ -15,6 +15,7 @@ import java.util.Map;
  */
 public class FormatsParserConverter {
     static HashMap<Integer, FileKeeper> fileSystem = new HashMap<Integer, FileKeeper>();
+
     public static void main(String[] args) {
 
         String inputFormat = "";
@@ -43,7 +44,7 @@ public class FormatsParserConverter {
             }
 
             if (inputFormat.equals("acm3")) {
-                parentsTree = new String[stringsCount-1];
+                parentsTree = new String[stringsCount - 1];
                 for (int i = 0; i < stringsCount - 1; i++) {
                     parentsTree[i] = rdr.readLine();
                 }
@@ -51,7 +52,7 @@ public class FormatsParserConverter {
 
             if (inputFormat.equals("xml")) {
                 String s = "";
-                while ((s = rdr.readLine()) != null ) {
+                while ((s = rdr.readLine()) != null) {
                     xmlList.add(s);
                     if (s.equals("</dir>")) break;
                 }
@@ -97,7 +98,7 @@ public class FormatsParserConverter {
 //            this.name = cuted[0];
 
             for (String s : xmlList) {
-                if (s.contains("<dir") || s.contains("<file")){
+                if (s.contains("<dir") || s.contains("<file")) {
                     int level = 0;
                     if (s.startsWith("  ")) {
                         int i = 0;
@@ -105,7 +106,7 @@ public class FormatsParserConverter {
                         while (chars[i] == ' ') {
                             i++;
                         }
-                        level = i/2;
+                        level = i / 2;
                     }
                     s = s.trim();
 
@@ -143,7 +144,7 @@ public class FormatsParserConverter {
 
                 for (Map.Entry<Integer, FileKeeper> keeperEntry : fileSystem.entrySet()) {
 //                    if (keeperEntry.getValue().parentName != null) continue;
-                    if (keeperEntry.getValue().loadLevel == level+1 && keeperEntry.getValue().id > id) {
+                    if (keeperEntry.getValue().loadLevel == level + 1 && keeperEntry.getValue().id > id) {
                         keeperEntry.getValue().parentName = name;
                         keeperEntry.getValue().parentId = id;
                     }
@@ -217,7 +218,7 @@ public class FormatsParserConverter {
             FileKeeper fk = fileKeeperEntry.getValue();
 
             for (Map.Entry<Integer, FileKeeper> keeperEntry : fileSystem.entrySet()) {
-                if (fk.parentName != null && fk.parentName.equals(keeperEntry.getValue().name) && (fk.loadLevel == keeperEntry.getValue().loadLevel+1)) {
+                if (fk.parentName != null && fk.parentName.equals(keeperEntry.getValue().name) && (fk.loadLevel == keeperEntry.getValue().loadLevel + 1)) {
                     if (fk.id < keeperEntry.getValue().id) break;
                     fk.parentId = keeperEntry.getValue().id;
                     break;
@@ -322,20 +323,20 @@ public class FormatsParserConverter {
         if (tag.equals("file")) tagClosed = "/>";
 
         int off = line.indexOf(tagOpen);
-        int offend = line.indexOf(tagClosed)+tagClosed.length();
+        int offend = line.indexOf(tagClosed) + tagClosed.length();
 
         String inline = line.substring(off, offend);
         String subinline = inline.substring(tagOpen.length());
         String nextline = line.substring(offend);
 
         while (subinline.contains(tagOpen)) {
-            int suboffend = nextline.indexOf(tagClosed)+tagClosed.length();
-            subinline = subinline.substring(subinline.indexOf(tagOpen)+tagOpen.length()) + nextline.substring(0, suboffend);
+            int suboffend = nextline.indexOf(tagClosed) + tagClosed.length();
+            subinline = subinline.substring(subinline.indexOf(tagOpen) + tagOpen.length()) + nextline.substring(0, suboffend);
             inline += nextline.substring(0, suboffend);
             nextline = nextline.substring(suboffend);
         }
         System.out.println(inline);
-        nextline = line.substring(line.indexOf(inline)+inline.length());
+        nextline = line.substring(line.indexOf(inline) + inline.length());
 //        System.out.println(nextline);
         subinline = inline.substring(tagOpen.length(), inline.lastIndexOf(tagClosed));
 //        System.out.println(subinline);
@@ -370,7 +371,9 @@ public class FormatsParserConverter {
 
     static class FileKeeper {
         enum Format {FIND, PYTHON, ACM1, ACM2, ACM3, XML}
+
         enum Type {FILE, DIR}
+
         String initialInfo = "";
         Format initialFormat;
         Type type;
@@ -382,12 +385,13 @@ public class FormatsParserConverter {
         int loadLevel;
         boolean xmlDirTagClose = false;
 
-        FileKeeper(){
+        FileKeeper() {
         }
 
         FileKeeper(String info) {
             initialInfo = info;
         }
+
         FileKeeper(String info, String format) {
             initialInfo = info;
             this.initialFormat = Format.valueOf(format.toUpperCase());
@@ -420,13 +424,13 @@ public class FormatsParserConverter {
             String[] cuted = initialInfo.split(" ");
             cuted = cuted[0].split("/");
             if (cuted.length > 0) {
-                this.loadLevel = cuted.length-1;
+                this.loadLevel = cuted.length - 1;
                 this.parentFullName = "";
-                for (int i = 0; i < cuted.length-1; i++) {
+                for (int i = 0; i < cuted.length - 1; i++) {
                     this.parentFullName += cuted[i] + "/";
                 }
             }
-            this.name = cuted[cuted.length-1];
+            this.name = cuted[cuted.length - 1];
             if (cuted.length > 1) this.parentName = cuted[cuted.length - 2];
 //            System.out.println(this.name + " " + this.id + "   " + this.parentName + "   " + this.parentFullName + "  " + this.loadLevel);
         }
@@ -438,7 +442,7 @@ public class FormatsParserConverter {
                 while (chars[i] == ' ') {
                     i++;
                 }
-                this.loadLevel = i/4;
+                this.loadLevel = i / 4;
             }
             String[] cuted = initialInfo.trim().split(" ");
             this.name = cuted[0];

@@ -6,9 +6,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/BaselinePredictors/mahout" />
     </content>
+    <orderEntry type="library" exported="" name="sevenzipjbinding-AllPlatforms" level="project" />
+    <orderEntry type="library" exported="" name="sevenzipjbinding" level="project" />
+    <orderEntry type="library" name="sevenzipjbinding-Windows-amd64" level="project" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="mahout-core-0.7-sources" level="application" />
   </component>
 </module>
 

@@ -6,18 +6,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/YCS14/GlobalVariables.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/sevenzipjbinding.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/sevenzipjbinding_AllPlatforms.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/sevenzipjbinding_Windows_amd64.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" afterPath="$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java" afterPath="$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrokenParquet/HKM.java" afterPath="$PROJECT_DIR$/src/BrokenParquet/HKM.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrokenParquet/HopcroftKarp.java" afterPath="$PROJECT_DIR$/src/BrokenParquet/HopcroftKarp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/YCS14/LongestOverallSubstring.java" afterPath="$PROJECT_DIR$/src/YCS14/LongestOverallSubstring.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrokenParquet/MaxFlowDinic.java" afterPath="$PROJECT_DIR$/src/BrokenParquet/MaxFlowDinic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java" afterPath="$PROJECT_DIR$/src/BrokenParquet/MaxFlowEdmondKarp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrokenParquet/MaxMatching.java" afterPath="$PROJECT_DIR$/src/BrokenParquet/MaxMatching.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BrokenParquet/MaxMatching2.java" afterPath="$PROJECT_DIR$/src/BrokenParquet/MaxMatching2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" afterPath="$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BaselinePredictors/SlopeOne.java" afterPath="$PROJECT_DIR$/src/BaselinePredictors/SlopeOne.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/YandexContest.iml" afterPath="$PROJECT_DIR$/YandexContest.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YandexContest.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/PieceOfCake.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387003604309" ignored="false" />
-    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397494899184" ignored="false" />
+    <file path="/Dummy.txt" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399062660966" ignored="false" />
     <file path="/BrokenParquet.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386493598535" ignored="false" />
-    <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397409799797" ignored="false" />
+    <file path="/fragment.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399062794502" ignored="false" />
     <file path="/sdsdsd.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1385732532179" ignored="false" />
     <file path="/MaxMatching.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386225924905" ignored="false" />
-    <file path="/a.dummy" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386223773907" ignored="false" />
+    <file path="/a.dummy" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399073792422" ignored="false" />
     <file path="/MaxMatching2.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386318969046" ignored="false" />
     <file path="/RegExp Fragment (BrokenParquet.java:1304).regexp" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1386332791621" ignored="false" />
     <file path="/SimpleRecommender.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387454545981" ignored="false" />
@@ -618,6 +633,26 @@
     <file path="/SVDtwo.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1387884514217" ignored="false" />
     <file path="/FormatsParserConverter.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397406836524" ignored="false" />
     <file path="/LongestOverallSubstring.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1397526436240" ignored="false" />
+    <file path="/GlobalVariables.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399063208714" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/net/sf/sevenzipjbinding/simple/impl/SimpleInArchiveItemImpl.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725167" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/SevenZip/Compression/LZMA/Decoder.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725168" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/SevenZip/Compression/LZMA/Encoder.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725558" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/net/sf/sevenzipjbinding/impl/SequentialInStreamImpl.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725169" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/net/sf/sevenzipjbinding/impl/RandomAccessFileInStream.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725168" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/net/sf/sevenzipjbinding/impl/InArchiveImpl.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725168" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/net/sf/sevenzipjbinding/impl/VolumedArchiveInStream.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725168" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/net/sf/sevenzipjbinding/simple/impl/SimpleInArchiveImpl.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725167" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/SevenZip/Compression/LZ/InWindow.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725167" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/SevenZip/Compression/LZ/BinTree.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725167" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/SevenZip/Compression/LZ/OutWindow.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725168" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/net/sf/sevenzipjbinding/simple/impl/package-info.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725168" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/SevenZip/Compression/LZMA/Base.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725168" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/SevenZip/Compression/RangeCoder/BitTreeDecoder.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725168" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/SevenZip/Compression/RangeCoder/BitTreeEncoder.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725168" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/SevenZip/Compression/RangeCoder/Decoder.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725168" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/SevenZip/Compression/RangeCoder/Encoder.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725168" ignored="false" />
+    <file path="$PROJECT_DIR$/src/YCS14/net/sf/sevenzipjbinding/impl/package-info.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399060725168" ignored="false" />
+    <file path="/SevenZip.java" changelist="a73f1ab7-e319-44ae-ac34-cc3e3a7f733d" time="1399062271084" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -675,7 +710,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" line="38" class="BrokenParquet.BrokenParquet" package="BrokenParquet">
+      <breakpoint url="file://$PROJECT_DIR$/src/BrokenParquet/BrokenParquet.java" line="37" class="BrokenParquet.BrokenParquet" package="BrokenParquet">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -690,52 +725,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="99" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="113" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="121" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="128" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="98" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -751,6 +741,51 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="112" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="120" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="127" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java" line="111" class="PieceOfCake.PieceOfCake" package="PieceOfCake">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -838,19 +873,46 @@
       <file leaf-file-name="FormatsParserConverter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="45" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
+            <state line="20" column="32" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LongestOverallSubstring.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LongestOverallSubstring.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/YCS14/LongestOverallSubstring.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="32" selection-start="1510" selection-end="1510" vertical-scroll-proportion="2.05516">
+            <state line="30" column="22" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GlobalVariables.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/YCS14/GlobalVariables.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="60" selection-start="1020" selection-end="1037" vertical-scroll-proportion="0.4331984">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SevenZip.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/sf/sevenzipjbinding/SevenZip.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="692" column="101" selection-start="32985" selection-end="32985" vertical-scroll-proportion="-16.64">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomAccessFile.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/io/RandomAccessFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="196" column="11" selection-start="9233" selection-end="9233" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -878,12 +940,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/BaselinePredictors/SlopeOne.java" />
-        <option value="$PROJECT_DIR$/src/BaselinePredictors/ss.java" />
-        <option value="$PROJECT_DIR$/src/BaselinePredictors/LinearRegression.java" />
-        <option value="$PROJECT_DIR$/src/BaselinePredictors/svd" />
-        <option value="$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java" />
-        <option value="$PROJECT_DIR$/src/BaselinePredictors/svd2_c" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/JAMASVD.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/SVD22.java" />
         <option value="$PROJECT_DIR$/src/BaselinePredictors/SVDwof.java" />
@@ -894,14 +950,20 @@
         <option value="$PROJECT_DIR$/src/BaselinePredictors/SVD.java" />
         <option value="$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java" />
         <option value="$PROJECT_DIR$/src/YCS14/LongestOverallSubstring.java" />
+        <option value="$PROJECT_DIR$/src/YCS14/SevenZip1/LzmaAlone.java" />
+        <option value="$PROJECT_DIR$/src/YCS14/SevenZip/LzmaBench.java" />
+        <option value="$PROJECT_DIR$/src/YCS14/net/sf/sevenzipjbinding/SevenZip/LzmaAlone.java" />
+        <option value="$PROJECT_DIR$/src/YCS14/net/sf/sevenzipjbinding/SevenZip.java" />
+        <option value="$PROJECT_DIR$/src/GlobalVariables.java" />
+        <option value="$PROJECT_DIR$/src/YCS14/GlobalVariables.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="252" />
-    <option name="y" value="7" />
-    <option name="width" value="1441" />
-    <option name="height" value="1035" />
+    <option name="x" value="76" />
+    <option name="y" value="-8" />
+    <option name="width" value="1852" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -951,8 +1013,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1005,17 +1065,19 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/sevenzipjbinding.jar!/" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -1037,7 +1099,7 @@
       <recent name="org.apache.mahout.cf.taste.impl.neighborhood" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LongestOverallSubstring">
+  <component name="RunManager" selected="Application.GlobalVariables">
     <configuration default="false" name="SVD" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SVD" />
       <option name="VM_PARAMETERS" />
@@ -1076,22 +1138,6 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="SVD23" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="BaselinePredictors.SVD23" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="YandexContest" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="FormatsParserConverter" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="YCS14.FormatsParserConverter" />
       <option name="VM_PARAMETERS" />
@@ -1127,6 +1173,28 @@
       <module name="YandexContest" />
       <envs />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GlobalVariables" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="YCS14.GlobalVariables" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="YandexContest" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -1221,17 +1289,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.SVD" />
       <item index="1" class="java.lang.String" itemvalue="Application.SVDtw" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SVD23" />
-      <item index="3" class="java.lang.String" itemvalue="Application.FormatsParserConverter" />
-      <item index="4" class="java.lang.String" itemvalue="Application.LongestOverallSubstring" />
+      <item index="2" class="java.lang.String" itemvalue="Application.FormatsParserConverter" />
+      <item index="3" class="java.lang.String" itemvalue="Application.LongestOverallSubstring" />
+      <item index="4" class="java.lang.String" itemvalue="Application.GlobalVariables" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.LongestOverallSubstring" />
-        <item index="1" class="java.lang.String" itemvalue="Application.FormatsParserConverter" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SVD" />
-        <item index="3" class="java.lang.String" itemvalue="Application.SVDtw" />
-        <item index="4" class="java.lang.String" itemvalue="Application.SVD23" />
+        <item index="0" class="java.lang.String" itemvalue="Application.GlobalVariables" />
+        <item index="1" class="java.lang.String" itemvalue="Application.LongestOverallSubstring" />
+        <item index="2" class="java.lang.String" itemvalue="Application.FormatsParserConverter" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SVD" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SVDtw" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1403,7 +1471,11 @@
       <created>1397410034786</created>
       <updated>1397410034786</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="YandexContest — Summer 2014&#10;                     &#10;LongestOverallSubstring">
+      <created>1397526572900</created>
+      <updated>1397526572900</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -1427,27 +1499,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="252" y="7" width="1441" height="1035" extended-state="0" />
-    <editor active="false" />
+    <frame x="76" y="-8" width="1852" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16588235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32800853" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38382688" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2599432" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3257403" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226837" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36461538" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26323423" sideWeight="0.18678816" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2027933" sideWeight="0.1629393" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26323423" sideWeight="0.48291573" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33029613" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2027933" sideWeight="0.4174654" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4195953" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964337" sideWeight="0.7400568" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1526,33 +1598,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/JAMASVD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="18" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="13" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PieceOfCake/PieceOfCake2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="33" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BaselinePredictors/SimpleRecommender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="11" selection-start="388" selection-end="388" vertical-scroll-proportion="-0.6779661" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BrokenParquet/HKM.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="118" column="13" selection-start="3166" selection-end="3203" vertical-scroll-proportion="0.0" />
@@ -1604,14 +1649,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/YCS14/FormatsParserConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="45" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0">
+        <state line="20" column="32" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/YCS14/LongestOverallSubstring.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="32" selection-start="1510" selection-end="1510" vertical-scroll-proportion="2.05516">
+        <state line="30" column="22" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1654" column="0" selection-start="69797" selection-end="69797" vertical-scroll-proportion="-0.6352313">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/java/io/RandomAccessFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="196" column="11" selection-start="9233" selection-end="9233" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/sf/sevenzipjbinding/SevenZip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="692" column="101" selection-start="32985" selection-end="32985" vertical-scroll-proportion="-16.64">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/YCS14/GlobalVariables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="60" selection-start="1020" selection-end="1037" vertical-scroll-proportion="0.4331984">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1695,7 +1768,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>mahout-core-0.7-sources</last-edited>
+          <last-edited>sevenzipjbinding</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

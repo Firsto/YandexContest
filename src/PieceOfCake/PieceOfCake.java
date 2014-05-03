@@ -3,8 +3,7 @@ package PieceOfCake;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.math.BigDecimal;
-import java.util.*;
+import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.

@@ -47,7 +47,7 @@ fdiuosdoiiodfhiuodhuiodfuhodfparampamiuhio
         String s = "";
 
         for (int i = 0; i < count - 1; i++) {
-            if (strings[i].length() <= strings[i+1].length()) {
+            if (strings[i].length() <= strings[i + 1].length()) {
                 s = strings[i];
             }
         }
